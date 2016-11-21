@@ -1,11 +1,21 @@
 PartyLite Learning Center
 =========================
 
-Uses:
+#### Existing Sites
++ *Live*
+  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/Master_FrametX_RVP.html)
+  + [CA English](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/Master_FrametX_RVP.html)
+  + [CA French](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Master_FrametX_RVP.html)
++ *Dev*
+  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/index.html)
+
+* * *
+
+#### Technology/Languages Used
 + HTML5
 + CSS3/Sass (SCSS syntax)
-+ Google fonts
 + JavaScript/JQuery
-+ Hugo
-+ Gulp
-+ Compass
++ [Hugo](https://gohugo.io/)
++ [Gulp](https://gulpjs.com/)
++ [Compass](https://compass-style.org/)
++ [Google Fonts](https://fonts.google.com/)
