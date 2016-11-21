@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+<!--<pre style="width: 100%; white-space: pre-wrap;">{{ printf "%#v" . }}</pre>-->
+<p>{{ partial "category-tag.html" . }}</p>
+<h4>{{ .Title }}</h4>
+<p>{{ .Description }}</p>
+
+<hr class="dotted-rule" />
+  
+{{ .Content }}
+
+{{ partial "footer.html" . }}

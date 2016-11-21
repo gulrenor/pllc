@@ -1,0 +1,22 @@
+<h5 class="list">
+  
+  <a href="{{ if isset .Params "src" -}}
+            {{- .Params.src | absLangURL -}}
+           {{- else -}}
+            {{- .Permalink | absLangURL -}}
+           {{- end -}}" class="columns-2">
+    {{ .Title -}}
+    <!-- Show filetype icon if .pdf -->
+    {{ if and (eq "pdf" .Params.filetype) (isset .Params "src") -}}
+    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;
+    {{- end -}}
+  </a>
+  
+  <!-- Tags -->
+  <div class="tags columns-2">
+    {{- partial "category-tag.html" . -}}
+    {{- partial "series-tag.html" . -}}
+  </div>
+
+  
+</h5>

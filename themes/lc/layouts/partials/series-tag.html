@@ -1,0 +1,6 @@
+<!-- Display series this content is associated with -->
+{{ if ne "" .Params.series }}
+<a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}.html">
+  <span class="tag series">{{ .Params.series }}</span>
+</a>
+{{ end }}

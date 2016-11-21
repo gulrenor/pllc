@@ -1,0 +1,18 @@
+<div class="sidebar">
+
+<h5>
+  {{ partial "series-tag.html" . }}
+  <a href="{{ if and (isset .Params "src") (eq true .Site.Params.offsiteurl) }}
+  {{ .Params.src }}
+  {{ else }}
+  {{ .Permalink }}
+  {{ end }}">
+    {{ .Title }}
+  </a>
+  <!-- Show filetype icon if .pdf -->
+  {{ if and (eq "pdf" .Params.filetype) (isset .Params "src") }}
+    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;
+  {{ end }}
+</h5>
+
+</div>

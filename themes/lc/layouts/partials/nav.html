@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    {{ $currentNode := . }} 
+    {{ range .Site.Menus.main }} 
+    {{ if .HasChildren }}
+    <li>
+      <p>{{ .Name }}</p>
+      <ul>
+        {{ range .Children }}
+        <a href="{{ .URL }}">
+          <li class="menu-item">{{ .Name }}</li>
+        </a>
+        {{ end }}
+      </ul>
+    </li>
+    {{ else }}
+    <a href="{{ .URL }}">
+      <li>
+        <p>{{ .Name }}</p>
+      </li>
+    </a>
+    {{ end }} {{ end }}
+  </ul>
+</nav>

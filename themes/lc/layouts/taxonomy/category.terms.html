@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<div class="row">
+  {{ $data := .Data }}
+  {{ range $key, $value := .Data.Terms }}
+  <a href = "/categories/{{ $key }}.html"><p class="tag category">{{ $key }}</p></a>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>{{ .Site.Title }}&nbsp;&ndash;&nbsp;{{ .Title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="http://www.partylite.com/regional/sharedfiles/websites/Corporate-US/images/en_US/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/styles.css">
+  <script src="https://use.fontawesome.com/b107476d60.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <a href="{{ .Site.BaseURL }}index.html">
+      <img class="site-logo" src="{{ .Site.Params.logo }}" alt="{{ .Title }}" />
+    </a>
+
+    <div class="header-sidebar">
+      <form id="header-search" name="cbcSearch" method="GET" action="https://my.partylite.com/portal/olc/restartFromOlc.aspx" target="blank">
+        <input name="c" type="hidden" value="110">
+        <input name="l" type="hidden" value="ENG">
+        <input type="text" name="q" maxlength="256" value="Search" class="text">
+        <!--<input type="submit" name="btncbcSearch" value="Search" title="Consultant Search" class="submit">-->
+      </form>
+
+      <div>
+        <button><i class="fa fa-undo"></i> CBC</button>
+        <button>S/RVP</button>
+        <button>Leader</button>
+      </div>
+    </div>
+  </header>

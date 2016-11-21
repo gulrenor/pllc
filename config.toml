@@ -1,0 +1,185 @@
+## For Dev ##
+baseurl = "http://localhost:1313/"
+
+## For Live ##
+#baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
+
+theme = "lc"
+defaultContentLanguage = "en"
+uglyurls = true
+
+#SectionPagesMenu = "main"
+
+type = "book"
+layout = "list"
+
+[params]
+  offsiteurl = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+
+## Begin Menu (English) ##
+[languages.en]
+  title = "Learning Center"
+  weight = 0
+  languageName = "English"
+  languageCode = "en-US"
+  logo = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Landing/Landing_Icons/LC_Logo/1210_LearningCenterLogo.jpg"
+
+  [[languages.en.menu.main]]
+    name = "New Consultants"
+    identifier = "new-consultants"
+    url = "/categories/new-consultants.html"
+    weight = 10
+    [[languages.en.menu.main]]
+      name = "Selling & Booking"
+      parent = "new-consultants"
+      url = "/categories/selling-and-booking.html"
+    [[languages.en.menu.main]]
+      name = "Host Program"
+      parent = "new-consultants"
+      url = "/categories/host-program.html"
+    [[languages.en.menu.main]]
+      name = "Starter Kit & Products"
+      parent = "new-consultants"
+      url = "/categories/starter-kit.html"
+    [[languages.en.menu.main]]
+     name = "First Parties"
+     parent = "new-consultants"
+     url = "/categories/first-parties.html"
+    [[languages.en.menu.main]]
+      name = "Income & Rewards"
+      parent = "new-consultants"
+      url = "/categories/income-and-rewards.html"
+
+  [[languages.en.menu.main]]
+    name = "Online Biz"
+    identifier = "Online Biz"
+    weight = 30
+    [[languages.en.menu.main]]
+      name = "Online Parties"
+      parent = "Online Biz"
+      url = "/categories/online-parties.html"
+    [[languages.en.menu.main]]
+      name = "Your Consultant Website"
+      parent = "Online Biz"
+      url = "/categories/your-consultant-website.html"
+    [[languages.en.menu.main]]
+      name = "Social Networking"
+      parent = "Online Biz"
+      url = "/categories/social-networking.html"
+    [[languages.en.menu.main]]
+      name = "Customer Contacts & Orders"
+      parent = "Online Biz"
+      url = "/categories/customer-contacts-and-orders.html"
+    
+  [[languages.en.menu.main]]
+    name = "Leader Academy"
+    identifier = "leadership"
+    weight = 50
+    [[languages.en.menu.main]]
+      name = "Leadership Skills"
+      parent = "leadership"
+      url = "/categories/leadership-skills.html"
+      weight = -20
+    [[languages.en.menu.main]]
+      name = "Generate Strong Personal Business"
+      parent = "leadership"
+      url = "/categories/generate-strong-personal-business.html"
+    [[languages.en.menu.main]]
+      name = "Influence Your Central Unit"
+      parent = "leadership"
+      url = "/categories/influence-your-central-unit.html"
+    [[languages.en.menu.main]]
+      name = "Start New Consultants Strong"
+      parent = "leadership"
+      url = "/categories/start-new-consultants-strong.html"
+    [[languages.en.menu.main]]
+      name = "Sponsoring"
+      parent = "leadership"
+      url = "/categories/sponsor.html"
+      weight = -10
+
+  [[languages.en.menu.main]]
+    name = "Product"
+    identifier = "Product"
+    weight = 60
+    [[languages.en.menu.main]]
+      name = "Product Training"
+      parent = "Product"
+      url = "/categories/product-training.html"
+    [[languages.en.menu.main]]
+      name = "Product Reference"
+      parent = "Product"
+      url = "/categories/product-reference.html"
+    
+  [[languages.en.menu.main]]
+    name = "Party Ideas"
+    identifier = "Party Ideas"
+    weight = 70
+    [[languages.en.menu.main]]
+      name = "Party Types"
+      parent = "Party Ideas"
+      url = "/categories/party-types.html"
+    [[languages.en.menu.main]]
+      name = "Theme Parties"
+      parent = "Party Ideas"
+      url = "/categories/theme-parties.html"
+    [[languages.en.menu.main]]
+      name = "Games"
+      parent = "Party Ideas"
+      url = "/categories/games.html"
+    
+  [[languages.en.menu.main]]
+    name = "Development"
+    identifier = "Development"
+    weight = 80
+    [[languages.en.menu.main]]
+      name = "Book Recommendations"
+      parent = "Development"
+      url = "/info/book-recommendations.html"
+    [[languages.en.menu.main]]
+      name = "Personal Growth"
+      parent = "Development"
+      url = "/categories/personal-growth.html"
+    
+  [[languages.en.menu.main]]
+    name = "Content Types [Debug]"
+    identifier = "Content-Types"
+    weight = 500
+    [[languages.en.menu.main]]
+      name = "Video Grid"
+      parent = "Content-Types"
+      url = "/video.html"
+    [[languages.en.menu.main]]
+      name = "Document List"
+      parent = "Content-Types"
+      url = "/doc.html"
+  
+[languages.fr]
+  title = "Centre de Formation"
+  weight = 10
+  languageName = "Francais"
+  languageCode = "fr-CA"
+  logo="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Learning_Center_Logo.jpg"
+  
+  [[languages.fr.menu.main]]
+    name = "Nouvelles Conseillères"
+    identifier = ""
+    weight = 10
+    
+  [[languages.fr.menu.main]]
+    name = "Content Types [Debug]"
+    identifier = "Content-Types"
+    weight = 500
+    [[languages.fr.menu.main]]
+      name = "Video Grid"
+      parent = "Content-Types"
+      url = "/video.html"
+    [[languages.fr.menu.main]]
+      name = "Document List"
+      parent = "Content-Types"
+      url = "/doc.html"
+  

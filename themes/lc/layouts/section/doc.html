@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+
+
+{{range .Data.Pages }}
+<div style="background-color: rgb(225, 225, 225);">
+  {{ .Render "li" }}
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}

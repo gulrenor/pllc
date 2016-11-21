@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+
+<h2>{{ .Title }}doc/list</h2>
+<hr class="dotted-rule" />
+
+<div class="row">
+  {{range .Data.Pages }}
+    {{ .Render "grid" }}
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

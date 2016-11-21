@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" . }}
+<!--<pre style="width: 100%; white-space: pre-wrap;">{{ printf "%#v" . }}</pre>-->
+<!-- Display categories this content is associated with -->
+<p>
+  {{ range .Params.categories }}
+    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">
+      <span class="series">{{ . }}</span>
+    </a>
+  {{ end }}
+</p>
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}
