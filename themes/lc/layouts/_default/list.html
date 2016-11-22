@@ -21,7 +21,7 @@
 {{ $lenVid := (len (where .Pages "Section" "video" )) }}
 
 <!--<h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}}</h4>-->
-{{ if ne "" .Key }}<a href="/series/{{ .Key | urlize }}.html"><h4 class="fg-white series head">{{ .Key }}</h4></a>{{ end }}
+{{ if ne "" .Key }}<a href="/series/{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
 <section class="section-break">
   
   {{ if ne 0 $lenDoc }}
