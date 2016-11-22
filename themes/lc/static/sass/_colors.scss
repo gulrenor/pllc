@@ -1,0 +1,79 @@
+// Colors //
+$white: rgb(255, 255, 255);
+.bg-white {background-color: $white;}
+.fg-white {color: $white;}
+
+$navwhite: rgba(255, 255, 255, .9);
+
+$bg-grey: rgb(242, 242, 242);
+
+$bodygrey: rgb(118, 118, 118);
+.bg-bodygrey {background-color: $bodygrey;}
+.fg-bodygrey {color: $bodygrey;}
+
+$ltgrey: rgb(228, 228, 228);
+.bg-ltgrey {background-color: $ltgrey;}
+.fg-ltgrey {color: $ltgrey;}  
+
+$dkblue: rgb(0, 46, 95);
+.bg-dkblue {background-color: $dkblue;}
+.fg-dkblue {color: $dkblue;}
+
+$ltblue: rgb(84, 156, 220);
+.bg-ltblue {background-color: $ltblue;}
+.fg-ltblue {color: $ltblue;}
+
+$mdblue: rgb(37, 120, 213);
+.bg-mdblue {background-color: $mdblue;}
+.fg-mdblue {color: $mdblue;}
+
+$green: rgb(140, 199, 71);
+.bg-green {background-color: $green;}
+.fg-green {color: $green;}
+
+$red: rgb(235, 75, 85);
+.bg-red {background-color: $red;}
+.fg-red {color: $red;}
+
+$orange: rgb(236, 124, 47);
+.bg-orange {background-color: $orange;}
+.fg-orange {color: $orange;}
+
+@mixin footer-gradient() {
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, $ltblue 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, $ltblue));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, $ltblue 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, $ltblue 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, $ltblue 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, $ltblue 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a2dbef', GradientType=0 );}
+
+
+@mixin nav-shadow() {
+  -webkit-box-shadow: 0px 16px 36px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 16px 36px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 16px 36px 0px rgba(0,0,0,0.3);
+}
+
+html {
+  background-color: $bg-grey;
+}
+
+body {
+  @include nav-shadow;
+  color: $bodygrey;
+  background-color: $white;
+}
+
+a {
+  &:link, 
+  &:visited,
+  &:active {
+    color: $bodygrey;
+  }
+  transition: color .1s ease-in;
+  &:hover {
+    color: $ltblue;
+  }
+}

@@ -1,0 +1,91 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Montaga|Open+Sans|Playfair+Display|Abhaya+Libre|Cardo');
+
+$font-header: 'Warnock Pro', 'Cardo', 'Palatino Linotype', 'Book Antigua', 'Abhaya Libre', 'Montaga', 'Playfair Display', Garamond, serif;
+$font-body: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
+
+html {
+  font-family: $font-body;
+  font-size: 16px;
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-header;
+}
+
+h1, h2, h3, h4 {
+  margin: 1rem 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: $dkblue;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4,
+h5 {
+  font-family: $font-body;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+h5 {
+  font-size: .9rem;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+}
+
+p,
+li,
+button,
+input {
+  font-size: .75rem;
+  line-height: 1.25rem;
+}
+
+nav {
+  text-transform: uppercase;
+  letter-spacing: .09375rem; // =1.5px on main site
+  ul {
+    li {
+      ul {
+        li {
+          letter-spacing: .0625rem // =1px on main site  
+        }
+      }
+    }
+  }
+}
+
+li {
+  margin: .5rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}

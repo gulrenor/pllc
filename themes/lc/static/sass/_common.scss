@@ -1,0 +1,58 @@
+// Common //
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1200px) {
+  body {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 960px) {
+  body {
+    @include nav-shadow;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0;
+  }
+}
+
+main {
+  width: 66%;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.dotted-rule {
+  border: 0;
+  margin: .5rem 0 2rem 0;
+  padding: 0;
+  border-bottom: .125rem dotted $bodygrey;
+}
+
+.section-break {
+  margin-bottom: 5rem;
+}
