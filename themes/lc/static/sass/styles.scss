@@ -52,6 +52,11 @@ button,
   }
 }
 
+strong {
+  color: $dkgrey;
+  font-weight: 700;
+}
+
 .category {background-color: $mdblue;}
 .series {background-color: $red;}
 .section {background-color: $green;}
@@ -295,6 +300,9 @@ footer {
   width: 100%
 }
 
+.plvid {
+}
+
 iframe {
   width: 100%;
   border: 0;
@@ -305,7 +313,6 @@ iframe {
   height: 0;
   //min-height: 13rem;
   padding-bottom: 56.25%; //Keep 16:9 ratio
-  //border: 1px solid blue;
   div {
     padding: 0;
   }
