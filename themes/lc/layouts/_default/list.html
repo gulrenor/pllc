@@ -19,8 +19,13 @@
 <!-- Get quantity of content types for eval -->
 {{ $lenDoc := (len (where .Pages "Section" "doc" )) }}
 {{ $lenVid := (len (where .Pages "Section" "video" )) }}
+{{ $lenInf := (len (where .Pages "Section" "info" )) }}
 
-<!--<h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}}</h4>-->
+<!-- Handy for Debugging -->
+<!--
+<h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}} | Info:{{$lenInf}}</h4>
+-->
+
 {{ if ne "" .Key }}<a href="/series/{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
 <section class="section-break">
   
@@ -35,10 +40,10 @@
   </aside>
   {{ end }}
 
-  {{ if ne 0 $lenVid }}
+  {{ if or (ne 0 $lenVid) (ne 0 $lenInf) }}
   <div class="grid">
     {{ range .Pages }}
-      {{ if eq "video" .Section }}
+      {{ if or (eq "video" .Section) (eq "info" .Section) }}
         <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
           {{ .Render "grid" }}
         </div>

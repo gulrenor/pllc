@@ -1,5 +1,11 @@
 <!--<p class="clearfix">{{ partial "series-tag.html" . }}</p>-->
+{{ if eq .Section "video" }}
 <div class="video">{{ .Content }}</div>
+{{ end }}
+
+{{ if and (eq .Section "info") (ne .Params.summary_file "true") }}
+<div class="video" ><img src="{{ .Params.thumb }}" /></div>
+{{ end }}
 
 <div>
   <a href="{{ .Permalink | absLangURL }}"><h5 class="bg-green fg-white">{{ .Title }}</h5></a>
