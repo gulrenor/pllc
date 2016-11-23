@@ -3,7 +3,7 @@ series = ""
 categories = [
   "Product",
   "Shareable", 
- "Online Parties",
+  "Online Parties",
   "Commercials",
   "Product Training"
 ]

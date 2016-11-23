@@ -5,6 +5,7 @@ series = "PartyLite Preferred"
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
+  "Customer Contacts and Orders",
 ]
 description = "Looking for more information? Refer to the Frequently Asked Questions for Consultants. See Preferred Member Information for the FAQs for Members."
 filetype = "pdf"

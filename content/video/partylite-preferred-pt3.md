@@ -8,6 +8,7 @@ series_weight = 30
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
+  "Customer Contacts and Orders",
 ]
 
 +++

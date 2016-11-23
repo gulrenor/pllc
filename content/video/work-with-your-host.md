@@ -1,7 +1,7 @@
 +++
 title = "Work With Your Host"
 description = "Work with your host."
-series = "Host Program"
+series = ""
 categories = [
   "Selling and Booking",
   "Host Program",

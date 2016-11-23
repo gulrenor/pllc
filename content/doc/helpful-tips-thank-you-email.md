@@ -1,5 +1,5 @@
 +++
-series = "Bookings"
+series = ""
 categories = [
   "New Consultants",
   "Selling and Booking",

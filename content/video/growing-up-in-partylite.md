@@ -4,7 +4,7 @@ series = "My Story"
 categories = [
   "Sponsor",
   "Shareable", 
- "Online Parties",
+  "Online Parties",
 ]
 description = ""
 active = true

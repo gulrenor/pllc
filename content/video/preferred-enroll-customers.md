@@ -4,6 +4,7 @@ series = "PartyLite Preferred"
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
+  "Customer Contacts and Orders",
 ]
 description = "Now enrolling your customers in PartyLite Preferred is easier than ever! Learn how. (Percentages used in this video are for demonstration purposes only. Refer to the Preferred documents for current percentage rates.)"
 active = true

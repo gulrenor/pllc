@@ -3,7 +3,7 @@ description = "a description"
 filetype = "pdf"
 date = "2016-11-07T11:51:14-05:00"
 title = "Helpful Tips for your Host Letter"
-series = "Bookings"
+series = ""
 categories = [
   "New Consultants",
   "Selling and Booking",

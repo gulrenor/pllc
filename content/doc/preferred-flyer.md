@@ -8,6 +8,7 @@ series = "PartyLite Preferred"
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
+  "Customer Contacts and Orders",
 ]
 src="https://commsite.partylite.com/CommSite/us/en/Preferred_Program/PreferredFlyer.pdf"
 

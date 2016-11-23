@@ -3,13 +3,15 @@ description = "Express your unique style with Clearly Creative collection from P
 active = true
 date = "2016-11-11T15:24:31-05:00"
 title = "DIY Delight with Clearly Creative"
-series = ""
+series = "DIY Party"
+series_weight = 50
 categories = [
   "Product",
   "Shareable", 
- "Online Parties",
+  "Online Parties",
   "Commercials",
-  "Product Training"
+  "Product Training",
+  "Party Types"
 ]
 
 +++

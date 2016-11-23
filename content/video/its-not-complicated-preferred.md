@@ -4,7 +4,8 @@ description = ""
 active = true
 series = "It's Not Complicated"
 categories = [
-  "Shareable"
+  "Shareable",
+  "Online Parties"
 ]
 date = "2016-11-10T16:27:02-05:00"
 

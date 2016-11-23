@@ -3,7 +3,7 @@ series = ""
 categories = [
   "Booking",
   "Shareable", 
- "Online Parties",
+  "Online Parties",
 ]
 description = ""
 active = true

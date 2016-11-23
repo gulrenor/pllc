@@ -5,7 +5,7 @@ categories = [
   "New Consultants",
   "Selling and Booking",
 ]
-series = "Bookings"
+series = ""
 description = "booking and host coaching description."
 
 +++

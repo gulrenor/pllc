@@ -7,7 +7,8 @@ series = ""
 categories = [
   "Sponsor",
   "Tools to Share PartyLite",
-  "Shareable"
+  "Shareable",
+  "Online Parties"
 ]
 
 +++
