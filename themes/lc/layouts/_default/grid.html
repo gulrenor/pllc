@@ -1,6 +1,6 @@
 <!--<p class="clearfix">{{ partial "series-tag.html" . }}</p>-->
 {{ if eq .Section "video" }}
-<div class="video">{{ .Content }}</div>
+{{ .Content }}
 {{ end }}
 
 {{ if and (eq .Section "info") (ne .Params.summary_file "true") }}

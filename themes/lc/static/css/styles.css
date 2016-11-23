@@ -702,53 +702,71 @@ footer {
   width: 100%;
 }
 
-/* line 306, ../sass/styles.scss */
+/* line 303, ../sass/styles.scss */
+.plvid {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 310, ../sass/styles.scss */
 iframe {
-  width: 100%;
   border: 0;
 }
 
-/* line 311, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
+video {
+  border: 1px solid purple;
+  position: absolute;
+  left: auto;
+  top: 0;
+  height: 100%;
+}
+
+/* line 325, ../sass/styles.scss */
 .video {
+  border: 1px solid green;
+  position: relative;
+  padding-bottom: 56.25%;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%;
   overflow: hidden;
 }
-/* line 318, ../sass/styles.scss */
-.video div {
-  padding: 0;
-}
-/* line 322, ../sass/styles.scss */
-.video img {
-  height: auto;
-}
-/* line 330, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 .video + div h5 {
   margin: 0;
   padding: 1rem .5rem;
 }
+/* line 339, ../sass/styles.scss */
+.video img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 
-/* line 337, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 .pdf {
   height: 50rem;
 }
 
-/* line 341, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 .commercials {
   width: 100%;
 }
-/* line 343, ../sass/styles.scss */
+/* line 354, ../sass/styles.scss */
 .commercials td:nth-child(2) {
   width: 50%;
 }
-/* line 346, ../sass/styles.scss */
+/* line 357, ../sass/styles.scss */
 .commercials td:nth-child(3) {
   background-color: #767676;
   text-align: center;
 }
 
-/* line 352, ../sass/styles.scss */
+/* line 363, ../sass/styles.scss */
 .external-link {
   text-decoration: none;
   display: block;
@@ -759,11 +777,11 @@ iframe {
   margin: .25rem 0;
   transition: background-color .2s ease-in, color .2s ease-in;
 }
-/* line 361, ../sass/styles.scss */
+/* line 372, ../sass/styles.scss */
 .external-link i {
   margin: 0 .5rem 0 .25rem;
 }
-/* line 364, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 .external-link:hover {
   color: white;
   background-color: #002e5f;
