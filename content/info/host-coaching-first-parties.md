@@ -13,11 +13,19 @@ thumb = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Ma
 
 +++
 
-#### First Things First!
-##### Creating a Host Packet
+Host Coaching for Your First Parties
+====================================
+
+* * *
+
+{{< figure src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Header_Image/First_Things_First_Image.jpg" class="right" >}}
+
+First Things First!
+-------------------
+#### Creating a Host Packet
 Give to your Hosts when they book a Party. Containing everything they need to invite people, gather outside orders and build their wish list
   
-##### What to Include in Your Packet
+#### What to Include in Your Packet
   + **1 Host Party Planner Envelope**
   + **10 Reminder Cards** for your Host to hand out while out and about.
   + **1 Catalog** for your Host to use to collect orders and create a Wish List.
@@ -26,8 +34,11 @@ Give to your Hosts when they book a Party. Containing everything they need to in
 
 * * *
 
-#### Let's Focus on You
-##### Preparing for your Party
+{{< figure src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Header_Image/Lets_Focus_On_You_Image.jpg" class="right" >}}
+
+Let's Focus on You
+------------------
+#### Preparing for your Party
 Five simple steps that help keep you on track while you prepare for your Party. Following these steps will help you have a successful Party with more sales, more bookings, and more free product for your Host!
 
   1. **Set a Time and Date**  
@@ -43,6 +54,9 @@ Five simple steps that help keep you on track while you prepare for your Party. 
 
 * * *
 
-#### Helpful Tools
-##### The Host Coaching Checklist
+{{< figure src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Header_Image/Helpful_Tools_Image.jpg" class="right" >}}
+
+Helpful Tools
+-------------
+#### The Host Coaching Checklist
 Download and use this handy Host Coaching Checklist to help keep track of everything! Available in your _Start With Success_ guide or downloadable [here]({{% relref "host-coaching-checklist.md" %}})

@@ -9,6 +9,7 @@ date = "2016-11-18T11:21:32-05:00"
 title = "host program"
 active = true
 summary_file = "true"
+thumb = ""
 
 +++
 
