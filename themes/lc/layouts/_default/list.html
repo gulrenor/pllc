@@ -29,6 +29,7 @@
 {{ if ne "" .Key }}<a href="/series/{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
 <section class="section-break">
   
+  <!-- Include sidebar if documents are present -->
   {{ if ne 0 $lenDoc }}
   <aside {{ if eq 0 $lenVid }}class="full-width"{{ end }}>
     <h4>Documents</h4>
@@ -40,10 +41,19 @@
   </aside>
   {{ end }}
 
+  <!-- Show videos/info in grid layout -->
   {{ if or (ne 0 $lenVid) (ne 0 $lenInf) }}
   <div class="grid">
     {{ range .Pages }}
-      {{ if or (eq "video" .Section) (eq "info" .Section) }}
+    
+    <!--
+    [is vid: {{eq "video" .Section}}]
+    [is info: {{eq "info" .Section}}]
+    [is summary: {{eq "" .Params.summary_file}}]
+    [has thumb: {{and (isset .Params "thumb") (ne "" .Params.thumb)}}]
+    -->
+    
+      {{ if or (eq "video" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb))) }}
         <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
           {{ .Render "grid" }}
         </div>
