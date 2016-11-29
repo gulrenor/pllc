@@ -13,11 +13,6 @@ thumb = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Ma
 
 +++
 
-Host Coaching for Your First Parties
-====================================
-
-* * *
-
 {{< figure src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Header_Image/First_Things_First_Image.jpg" class="right" >}}
 
 First Things First!

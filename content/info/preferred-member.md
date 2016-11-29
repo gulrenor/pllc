@@ -13,16 +13,16 @@ summary_file = ""
 thumb = "/images/preferred_logo.png"
 
 +++
-{{< figure src="/images/preferred_logo.png" class="right" >}}
+{{< figure src="/images/preferred_logo.png" class="right columns-2" >}}
 
-#### Program Information
-___
-###### [**Program Overview**]({{< relref "preferred-overview.md" >}})  
-Details about the Preferred Program for you and your Customers.  
-+ [**Participation Agreement**]({{< relref "preferred-tac.md" >}})  
-The Participation agreement for your customers.  
+### Program Information
+##### [Program Overview]({{< relref "preferred-overview.md" >}})  
++ Details about the Preferred Program for you and your Customers. 
+ 
+##### [Participation Agreement]({{< relref "preferred-tac.md" >}})  
++ The Participation agreement for your customers.  
 
-#### Support Materials
-___
-+ [**Preferred Program Flyer for Parties**](http://www.google.com)  
-Keep this flyer on your display table to remind your customers to become a Preferred Member.  
+### Support Materials
+##### [Preferred Program Flyer for Parties](http://www.google.com)  
+
++ Keep this flyer on your display table to remind your customers to become a Preferred Member.  

@@ -11,4 +11,4 @@ series_weight = 10
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Show_Types/DIY_Party/Introducing_The_DIY_Party_Cut.mp4" poster="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Show_Ideas/Show_Types/DIY_Party/Introducing_The_DIY_Party_Cut.jpg" >}}
+{{< plvid src="LC_Main_Show_Ideas/Show_Types/DIY_Party/Introducing_The_DIY_Party_Cut.mp4" >}}

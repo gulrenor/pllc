@@ -4,6 +4,7 @@ series = ""
 categories = [
   "Sponsor",
   "Selling and Booking",
+  "Leadership Skills",
 ]
 description = "Work with your new consultants to get multiple bookings on their calendars."
 active = true
