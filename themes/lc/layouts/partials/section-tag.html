@@ -1,5 +1,9 @@
 <!-- Content type tag -->
 
-<a href="{{ "/" | relLangURL }}{{ .Section | urlize }}.html">
-  <span class="tag section">{{ .Section }}</span>
+<!--<a href="{{ "/" | relLangURL }}{{ .Section | urlize }}.html">-->
+
+{{ if .Params.filetype }}
+<a href="{{ .Params.src }}" download="{{ .Title | urlize }}">
+  <span class="tag section">Download {{ .Params.filetype }}&nbsp;<i class="fa fa-download" aria-hidden="true"></i></span>
 </a>
+{{ end }}
