@@ -2,7 +2,10 @@
 {{ partial "nav.html" . }}
 <!--<pre style="width: 100%; white-space: pre-wrap;">{{ printf "%#v" . }}</pre>-->
 <!-- Display categories this content is associated with -->
-<p>{{ partial "category-tag.html" . }}</p>
+<section>
+  <p>{{ partial "category-tag.html" . }}</p>
+  <h4>{{ .Title }}</h4>
+</section>
 
 {{ .Content }}
 
