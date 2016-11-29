@@ -11,4 +11,4 @@ categories = [
 
 +++
 
-{{< plvid src="LC_Main_Sell_And_Book/Book/Get_The_Yes/Bookings_Out_&_About.mp4" >}}
+{{< plvid src="LC_Main_Sell_And_Book/Book/Get_The_Yes/Bookings_Out_&_About.mp4" poster="/images/get-the-yes.jpg">}}

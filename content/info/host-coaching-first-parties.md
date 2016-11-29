@@ -59,4 +59,4 @@ Five simple steps that help keep you on track while you prepare for your Party. 
 Helpful Tools
 -------------
 #### The Host Coaching Checklist
-Download and use this handy Host Coaching Checklist to help keep track of everything! Available in your _Start With Success_ guide or downloadable [here]({{% relref "host-coaching-checklist.md" %}})
+Download and use this handy Host Coaching Checklist to help keep track of everything! Available in your _Start With Success_ guide or downloadable [here]({{% ref "host-coaching-checklist.md" %}})

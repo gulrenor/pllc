@@ -10,4 +10,8 @@ series = ""
 
 ## Book Recommendations
 
-+ [Winning With People](#)
+##### Winning With People
+{{< figure src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Graphics/Icon/Motivational_Food_For_Thought_Covers/Winning_With_People.jpg" class="columns-4" >}}
+
+
+</div>

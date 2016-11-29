@@ -11,4 +11,4 @@ title = "Bookings: Soccer Scene"
 
 +++
 
-{{< plvid src="LC_Main_Sell_And_Book/Book/Get_The_Yes/Bookings_&_Soccer_Scene.mp4" >}}
+{{< plvid src="LC_Main_Sell_And_Book/Book/Get_The_Yes/Bookings_&_Soccer_Scene.mp4" poster="/images/get-the-yes.jpg" >}}
