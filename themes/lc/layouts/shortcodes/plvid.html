@@ -1,5 +1,5 @@
 <div class="video">
-  <video poster="{{ .Get "poster" }}">
+  <video poster="{{ if eq "" (.Get "poster") }}/images/video_placeholder.png{{else}}{{ .Get "poster" }}{{end}}">
     <source src="http://usolc.partylite.com/Learning_Center/LC_Main/{{ .Get "src" }}">
     HTML5 Browser Required <!-- Fallback -->
   </video>
