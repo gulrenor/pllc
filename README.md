@@ -19,3 +19,10 @@ PartyLite Learning Center
 + [Gulp](https://gulpjs.com/)
 + [Compass](https://compass-style.org/)
 + [Google Fonts](https://fonts.google.com/)
+
+* * *
+
+### Editing Content
+
+#### Nav Menu
++ Edit menu entries in [config.toml](/config.toml).
