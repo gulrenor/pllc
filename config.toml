@@ -1,12 +1,15 @@
 ## For Dev ##
-baseurl = "http://localhost:1313/"
+#baseurl = "http://localhost:1313/"
 
 ## For Live ##
-#baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
+baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
 
 theme = "lc"
 defaultContentLanguage = "en"
+
 uglyurls = true
+#canonifyurls = false
+#relativeurls = false
 
 #SectionPagesMenu = "main"
 

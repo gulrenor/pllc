@@ -1,6 +1,12 @@
 <div class="video">
-  <video poster="{{ if eq "" (.Get "poster") }}/images/video_placeholder.png{{else}}{{ .Get "poster" }}{{end}}">
-    <source src="http://usolc.partylite.com/Learning_Center/LC_Main/{{ .Get "src" }}">
+  <video poster="
+    {{ if eq "" (.Get "poster") }}
+      {{ "images/video_placeholder.png" | relURL }}
+    {{ else }}
+      {{ ((.Get "poster") | relURL) }}
+    {{ end }}
+    ">
+    <source src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/{{ .Get "src" }}">
     HTML5 Browser Required <!-- Fallback -->
   </video>
 </div>
