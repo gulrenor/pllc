@@ -8,6 +8,11 @@
 @import '_layout.scss';
 
 // Styles //
+.copyright {
+  margin-top: 1.5rem;
+  text-align: right;
+  opacity: .5;
+}
 .right {
   float: right;
 }
