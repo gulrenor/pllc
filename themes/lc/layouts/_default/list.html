@@ -26,7 +26,7 @@
 <h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}} | Info:{{$lenInf}}</h4>
 -->
 
-{{ if ne "" .Key }}<a href="/series/{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
+{{ if ne "" .Key }}<a href="{{ "/series/" | relURL }}{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
 <section class="section-break">
   
   <!-- Include sidebar if documents are present -->
