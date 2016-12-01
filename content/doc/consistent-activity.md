@@ -1,6 +1,6 @@
 +++
 active = true
-series = ""
+series = "Lead With Success"
 categories = [
   "Leadership Skills",
   "Start New Consultants Strong",

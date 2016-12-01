@@ -1,10 +1,11 @@
 +++
 filetype = "pdf"
 active = true
-series = "Connect 25"
+series = "Lead With Success"
 categories = [
   "Generate Strong Personal Business",
-  "Leadership Skills"
+  "Leadership Skills",
+  "Connect 25",
 ]
 description = "As a Leader, you can impact the growth of your business and influence the growth of your Unit by consistently meeting enough people to book, sponsor and dovetail every week."
 date = "2016-11-15T09:59:23-05:00"

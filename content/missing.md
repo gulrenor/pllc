@@ -1,6 +1,15 @@
 Missing Sections/Content
 ========================
 
+General
+-------
++ Need thumbnails for Limelight hosted videos -- currently using placeholder image.
++ Need footer links/content.
++ Need stock photo thumbnails for info pages, the ones currently used are too low resolution
++ Redesign LC logo (for all languages).
++ Description text for nearly all content.
++ Possible resize of 4:3 videos.
+
 Home
 ----
 #### Home

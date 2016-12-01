@@ -1,7 +1,7 @@
 +++
 filetype = "pdf"
 active = true
-series = ""
+series = "Lead With Success"
 date = "2016-11-15T10:16:27-05:00"
 title = "Make Time for Personal and Professional Growth"
 categories = [
