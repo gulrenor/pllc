@@ -86,7 +86,7 @@ aside {
   background-color: $ltgrey;
 }
 
-nav {
+.nav-main {
   // Top Level //
   background-color: $dkblue;
   color: $white;
@@ -110,6 +110,17 @@ nav {
     }
 }
 
+.nav-header {
+  li {
+    background-color: $orange;
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 .category {background-color: $mdblue;}
 .series {background-color: $red;}

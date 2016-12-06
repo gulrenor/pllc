@@ -4,11 +4,11 @@ $(document).ready(function() {
   var mobileNavBreakpoint = 'mobile';
 
   // Targets
-  var nav = $('nav');
+  var nav = $('nav-main');
   var primaryButton = $('.hamburger a');
-  var secondaryButton = $('nav ul li');
-  var primaryMenu = $('nav > ul');
-  var secondaryMenu = $('nav > ul ul');
+  var secondaryButton = $('.nav-main ul li');
+  var primaryMenu = $('.nav-main > ul');
+  var secondaryMenu = $('.nav-main > ul ul');
   
   function isMobileNav() {
     // Check the html body::before which contains
@@ -23,7 +23,6 @@ $(document).ready(function() {
 
   // Mobile size open window
   primaryButton.click(function() {
-    console.log('primary button function -> ' + isMobileNav());
     if (isMobileNav()) {
       primaryMenu.toggle(function() {
         if ($(this).is(':visible'))
@@ -34,8 +33,8 @@ $(document).ready(function() {
   
     // Secondary menu control
   secondaryButton.click(function() {
-    console.log('secondary button function -> ' + isMobileNav());
     if (isMobileNav()) {
+      secondaryMenu.css('display', 'none');
       $('ul', this).toggle(function() {
         if ($(this).is(':visible'))
           $(this).css('display', 'flex');
