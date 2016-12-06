@@ -20,27 +20,27 @@ $body-padding: 1rem;
 // Reference: https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
 body {
   &:before {
-  //display: none;
+  display: none;
   content: 'mobile';
   }
   @include susy-breakpoint($bp-mobile) {
     &:before {
-      content: 'mobile';
+      content: 'small';
     }
   }
   @include susy-breakpoint($bp-small) {
     &:before {
-       content: 'small';
+       content: 'medium';
     }
   }
   @include susy-breakpoint($bp-medium) {
     &:before {
-      content: 'medium';
+      content: 'large';
     }
   }
   @include susy-breakpoint($bp-large) {
     &:before {
-      content: 'large';
+      content: 'exlarge';
     }
   }
 }
@@ -51,6 +51,10 @@ body {
   padding: $body-padding;
   margin: 3rem 0;
   @include susy-breakpoint($bp-mobile) {
+    width: 100%;
+    margin: 0;
+  }
+  @include susy-breakpoint($bp-small) {
     width: 90%;
     margin: 0 5%;
   }
@@ -60,7 +64,7 @@ body {
   }
   @include susy-breakpoint($bp-large) {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 15%;
   }
 }
 
@@ -111,14 +115,21 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  @include susy-breakpoint($bp-mobile) {
+    width: 100%;
+    margin: 0;
+  }
   @include susy-breakpoint($bp-small) {
     width: 90%;
+    margin: 0 5%;
   }
   @include susy-breakpoint($bp-medium) {
     width: 80%;
+    margin: 0 10%;
   }
   @include susy-breakpoint($bp-large) {
     width: 70%;
+    margin: 0 15%;
   }
 }
 
