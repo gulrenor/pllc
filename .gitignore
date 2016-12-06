@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/sass,git,node,ruby,hugo,windows,adobe
+# Created by https://www.gitignore.io/api/sass,git,node,ruby,hugo,windows,adobe,bower
 
 ### Sass ###
 .sass-cache/
@@ -146,3 +146,10 @@ $RECYCLE.BIN/
 *.indd
 *.prproj
 *.aep
+
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp

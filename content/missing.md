@@ -16,6 +16,8 @@ General
 + Facebook Party info page.
 + Facebook and your Business landing pages.
 + Search box/Back to CBC link needs testing.
++ Finalize responsive design.
++ Floating/scroll-with menu
 
 
 Home
@@ -46,7 +48,6 @@ _Is now under Booking/Selling_
 
 #### Start with Success
 + Merged with Income & Rewards
-
 * * *
 
 Sell & Book
