@@ -5,13 +5,11 @@ $font-header: 'Warnock Pro', 'Cardo', 'Palatino Linotype', 'Book Antigua', 'Abha
 $font-body: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
 
 html {
-  font-family: $font-body;
-  font-size: 16px;
-}
-@media (max-width: 960px) {
-  html {
-    font-size: 14px;
+  @include susy-breakpoint($bp-medium) {
+    font-size: 16px;
   }
+  font-family: $font-body;
+  font-size: 14px;
 }
 
 h1,
@@ -64,18 +62,26 @@ p,
 li,
 button,
 input {
-  font-size: .75rem;
+  font-size: 1rem;
   line-height: 1.25rem;
 }
 
 nav {
+  z-index: 200;
+  * {
+    z-index: 200;
+  }
   text-transform: uppercase;
   letter-spacing: .09375rem; // =1.5px on main site
   ul {
     li {
+      p {
+        font-size: .75rem;  
+      }
       ul {
         li {
-          letter-spacing: .0625rem // =1px on main site  
+          font-size: .7rem;
+          letter-spacing: .0625rem; // =1px on main site  
         }
       }
     }

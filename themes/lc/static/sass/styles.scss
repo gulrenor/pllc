@@ -1,20 +1,21 @@
 @import 'compass';
 @import 'compass/css3';
 
+@import 'susy';
+@import 'breakpoint';
+
 // Partials
+@import '_layout.scss';
 @import '_colors.scss';
 @import '_typography.scss';
 @import '_common.scss';
-@import '_layout.scss';
+
 
 // Styles //
 .copyright {
   margin-top: 1.5rem;
   text-align: right;
   opacity: .5;
-}
-.right {
-  float: right;
 }
 
 .info {
@@ -66,10 +67,6 @@ strong {
   font-weight: 700;
 }
 
-.category {background-color: $mdblue;}
-.series {background-color: $red;}
-.section {background-color: $green;}
-
 .head {
   margin: 0;
   padding: .75rem;
@@ -96,16 +93,22 @@ strong {
   }
 }
 
+
 // Header //
 header {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  header {
-    flex-direction: column;
+  left: 0;
+  top: 0;
+  background-color: $white;
+  //position: fixed;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 0;
+  @include susy-breakpoint($bp-mobile) {
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -123,124 +126,110 @@ header {
   }
 }
 
-.site-logo {
-  width: 15rem;
-}
-
 .header-sidebar {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-self: flex-end;
-  margin-left: auto;
+  display: none; //NOTE: Reference nav-scroll.js
+  width: 100%;
   form {
-    width: 50%;
-  }
-  button {
-    padding: .5rem 1.5rem;
-  }
-  input {
     width: 100%;
   }
   & * {
-    margin-left: auto;
+    margin-left: 0;
+    margin-right: auto;
   }
-}
-
-@media (max-width: 500px) {
-  .header-sidebar {
-    width: 100%;
+  @include susy-breakpoint($bp-mobile) {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    margin-left: auto;
     form {
+      width: 50%;
+    }
+    button {
+      padding: .5rem 1.5rem;
+    }
+    input {
       width: 100%;
     }
     & * {
-      margin-left: 0;
-      margin-right: auto;
+      margin-left: auto;
     }
   }
 }
 
 
 // Nav //
-nav {
-  margin: 0 -1rem; //HACK
-  padding: 0 1rem;
-  background-color: $dkblue;
-
-  a {
-    text-decoration: none;
-    color: $white;
-    transition: background-color .25s, color .5s;
-  }
-  li {
-    margin: 0;
-  }
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  ul li {
-    position: relative;
-    color: $white;
-    padding: .5rem;
-    transition: color .5s, background-color .5s;
-
-    // Begins second level of menu
-    ul {
-      @include nav-shadow();
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      width: 12rem;
-      left: 0;
-      background-color: $navwhite;
-      z-index: 50;
-      margin-top: .5rem;
-      li {
-        font-size: .7rem;
-        color: $dkblue;
-      }
-    }
-    &:hover {
-      cursor: pointer;
-      background-color: $ltblue;
-      color: $white;
-    }
-    &:hover > ul {
-      display: flex;
-    }
-    &:hover > a {
-      color: $white;
-    }
-  }
+.menu-item {
+  padding-left: 1rem;
 }
 
-@media (max-width: 500px) {
-  nav {
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  //display: none; //NOTE: Reference nav-scroll.js
+  * {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: background-color .5s, color .25s ease-out;
+  }
+  ul { // Primary menu
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    li {
+      padding: .5rem;
+      ul { // Secondary menu
+        display: none;
+        padding-left: 0;
+        width: 100%;
+        @include nav-shadow;
+        @include susy-breakpoint($bp-mobile) {
+          margin: .5rem auto auto -0.5rem;
+        }
+      }
+    }
+  }
+  @include susy-breakpoint ($bp-mobile) {
+    display: flex;
+    position: inherit;
+    width: auto;
+    margin: 0 (-$body-padding); //HACK
+    padding: 0 ($body-padding);
     ul {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        position: relative;
+        &:hover > ul {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          width: 12rem;
+        }
+      }
     }
   }
 }
 
 // Sidebar //
 aside {
+  @include susy-breakpoint($bp-mobile) {
+    width: 32%;
+    float: right;
+  }
   padding: 1rem;
   background-color: $ltgrey;
   height: 100%;
-  width: 32%;
-  float: right;
+  width: 100%;
+  float: none;
   margin-left: auto;
   order: 50;
 }
@@ -251,16 +240,6 @@ aside {
   h4 {
     margin: 0;
     margin-bottom: .5rem;
-  }
-}
-
-.img-linked {
-  width: 100%;
-  opacity: .8;
-  border: .0625rem solid $bodygrey;
-  transition: opacity .1s ease-in;
-  &:hover {
-    opacity: 1;
   }
 }
 
@@ -305,17 +284,6 @@ footer {
 }
 
 // Content Types //
-.slider {
-  width: 100%
-}
-
-.plvid {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
 iframe {
   border: 0;
 }
@@ -354,35 +322,60 @@ video {
   }
 }
 
+.slider {
+  width: 100%
+}
+
+.plvid {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
 .pdf {
   height: 50rem;
 }
 
-.commercials {
+// Mobile Nav //
+.hamburger {
+  display: block;
+  left: 0;
+  top: 0;
   width: 100%;
-  td:nth-child(2) {
-    width: 50%;
+  height: 3rem;
+  background-color: $dkblue;
+  border-bottom: .0625rem solid $white;
+  i {
+    color: $ltblue;
+    font-size: 2rem;
+    line-height: 3rem;
   }
-  td:nth-child(3) {
-    background-color: $bodygrey;
+  a {
+    float: right;
+    display: block;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
+  }
+  @include susy-breakpoint($bp-mobile) {
+    display: none;
   }
 }
 
-.external-link {
-  text-decoration: none;
+
+.show-element {
   display: block;
-  width: 100%;
-  background-color: $ltblue;
-  color: $dkblue;
-  padding: .25rem;
-  margin: .25rem 0;
-  transition: background-color .2s ease-in, color .2s ease-in;
-  i {
-    margin: 0 .5rem 0 .25rem;
-  }
-  &:hover {
-    color: $white;
-    background-color: $dkblue;
-  }
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  //position: fixed;
+  //top: 14.7rem;
+  //left: 0;
+  //padding: .5rem 0 1.5rem 0;
+}
+
+.hide-element {
+  display: none;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }

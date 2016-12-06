@@ -81,3 +81,36 @@ a {
     color: $ltblue;
   }
 }
+
+aside {
+  background-color: $ltgrey;
+}
+
+nav {
+  // Top Level //
+  background-color: $dkblue;
+  color: $white;
+  ul
+    li {
+      &:hover {
+        @include susy-breakpoint($bp-mobile) {
+          background-color: $ltblue;  
+        }
+      }
+    }
+    
+    // Second Level //
+    ul ul {background-color: $white;}
+    ul ul li {
+      color: $dkblue;
+      &:hover {
+        background-color: $ltblue;
+        color: $white;
+      }
+    }
+}
+
+
+.category {background-color: $mdblue;}
+.series {background-color: $red;}
+.section {background-color: $green;}
