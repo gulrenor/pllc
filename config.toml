@@ -147,19 +147,20 @@ layout = "list"
       name = "Personal Growth"
       parent = "Development"
       url = "/categories/personal-growth.html"
+
     
-  [[languages.en.menu.main]]
-    name = "Content Types [Debug]"
-    identifier = "Content-Types"
-    weight = 500
-    [[languages.en.menu.main]]
-      name = "Video Grid"
-      parent = "Content-Types"
-      url = "/video.html"
-    [[languages.en.menu.main]]
-      name = "Document List"
-      parent = "Content-Types"
-      url = "/doc.html"
+#  [[languages.en.menu.main]]
+#    name = "Content Types [Debug]"
+#    identifier = "Content-Types"
+#    weight = 500
+#    [[languages.en.menu.main]]
+#      name = "Video Grid"
+#      parent = "Content-Types"
+#      url = "/video.html"
+#    [[languages.en.menu.main]]
+#      name = "Document List"
+#      parent = "Content-Types"
+#      url = "/doc.html"
   
 [languages.fr]
   title = "Centre de Formation"
