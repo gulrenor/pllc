@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-{{ partial "nav.html" . }}
 
 {{range where .Data.Pages "Section" "doc" }}
   {{ .Render "sidebar" }}
