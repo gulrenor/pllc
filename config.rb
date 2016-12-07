@@ -11,4 +11,5 @@ line_comments = true
 
 preferred_syntax = :scss
 
+require 'susy'
 require 'breakpoint'

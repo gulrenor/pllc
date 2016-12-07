@@ -10,6 +10,8 @@
 @import '_typography.scss';
 @import '_common.scss';
 
+@import '_slick.scss';
+
 
 // Styles //
 .copyright {
@@ -337,10 +339,6 @@ video {
     object-fit: cover;
     object-position: 50% 50%;
   }
-}
-
-.slider {
-  width: 100%
 }
 
 .plvid {
