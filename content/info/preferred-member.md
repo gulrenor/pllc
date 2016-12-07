@@ -3,7 +3,8 @@ series = "PartyLite Preferred"
 series_weight = 0
 categories = [
   "PartyLife Preferred",
-  "Customer Contacts and Orders"
+  "Customer Contacts and Orders",
+  "BusinessGuides"
 ]
 categories_weight = -10
 description = "PartyLite Preferred Member Program"

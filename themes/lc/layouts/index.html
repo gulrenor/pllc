@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<div class="slider single-item">
+<div class="slider single-item section-break">
   <div>
     <a href="">
       <img src="http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Graphics/Landing_Page_Graphics/Landing_Page_September2014_Charles/Main_Images/Facebook_Party_Main.jpg" />
@@ -37,5 +37,34 @@
     </a>
   </div>
 </div>
+
+<section class="grid section-break">
+  <div class="columns-3 bg-ltgrey triptych">
+    <h3>Webinars</h3>
+    <ul>
+      {{ range .Site.Taxonomies.categories.webinars }}
+      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="columns-3 bg-ltgrey triptych">
+    <h3>Business Guides</h3>
+    <ul>
+      {{ range .Site.Taxonomies.categories.businessguides }}
+      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="columns-3 bg-ltgrey triptych">
+    <h3>Tutorials</h3>
+    <ul>
+      {{ range .Site.Taxonomies.categories.tutorials }}
+      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  
+</section>
+
 
 {{ partial "footer.html" . }}

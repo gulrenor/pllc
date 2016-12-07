@@ -3,6 +3,7 @@ series = ""
 categories = [
   "New Consultants",
   "Income and Rewards",
+  "BusinessGuides",
 ]
 description = "There are a few of the key values - what we call the \"Pillars\" of our PartyLite Culture. They make us different from other businesses - not only because we say them, but also because we live them. These Pillars are truly a source of pride, strength and direction for all of us, every person on the PartyLite Team."
 filetype = "pdf"
