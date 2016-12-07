@@ -15,6 +15,7 @@ PartyLite Learning Center
 + HTML5
 + CSS3/Sass (SCSS syntax)
 + JavaScript/JQuery
++ [Slick](http://kenwheeler.github.io/slick/)
 + [Hugo](https://gohugo.io/)
 + [Gulp](https://gulpjs.com/)
 + [Compass](https://compass-style.org/)
