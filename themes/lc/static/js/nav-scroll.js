@@ -4,8 +4,8 @@ $(document).ready(function() {
   var mobileNavBreakpoint = 'mobile';
 
   // Targets
-  var nav = $('nav-main');
-  var primaryButton = $('.hamburger a');
+  var nav = $('.nav-main');
+  var primaryButton = $('.hamburger-button');
   var secondaryButton = $('.nav-main ul li');
   var primaryMenu = $('.nav-main > ul');
   var secondaryMenu = $('.nav-main > ul ul');
