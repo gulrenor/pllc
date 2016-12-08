@@ -207,6 +207,9 @@ nav {
     flex-direction: column;
     li {
       padding: .5rem;
+      &:last-child ul {
+        right: 0;
+      }
       ul { // Secondary menu
         display: none;
         padding-left: 0;
