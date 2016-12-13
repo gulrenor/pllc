@@ -14,7 +14,7 @@ summary_file = ""
 thumb = "/images/preferred_logo.png"
 
 +++
-{{< figure src="/images/preferred_logo.png" class="right columns-2" >}}
+{{% figure src="../images/preferred_logo.png"  class="right columns-2" %}}
 
 Program Information
 -------------------

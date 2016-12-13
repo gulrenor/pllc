@@ -7,7 +7,7 @@
 
 <!-- If content is info, show thumb param -->
 {{ if and (eq .Section "info") (ne "true" .Params.summary_file) }}
-<div class="video" ><a href="{{ .Permalink | absLangURL }}"><img src="{{ .Params.thumb }}" /></a></div>
+<div class="video" ><a href="{{ .Permalink | absLangURL }}"><img src="{{ .Params.thumb | relURL }}" /></a></div>
 {{ end }}
 
 <div>

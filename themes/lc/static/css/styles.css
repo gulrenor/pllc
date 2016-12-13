@@ -293,6 +293,10 @@ img {
 .info ul * {
   list-style: disc;
 }
+/* line 190, ../sass/_layout.scss */
+.info a:link {
+  text-decoration: underline;
+}
 
 /* line 3, ../sass/_colors.scss */
 .bg-white {
@@ -1331,36 +1335,41 @@ iframe {
 /* line 316, ../sass/styles.scss */
 video {
   position: absolute;
-  left: auto;
+  left: 0;
   top: 0;
   height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
-/* line 323, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 .video {
   position: relative;
   width: 100%;
   height: 0;
+  min-width: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
+  background-size: cover;
 }
-/* line 329, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 .video div {
   padding: 0;
 }
-/* line 332, ../sass/styles.scss */
+/* line 338, ../sass/styles.scss */
 .video img {
   height: auto;
 }
-/* line 337, ../sass/styles.scss */
+/* line 343, ../sass/styles.scss */
 .video + div:hover h5 {
   text-decoration: underline;
 }
-/* line 341, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 .video + div p {
   padding: 0 0.875rem;
 }
-/* line 345, ../sass/styles.scss */
+/* line 351, ../sass/styles.scss */
 .video img {
   position: absolute;
   width: 100%;
@@ -1369,14 +1378,14 @@ video {
   object-position: 50% 50%;
 }
 
-/* line 354, ../sass/styles.scss */
+/* line 360, ../sass/styles.scss */
 .column-header {
   margin: 0;
   margin-bottom: 0.4375rem;
   padding: 0.875rem 0.875rem;
 }
 
-/* line 360, ../sass/styles.scss */
+/* line 366, ../sass/styles.scss */
 .plvid {
   position: relative;
   padding-bottom: 56.25%;
@@ -1384,12 +1393,12 @@ video {
   overflow: hidden;
 }
 
-/* line 367, ../sass/styles.scss */
+/* line 373, ../sass/styles.scss */
 .pdf {
   height: 52.5rem;
 }
 
-/* line 372, ../sass/styles.scss */
+/* line 378, ../sass/styles.scss */
 .hamburger {
   display: flex;
   justify-content: space-between;
@@ -1400,17 +1409,17 @@ video {
   height: 3.5rem;
   border-bottom: 0.0625rem solid white;
 }
-/* line 381, ../sass/styles.scss */
+/* line 387, ../sass/styles.scss */
 .hamburger h5 {
   width: 100%;
 }
-/* line 384, ../sass/styles.scss */
+/* line 390, ../sass/styles.scss */
 .hamburger i {
   color: #549cdc;
   font-size: 2rem;
   line-height: 3.5rem;
 }
-/* line 389, ../sass/styles.scss */
+/* line 395, ../sass/styles.scss */
 .hamburger .hamburger-button {
   display: block;
   width: 3.5rem;
@@ -1418,55 +1427,55 @@ video {
   text-align: center;
 }
 @media (min-width: 32em) {
-  /* line 372, ../sass/styles.scss */
+  /* line 378, ../sass/styles.scss */
   .hamburger {
     display: none;
   }
 }
 
-/* line 401, ../sass/styles.scss */
+/* line 407, ../sass/styles.scss */
 .show-element {
   display: block;
   opacity: 1;
   transition: opacity .2s ease-in-out;
 }
 
-/* line 411, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 .hide-element {
   display: none;
   opacity: 0;
   transition: opacity .2s ease-in-out;
 }
 
-/* line 419, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 .float {
   position: fixed !important;
   width: 100%;
   top: 0;
 }
 @media (min-width: 32em) {
-  /* line 419, ../sass/styles.scss */
+  /* line 425, ../sass/styles.scss */
   .float {
     width: 100%;
     margin: 0;
   }
 }
 @media (min-width: 44em) {
-  /* line 419, ../sass/styles.scss */
+  /* line 425, ../sass/styles.scss */
   .float {
     width: 90%;
     margin: 0 5%;
   }
 }
 @media (min-width: 63em) {
-  /* line 419, ../sass/styles.scss */
+  /* line 425, ../sass/styles.scss */
   .float {
     width: 80%;
     margin: 0 10%;
   }
 }
 @media (min-width: 80em) {
-  /* line 419, ../sass/styles.scss */
+  /* line 425, ../sass/styles.scss */
   .float {
     width: 70%;
     margin: 0 15%;
