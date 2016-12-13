@@ -23,6 +23,8 @@ $dkblue: rgb(0, 46, 95);
 .bg-dkblue {background-color: $dkblue;}
 .fg-dkblue {color: $dkblue;}
 
+$dkblue-t: rgba(0, 46, 95, .25); //for slider arrows
+
 $ltblue: rgb(84, 156, 220);
 .bg-ltblue {background-color: $ltblue;}
 .fg-ltblue {color: $ltblue;}
