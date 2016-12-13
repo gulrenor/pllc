@@ -3,8 +3,6 @@
   box-sizing: border-box;
 }
 
-
-
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -21,11 +19,11 @@ pre {
 
 .dotted-rule {
   border: 0;
-  margin: .5rem 0 2rem 0;
+  margin: rhythm(.5) 0 rhythm(1) 0;
   padding: 0;
   border-bottom: .125rem dotted $bodygrey;
 }
 
 .section-break {
-  margin-bottom: 5rem;
+  margin-bottom: rhythm(1);
 }

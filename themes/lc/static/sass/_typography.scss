@@ -4,19 +4,31 @@
 $font-header: 'Warnock Pro', 'Cardo', 'Palatino Linotype', 'Book Antigua', 'Abhaya Libre', 'Montaga', 'Playfair Display', Garamond, serif;
 $font-body: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
 
+$bsae-font-size: 16px;
+$base-line-height: 1.75rem;
+$round-to-nearest-half-line: true;
+$rhythm-unit: 'rem';
+
+@include establish-baseline;
+
+// Responsive root declaration
 html {
-  font-family: $font-body;
-  font-size: 14px;
+  font-size: .8rem;
   @include susy-breakpoint($bp-mobile) {
-    font-size: 15px;
+    font-size: .85rem;
   }
   @include susy-breakpoint($bp-medium) {
-    font-size: 16px;
+    font-size: .9rem;
   }
   // For large sizes only?
   @media (min-width: 2100px) {
     font-size: 30px;
   }
+}
+
+// Family/Weight/Case declarations
+body {
+  font-family: $font-body;
 }
 
 h1,
@@ -25,44 +37,55 @@ h3 {
   font-family: $font-header;
 }
 
-h1, h2, h3, h4 {
-  margin: 1rem 0;
-  font-weight: normal;
+h1,
+h2,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+// Padding & Margin declarations
+* {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 1.9rem;
-  text-transform: uppercase;
+  font-size: 1.8rem;
   color: $dkblue;
-  font-weight: bold;
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.6rem;
 }
 
-h4,
-h5,
-button,
-input, 
-optgroup,
-select,
-textarea {
-  font-family: $font-body;
-  text-transform: uppercase;
-  font-weight: bold;
+h4 {
   font-size: 1.15rem;
 }
 
 h5,
 input {
-  font-size: .9rem;
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: .75rem;
+  letter-spacing: .09735rem;
 }
 
 a {
@@ -71,19 +94,21 @@ a {
   }
 }
 
-p,
-li {
+p {
   font-size: 1rem;
-  line-height: 1.25rem;
+  margin-bottom: rhythm(1);
+}
+
+.bullet-list {
+  list-style-type: disc;
 }
 
 nav {
-  z-index: 200;
-  * {
-    z-index: 200;
-  }
   text-transform: uppercase;
   letter-spacing: .09375rem; // =1.5px on main site
+  & * {
+    z-index: 200;
+  }
   ul {
     li {
       p {
@@ -100,27 +125,25 @@ nav {
 }
 
 li {
-  margin: .5rem 0;
+  margin-bottom: rhythm(.25);
+  list-style: none;
 }
 
 ul {
-  padding-left: 1.5rem;
+  margin: 0 rhythm(.5);
+  padding-left: rhythm(.5);
 }
 
 .copyright {
   font-size: .6rem;
 }
 
-.nav-header {
-  * {
-    font-size: .8rem;
-  }
+hr {
+  margin: rhythm(1) 0;
 }
 
 .sidebar {
-  p {
-    font-size: .75rem;
-    line-height: 1.5rem;
+  li {
     text-transform: capitalize;
   }
 }

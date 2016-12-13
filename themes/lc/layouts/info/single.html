@@ -1,11 +1,16 @@
 {{ partial "header.html" . }}
 <!--<pre style="width: 100%; white-space: pre-wrap;">{{ printf "%#v" . }}</pre>-->
 <!-- Display categories this content is associated with -->
-<section>
-  <p>{{ partial "category-tag.html" . }}</p>
-  <h4>{{ .Title }}</h4>
+<section class="content-header">
+  <h4>{{- .Title -}}</h4>
+  <div class="tags">{{- partial "section-tag.html" . -}}</div>
+  <div class="tags">{{- partial "category-tag.html" . -}}</div>
 </section>
 
+<hr class="dotted-rule" />
+
+<div class="info">
 {{ .Content }}
+</div>
 
 {{ partial "footer.html" . }}

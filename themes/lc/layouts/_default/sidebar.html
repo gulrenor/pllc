@@ -1,18 +1,14 @@
-<div class="sidebar">
-
-<p>
-  {{ partial "series-tag.html" . }}
+<li>
   <a href="{{- if and (isset .Params "src") (eq true .Site.Params.offsiteurl) -}}
   {{- .Params.src }}
   {{- else -}}
   {{- .Permalink -}}
   {{- end -}}">
     {{- .Title -}}
-  </a>
   <!-- Show filetype icon if .pdf -->
   {{- if and (eq "pdf" .Params.filetype) (isset .Params "src") -}}
-    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
   {{- end -}}
-</p>
-
-</div>
+  </a>
+  <!--{{ partial "series-tag.html" . }}-->
+</li>

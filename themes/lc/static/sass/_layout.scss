@@ -6,7 +6,7 @@ $bp-small: 44em;
 $bp-mobile: 32em;
 
 
-$body-padding: 1rem;
+$body-padding: rhythm(1);
 
 // Common use //
 * {
@@ -49,7 +49,6 @@ body {
   width: 100%;
   margin: 0;
   padding: $body-padding;
-  margin: 3rem 0;
   @include susy-breakpoint($bp-mobile) {
     width: 100%;
     margin: 0;
@@ -72,6 +71,9 @@ body {
   margin-bottom: 5rem;
 }
 
+main {
+  padding: rhythm(1) 0;
+}
 .centered {
   text-align: center;
 }
@@ -83,7 +85,7 @@ body {
 .columns-4 {
   width: 23%;
   max-width: 23%;
-  margin-bottom: 2rem;
+  margin-bottom: rhythm(1);
   margin-right: 1%;
 }
 
@@ -91,7 +93,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin-right: 0;
-  margin-bottom: 2rem;
+  margin-bottom: rhythm(1);
   @include susy-breakpoint($bp-mobile) {
     width: 48.5%;
     max-width: 48.5%;
@@ -100,7 +102,7 @@ body {
   @include susy-breakpoint($bp-medium) {
     width: 32%;
     max-width: 32%;
-    margin-bottom: 1rem;
+    margin-bottom: rhythm(1);
     margin-right: 1.33%;
   }
 }
@@ -109,7 +111,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin-right: 0;
-  margin-bottom: 2rem;
+  margin-bottom: rhythm(1);
   @include susy-breakpoint($bp-medium) {
     width: 48.5%;
     max-width: 48.5%;
@@ -118,19 +120,30 @@ body {
 }
 
 .triptych {
-  padding: .5rem 1.5rem;
+  img {
+    height: rhythm(7);
+    object-fit: cover;
+  }
 }
 
 img {
   width: 100%;
 }
 
-section,
-footer {
-  // auto clearfix
-  overflow: auto;
-  zoom: 1;
-  width: 100%;
+.content-header {
+  margin: rhythm(.5) 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  h4 {
+    white-space: nowrap;
+    line-height: 100%;
+  }
+  @include susy-breakpoint($bp-mobile) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .grid {
@@ -150,7 +163,28 @@ footer {
 
 .nav-logo {
   height: 100%;
-  padding: .25rem 0;
+  padding: .5rem;
   width: auto;
-  margin-left: 1rem;
+}
+
+.info { // Special formatting for text only info pages
+  h1, h2 {
+    margin-bottom: rhythm(.25);
+  }
+  p {
+    padding-left: rhythm(.5);
+  }
+  h4, h5, h6 {
+    padding-left: rhythm(.25);
+  }
+  ul, ol {
+    padding-left: rhythm(1);
+    margin-bottom: rhythm(1);
+  }
+  ol * {
+    list-style: decimal;
+  }
+  ul * {
+    list-style: disc;
+  }
 }

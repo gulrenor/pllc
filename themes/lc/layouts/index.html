@@ -40,24 +40,27 @@
 
 <section class="grid section-break">
   <div class="columns-3 bg-ltgrey triptych">
-    <h3>Webinars</h3>
-    <ul>
+    <img src="{{ "/images/Clearly_Creative.jpg" | relURL }}" />
+    <h5 class="column-header bg-red fg-white">Webinars</h5>
+    <ul class="bullet-list">
       {{ range .Site.Taxonomies.categories.webinars }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
-    <h3>Business Guides</h3>
-    <ul>
+    <img src="{{ "/images/Discovery.jpg" | relURL }}" />
+    <h5 class="column-header bg-mdblue fg-white">Business Guides</h5>
+    <ul class="bullet-list">
       {{ range .Site.Taxonomies.categories.businessguides }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
-    <h3>Tutorials</h3>
-    <ul>
+    <img src="{{ "/images/Zen_Embrace.jpg" | relURL }}" />
+    <h5 class="column-header bg-green fg-white">Tutorials</h5>
+    <ul class="bullet-list">
       {{ range .Site.Taxonomies.categories.tutorials }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}

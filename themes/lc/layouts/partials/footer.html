@@ -1,15 +1,15 @@
 <footer class="grid">
   <div class="columns-3">
-    <h4>Quick Links</h4>
+    <h6>Quick Links</h6>
     <ul>
-      {{ range .Site.Taxonomies.categories.quicklink }}
-       <li><a href="/series/{{ .Page.Params.series | urlize}}.html">{{ .Page.Params.series }}</a></li>
+      {{ range .Site.Taxonomies.categories.quicklinks }}
+      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </div>
   
   <div class="columns-3">
-    <h4>Programs at-a-Glance</h4>
+    <h6>Programs at-a-Glance</h6>
     <ul>
     </ul>
   </div>

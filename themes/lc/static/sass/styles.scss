@@ -1,4 +1,5 @@
 @import 'compass';
+@import 'compass/reset';
 @import 'compass/css3';
 
 @import 'susy';
@@ -17,7 +18,7 @@
 
 // Styles //
 .copyright {
-  margin-top: 1.5rem;
+  margin: rhythm(.5) 0;
   text-align: right;
   opacity: .5;
 }
@@ -48,25 +49,30 @@ button,
 .tags {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-right: 0;
+  flex-wrap: wrap;
+  @include susy-breakpoint($bp-mobile) {
+    justify-content: flex-end;
+  }
 }
 
 .tag {
   $tag-padding: .25rem;
   display: inline-block;
   font-size: .7rem;
-  padding: $tag-padding .5rem;
+  padding: rhythm(.125) rhythm(.25);
   color: $white;
   text-transform: uppercase;
   float: none;
-  margin: inherit;
+  margin: rhythm(.125);
+  //margin: inherit;
   &:hover {
     text-decoration: underline;
   }
   @include susy-breakpoint($bp-mobile) {
-    margin: -($tag-padding) .25rem;
-    float: right;
+    //margin: -(rhythm(.125)) rhythm(.25);
+    //float: right;
   }
 }
 
@@ -168,7 +174,6 @@ nav {
     cursor: pointer;
     margin: 0;
     padding: 0;
-    list-style: none;
     transition: background-color .5s, color .25s ease-out;
   }
   @include susy-breakpoint($bp-mobile) {
@@ -200,6 +205,7 @@ nav {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 190;
   //display: none; //NOTE: Reference nav-scroll.js
   ul { // Primary menu
     margin: 0;
@@ -248,33 +254,27 @@ nav {
 
 // Sidebar //
 aside {
-  padding: 1rem;
   background-color: $ltgrey;
   height: 100%;
   width: 100%;
   float: none;
   margin-left: auto;
   order: 50;
-  margin-bottom: 2rem;
+  order: 50;
+  margin-bottom: rhythm(1);
+  padding-bottom: rhythm(1);
   @include susy-breakpoint($bp-mobile) {
     width: 32%;
     float: right;
   }
 }
 
-.sidebar {
-  padding-left: 1rem; //Indent
-  h4 {
-    margin: 0;
-    margin-bottom: .5rem;
-  }
-}
 
 // Footer //
 footer {
-  min-height: 10rem;
+  min-height: rhythm(10);
   border-top: .0625rem solid $ltgrey;
-  margin-top: 3rem;
+  padding-top: rhythm(1);
 }
 
 .footer-nav {
@@ -286,7 +286,6 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    list-style: none;
     margin: 0;
     padding: 0;
     li {
@@ -297,7 +296,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .0625rem;
     color: $dkblue;
-    padding: .5rem;
+    padding: rhythm(.5);
     transition: color .5s, background-color .5s;
     // Begins second level of menu
     ul {
@@ -339,9 +338,8 @@ video {
         text-decoration: underline;
       }
     }
-    h5 { 
-      margin: 0;
-      padding: 1rem .5rem;
+    p {
+      padding: 0 rhythm(.5);
     }
   }
   img {
@@ -353,6 +351,12 @@ video {
   }
 }
 
+.column-header {
+  margin: 0;
+  margin-bottom: rhythm(.25);
+  padding: rhythm(.5) rhythm(.5);
+}
+
 .plvid {
   position: relative;
   padding-bottom: 56.25%;
@@ -361,28 +365,31 @@ video {
 }
 
 .pdf {
-  height: 50rem;
+  height: rhythm(30);
 }
 
 // Mobile Nav //
 .hamburger {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   left: 0;
   top: 0;
   width: 100%;
-  height: 3rem;
-  background-color: $dkblue;
+  height: rhythm(2);
   border-bottom: .0625rem solid $white;
+  h5 {
+    width: 100%;
+  }
   i {
     color: $ltblue;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: rhythm(2);
   }
   .hamburger-button {
-    float: right;
     display: block;
-    width: 3rem;
-    height: 3rem;
+    width: rhythm(2);
+    height: rhythm(2);
     text-align: center;
   }
   @include susy-breakpoint($bp-mobile) {
