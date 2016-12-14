@@ -3,15 +3,15 @@ PartyLite Learning Center
 
 + [About this Site](#about-this-site)
 + [Site Locations](#site-locations)
-+ [Technology/Languages Used](#technology-languages-used)
++ [Technology/Languages Used](#technologylanguages-used)
 + [Local Theme Development & Site Configuration](#local-theme-development--site-configuration)
-+ [Creating/Editing Content](#creating-editing-content)
++ [Creating/Editing Content](#creatingediting-content)
 
 * * *
 
 About this Site
 ---------------
-The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS.
+The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS. It also won't parse `index.html` (or any other default) files at the root of a directory, so links must be directly to the html.
 
 Hugo was chosen as a means of providing some form of templating to greatly reduce (eliminate) existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily searched for SEO and for a more logical sitemap creation.
 
@@ -80,15 +80,15 @@ Local Theme Development & Site Configuration
 
 You'll need to have several programs installed to do local development on this site. 
 
-1. The first thing you'll probably want to install is _[git](https://git-scm.com/downloads)_. I installed using the built in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
+1. The first thing you'll probably want to install is **[git](https://git-scm.com/downloads)**. I installed using the built in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
 
-2. Install _[nodejs](https://nodejs.org/en/)_ so you can use `npm`.
+2. Install **[nodejs](https://nodejs.org/en/)** so you can use `npm`.
 
-3. Install _[ruby](https://www.ruby-lang.org/en/downloads/)_ so that you can use `gem`. Ruby has some issues with Windows so you may have to ensure you have proper permissions.
+3. Install **[ruby](https://www.ruby-lang.org/en/downloads/)** so that you can use `gem`. Ruby has some issues with Windows so you may have to ensure you have proper permissions.
 
-4. Download and install _[Hugo](https://gohugo.io/overview/installing/)_ according to the instructions on their site. If you're on Windows, you'll probably have to add Hugo to your $PATH.
+4. Download and install **[Hugo](https://gohugo.io/overview/installing/)** according to the instructions on their site. If you're on Windows, you'll probably have to add Hugo to your $PATH.
 
-5. Install _[compass](http://compass-style.org/install/)_ in your terminal using `gem install compass`.
+5. Install **[bundler](http://bundler.io/)** in your terminal using `gem install bundler`. Once installation is complete, you can install **[Compass](https://compass-style.org/)**, **[Susy](http://susy.oddbird.net/)**, and **[Breakpoint](http://breakpoint-sass.com/)** using the command `bundle install` from your terminal.
 
 When starting local development, I generally start by running both `compass watch` and `hugo server`. I also have LiveReload plugin running on my browser.
 
@@ -99,16 +99,16 @@ When starting local development, I generally start by running both `compass watc
 + Start local development server:  
   `hugo server`
 
-+ Create a new info page:  
-  `hugo new info/<info-title>.md`
++ Create a new info page, where `$info_title` is the title of your content:  
+  `hugo new info/$info-title.md`
 
-+ Create a new document:  
-  `hugo new doc/<document-title>.md`
++ Create a new document, where `$doc_title` is the title of your content:  
+  `hugo new doc/$doc_title.md`
 
-+ Create a new video:  
-  `hugo new video/<video-title>.md`
++ Create a new video, where `$video_title` is the title of your content:  
+  `hugo new video/$video_title.md`
 
-+ Build site for publishing to live server:  
++ Build site for publishing to live server. Site will build into `/public`:  
   `hugo`
 
 #### Compass
@@ -146,7 +146,7 @@ When starting local development, I generally start by running both `compass watc
   This is the site's robots.txt file, but is currently ineffective because it doesnt reside on the root directory of the server. It should be moved there for proper SEO and spidering directives.
   
 + `/themes/lc/theme.toml`  
-  The theme configuration file. Mostly used if the theme is going to packaged and redistributed.
+  The theme configuration file; used if the theme is going to packaged and redistributed.
   
 + `/themes/lc/LICENSE.md`  
   The theme's license for redistribution. Default MIT license.
@@ -159,13 +159,9 @@ Creating/Editing Content
 
 ### Main Content
 
-Content can be edited simply by directly editing the markdown files in the `/content` directory.
+Content can be edited simply by directly editing the markdown files in the `/content` directory. For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Markdown allows for easy content editing for people who may not be familiar with HTML and want a more text based option. 
-
-Using Hugo's shortcodes, it also allows for easy embedding of media.
+Markdown allows for easy content editing for people who may not be familiar with HTML and want a more text based option. Using Hugo's shortcodes, it also allows for easy embedding of media.
 
 #### Content Types and Frontmatter
 
@@ -209,5 +205,5 @@ Using Hugo's shortcodes, it also allows for easy embedding of media.
 
 ### Nav Menu
 
-+ Edit menu entries in [`config.toml`](/config.toml).
++ Edit menu entries directly in [`config.toml`](/config.toml).
 + Menu entries for both languages are located here.
