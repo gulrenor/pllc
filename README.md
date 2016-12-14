@@ -1,10 +1,11 @@
 PartyLite Learning Center
 =========================
 
-+ [About this Site]()
-+ [Existing Sites](#Existing Sites)
-+ [Technology/Languages Used]()
-+ [Local Development]()
++ [About this Site](#about-this-site)
++ [Site Locations](#site-locations)
++ [Technology/Languages Used](#technology-languages-used)
++ [Local Theme Development & Site Configuration](#local-theme-development--site-configuration)
++ [Creating/Editing Content](#creating-editing-content)
 
 * * *
 
@@ -20,9 +21,9 @@ Finally, Hugo offers a multilingual option, which will build the site with suppo
 
 * * *
 
-Existing Sites
+Site Locations
 --------------
-+ **Live**
++ **Existing/Live**
   + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/Master_FrametX_RVP.html)
   + [CA English](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/Master_FrametX_RVP.html)
   + [CA French](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Master_FrametX_RVP.html)
@@ -65,12 +66,15 @@ Technology/Languages Used
 
 + **[Bundler](http://bundler.io/)**  
   Manage and install ruby gems
+  
++ **[LiveReload](http://livereload.com/)**  
+  Browser plugin to automatically refresh the page after changes are made.
 
 
 * * *
 
-Local Development
------------------
+Local Theme Development & Site Configuration
+--------------------------------------------
 
 ### Requirements
 
@@ -153,7 +157,55 @@ When starting local development, I generally start by running both `compass watc
 Creating/Editing Content
 ------------------------
 
-+ Content can be edited simply by editing the markdown files in the `/content` directory.
+### Main Content
+
+Content can be edited simply by directly editing the markdown files in the `/content` directory.
+
+For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+Markdown allows for easy content editing for people who may not be familiar with HTML and want a more text based option. 
+
+Using Hugo's shortcodes, it also allows for easy embedding of media.
+
+#### Content Types and Frontmatter
+
+##### info
++ `series`
++ `series_weight`
++ `categories`
++ `categories_weight`
++ `description`
++ `active`
++ `summary_file`
++ `thumb`
+
+##### doc
++ `series`
++ `series_weight`
++ `categories`
++ `categories_weight`
++ `description`
++ `active`
++ `filetype`
++ `src`
+
+##### video
++ `series`
++ `series_weight`
++ `categories`
++ `categories_weight`
++ `description`
++ `active`
+
+#### Content Shortcodes
+
++ `{{< youtube $file_id >}}`
+
++ `{{< vimeo $file_id >}}`
+
++ `{{< plvid src="$video_url" poster="$poster_url"}}`
+
++ `{{< pdf src="$url" >}}`
 
 ### Nav Menu
 

@@ -1,3 +1,7 @@
+// navscroll.js
+// Handles breakpoint listener, mobile nav visibility,
+// and sticky/floating nav bar.
+
 $(document).ready(function() {
   
   // Which breakpoint is the mobile menu?

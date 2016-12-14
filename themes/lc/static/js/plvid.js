@@ -41,7 +41,6 @@ $(document).ready(function() {
         $(this).prop('controls', false);  
       }
     }
-    //function() {$(this).prop('controls', !$(this).prop('controls'));}
   );
   
 });
