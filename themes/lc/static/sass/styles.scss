@@ -23,6 +23,11 @@
   opacity: .5;
 }
 
+strong {
+  color: $dkgrey;
+  font-weight: 700;
+}
+
 .info {
   img:first-child {
     width: 100%;
@@ -74,16 +79,6 @@ button,
     //margin: -(rhythm(.125)) rhythm(.25);
     //float: right;
   }
-}
-
-strong {
-  color: $dkgrey;
-  font-weight: 700;
-}
-
-.head {
-  margin: 0;
-  padding: .75rem;
 }
 
 .list {
@@ -163,7 +158,6 @@ header {
   }
 }
 
-
 // Nav //
 .menu-item {
   padding-left: 1rem;
@@ -189,10 +183,10 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     li {
-      padding: .125rem 1rem;
-      border-radius: .5rem;
+      padding: 0 rhythm(.5);
+      border-radius: rhythm(.25);
       background-color: $orange;
-      margin-left: .5rem;
+      margin-left: rhythm(.5);
     }
   }
 }
@@ -315,7 +309,6 @@ iframe {
 
 video {
   position: absolute;
-  //left: auto;
   left: 0;  
   top: 0;
   height: 100%;
@@ -355,12 +348,6 @@ video {
     object-fit: cover;
     object-position: 50% 50%;
   }
-}
-
-.column-header {
-  margin: 0;
-  margin-bottom: rhythm(.25);
-  padding: rhythm(.5) rhythm(.5);
 }
 
 .plvid {
@@ -412,14 +399,11 @@ video {
 }
 
 
+// Refer to navscroll.js for mobile nav visibility.
 .show-element {
   display: block;
   opacity: 1;
   transition: opacity .2s ease-in-out;
-  //position: fixed;
-  //top: 14.7rem;
-  //left: 0;
-  //padding: .5rem 0 1.5rem 0;
 }
 
 .hide-element {
@@ -428,6 +412,7 @@ video {
   transition: opacity .2s ease-in-out;
 }
 
+// Refer to navscroll.js for floating/sticky nav functionality.
 //FIXME: Add this and .nav-main to _layout.scss if possible
 // (maintain specificity)
 .float {
