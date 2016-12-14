@@ -88,9 +88,9 @@ You'll need to have several programs installed to do local development on this s
 
 4. Download and install **[Hugo](https://gohugo.io/overview/installing/)** according to the instructions on their site. If you're on Windows, you'll probably have to add Hugo to your $PATH.
 
-5. Install **[bundler](http://bundler.io/)** in your terminal using `gem install bundler`. Once installation is complete, you can install **[Compass](https://compass-style.org/)**, **[Susy](http://susy.oddbird.net/)**, and **[Breakpoint](http://breakpoint-sass.com/)** using the command `bundle install` from your terminal.
+5. Install **[bundler](http://bundler.io/)** in your terminal using `gem install bundler`. Once installation is complete, you can install **[Compass](https://compass-style.org/)**, **[Susy](http://susy.oddbird.net/)**, and **[Breakpoint](http://breakpoint-sass.com/)** using the command `bundle install`.
 
-When starting local development, I generally start by running both `compass watch` and `hugo server`. I also have LiveReload plugin running on my browser.
+When starting local development, I generally start by running both `compass watch` and `hugo server`. I also have the **[LiveReload](http://livereload.com/)** plugin running on my browser.
 
 ### Command Line Reference
 
@@ -100,7 +100,7 @@ When starting local development, I generally start by running both `compass watc
   `hugo server`
 
 + Create a new info page, where `$info_title` is the title of your content:  
-  `hugo new info/$info-title.md`
+  `hugo new info/$info_title.md`
 
 + Create a new document, where `$doc_title` is the title of your content:  
   `hugo new doc/$doc_title.md`
@@ -113,7 +113,7 @@ When starting local development, I generally start by running both `compass watc
 
 #### Compass
 
-+ Watch sass directory and automatically compile to css:  
++ Watch `/themes/lc/static/sass` directory and automatically compile to CSS in `/themes/lc/static/css`:  
   `compass watch`  
   
 ### File Reference
