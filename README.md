@@ -1,33 +1,161 @@
 PartyLite Learning Center
 =========================
 
-#### Existing Sites
-+ *Live*
++ [About this Site]()
++ [Existing Sites](#Existing Sites)
++ [Technology/Languages Used]()
++ [Local Development]()
+
+* * *
+
+About this Site
+---------------
+The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS.
+
+Hugo was chosen as a means of providing some form of templating to greatly reduce (eliminate) existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily searched for SEO and for a more logical sitemap creation.
+
+Hugo also cuts down on content repetition as pieces of content can be cross-referenced in multiple places without having to recreate it. 
+
+Finally, Hugo offers a multilingual option, which will build the site with support for multiple languages, which is a requirement for this particular site.
+
+* * *
+
+Existing Sites
+--------------
++ **Live**
   + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/Master_FrametX_RVP.html)
   + [CA English](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/Master_FrametX_RVP.html)
   + [CA French](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Master_FrametX_RVP.html)
-+ *Dev*
-  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/index.html)
++ **Dev**
+  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/index.html) (Hugo Staging)
+  + [US English](http://localhost:1313) (Localhost)
 
 * * *
 
-#### Technology/Languages Used
-+ HTML5
-+ CSS3/Sass (SCSS syntax)
-+ JavaScript/JQuery
-+ [Slick](http://kenwheeler.github.io/slick/)
-+ [Hugo](https://gohugo.io/)
-+ [Gulp](https://gulpjs.com/)
-+ [Compass](https://compass-style.org/)
-+ Susy
-+ Breakpoint
-+ [Google Fonts](https://fonts.google.com/)
-+ Rubygems
-+ Bundler
+Technology/Languages Used
+-------------------------
++ **HTML5**  
+
++ **CSS3/Sass (SCSS syntax)**  
+
++ **[JavaScript/JQuery](https://jquery.com/)**  
+
++ **[Slick](http://kenwheeler.github.io/slick/)**  
+  JQuery image carousel plugin
+  
++ **[Hugo](https://gohugo.io/)**  
+  Static site generator
+  
++ **[Gulp](https://gulpjs.com/)**  
+  JS-based task runner
+  
++ **[Compass](https://compass-style.org/)**  
+  CSS/Sass library/compiler
+  
++ **[Susy](http://susy.oddbird.net/)**  
+  Responsive framework/grid system
+  
++ **[Breakpoint](http://breakpoint-sass.com/)**  
+  Responsive breakpoints using Susy & Compass
+  
++ **[Google Fonts](https://fonts.google.com)**  
+
++ **[Rubygems](https://www.ruby-lang.org/en/downloads/)**  
+  Ruby package manager
+
++ **[Bundler](http://bundler.io/)**  
+  Manage and install ruby gems
+
 
 * * *
 
-### Editing Content
+Local Development
+-----------------
 
-#### Nav Menu
-+ Edit menu entries in [config.toml](/config.toml).
+### Requirements
+
+You'll need to have several programs installed to do local development on this site. 
+
+1. The first thing you'll probably want to install is _[git](https://git-scm.com/downloads)_. I installed using the built in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
+
+2. Install _[nodejs](https://nodejs.org/en/)_ so you can use `npm`.
+
+3. Install _[ruby](https://www.ruby-lang.org/en/downloads/)_ so that you can use `gem`. Ruby has some issues with Windows so you may have to ensure you have proper permissions.
+
+4. Download and install _[Hugo](https://gohugo.io/overview/installing/)_ according to the instructions on their site. If you're on Windows, you'll probably have to add Hugo to your $PATH.
+
+5. Install _[compass](http://compass-style.org/install/)_ in your terminal using `gem install compass`.
+
+When starting local development, I generally start by running both `compass watch` and `hugo server`. I also have LiveReload plugin running on my browser.
+
+### Command Line Reference
+
+#### Hugo
+
++ Start local development server:  
+  `hugo server`
+
++ Create a new info page:  
+  `hugo new info/<info-title>.md`
+
++ Create a new document:  
+  `hugo new doc/<document-title>.md`
+
++ Create a new video:  
+  `hugo new video/<video-title>.md`
+
++ Build site for publishing to live server:  
+  `hugo`
+
+#### Compass
+
++ Watch sass directory and automatically compile to css:  
+  `compass watch`  
+  
+### File Reference
+
++ `gitignore`  
+  Ignores certain files/directories so they're not included in git.
+  
++ `config.rb`  
+  Compass configuration file.
+  
++ `config.toml`  
+  Hugo site configuration file.
+  
++ `Gemfile`  
+  Bundler configuration file. Used to install Compass, Susy, and Breakpoint.
+  
++ `Gemfile.lock`  
+  Logs the specific versions installed so that they can be reinstalled using Bundler. If you remove this file and re-bundle you may end up with incompatible versions of applications.
+
++ `gulpfile.js`  
+  Gulp configuration file.
+  
++ `package.json`  
+  Node.js/npm project and configuration file.
+
++ `README.md`  
+  This file, and what's uploaded as the default readme on Github.
+  
++ `/content/robots.txt`  
+  This is the site's robots.txt file, but is currently ineffective because it doesnt reside on the root directory of the server. It should be moved there for proper SEO and spidering directives.
+  
++ `/themes/lc/theme.toml`  
+  The theme configuration file. Mostly used if the theme is going to packaged and redistributed.
+  
++ `/themes/lc/LICENSE.md`  
+  The theme's license for redistribution. Default MIT license.
+  
+
+* * *
+
+Creating/Editing Content
+------------------------
+
++ Content can be edited simply by editing the markdown files in the `/content` directory.
+
+### Nav Menu
+
++ Edit menu entries in [`config.toml`](/config.toml).
++ Menu entries for both languages are located here.
