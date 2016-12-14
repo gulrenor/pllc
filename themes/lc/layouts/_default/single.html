@@ -2,8 +2,7 @@
 
 <section class="content-header">
   <h4>{{- .Title -}}</h4>
-  <div class="tags">{{- partial "section-tag.html" . -}}</div>
-  <div class="tags">{{- partial "category-tag.html" . -}}</div>
+  <div class="tags">{{- partial "section-tag.html" . -}}{{- partial "category-tag.html" . -}}</div>
 </section>
 
 <p>{{ .Description }}</p>

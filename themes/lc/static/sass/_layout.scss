@@ -169,6 +169,7 @@ img {
 }
 
 .info { // Special formatting for text only info pages
+  margin-top: rhythm(1);
   h1, h2 {
     margin-bottom: rhythm(.25);
   }
@@ -190,5 +191,8 @@ img {
   }
   a:link {
     text-decoration: underline;
+  }
+  em {
+    font-style: oblique;
   }
 }

@@ -269,34 +269,42 @@ img {
   width: auto;
 }
 
-/* line 172, ../sass/_layout.scss */
+/* line 171, ../sass/_layout.scss */
+.info {
+  margin-top: 1.5em;
+}
+/* line 173, ../sass/_layout.scss */
 .info h1, .info h2 {
   margin-bottom: 0.375em;
 }
-/* line 175, ../sass/_layout.scss */
+/* line 176, ../sass/_layout.scss */
 .info p {
   padding-left: 0.75em;
 }
-/* line 178, ../sass/_layout.scss */
+/* line 179, ../sass/_layout.scss */
 .info h4, .info h5, .info h6 {
   padding-left: 0.375em;
 }
-/* line 181, ../sass/_layout.scss */
+/* line 182, ../sass/_layout.scss */
 .info ul, .info ol {
   padding-left: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 185, ../sass/_layout.scss */
+/* line 186, ../sass/_layout.scss */
 .info ol * {
   list-style: decimal;
 }
-/* line 188, ../sass/_layout.scss */
+/* line 189, ../sass/_layout.scss */
 .info ul * {
   list-style: disc;
 }
-/* line 191, ../sass/_layout.scss */
+/* line 192, ../sass/_layout.scss */
 .info a:link {
   text-decoration: underline;
+}
+/* line 195, ../sass/_layout.scss */
+.info em {
+  font-style: oblique;
 }
 
 /* line 3, ../sass/_colors.scss */

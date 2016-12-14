@@ -11,7 +11,9 @@
 <h2>{{ .Title }}</h2>
 {{ range where .Data.Pages "Section" "info" }}
   {{ if eq "true" .Params.summary_file }}
+  <div class="info clearfix">
   {{ .Content }}
+  </div>
   {{ end }}
 {{ end }}
 <hr class="dotted-rule" />
