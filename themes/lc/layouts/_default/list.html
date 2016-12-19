@@ -1,6 +1,4 @@
 {{ partial "header.html" . }}
-
-
 <main>
   
 <!-- IDEA TODO: Some Regex stuff to attempt to hide the -->
@@ -8,7 +6,10 @@
 {{ $currentURL := .Permalink | replaceRE "^http?://.*/([^/]+).html" "$1" }}
 {{ $.Scratch.Add "currentURL" $currentURL }}
 
+
 <h2>{{ .Title }}</h2>
+<!-- If there's an info page with summary_file = true, -->
+<!-- then display the summary markdown. -->
 {{ range where .Data.Pages "Section" "info" }}
   {{ if eq "true" .Params.summary_file }}
   <div class="info clearfix">
@@ -18,6 +19,8 @@
 {{ end }}
 <hr class="dotted-rule" />
 
+<!-- Group results by series (if defined) with undefined series -->
+<!-- displaying first. -->
 {{ range .Data.Pages.GroupByParam "series" }}
 
 <!-- Get quantity of content types for eval -->
@@ -51,15 +54,9 @@
   {{ if or (ne 0 $lenVid) (ne 0 $lenInf) }}
   <div class="grid">
     {{ range .Pages }}
-    
-    <!--
-    [is vid: {{eq "video" .Section}}]
-    [is info: {{eq "info" .Section}}]
-    [is summary: {{eq "" .Params.summary_file}}]
-    [has thumb: {{and (isset .Params "thumb") (ne "" .Params.thumb)}}]
-    -->
-    
+      <!-- Display videos and info pages, as long as summary_file isn't true -->
       {{ if or (eq "video" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb))) }}
+        <!-- If there's documents (and a sidebar) then adjust size accordingly -->
         <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
           {{ .Render "grid" }}
         </div>

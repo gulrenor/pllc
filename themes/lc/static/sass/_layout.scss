@@ -209,8 +209,9 @@ img {
     padding-left: rhythm(.25);
   }
   ul, ol {
-    padding-left: rhythm(1);
+    padding-left: rhythm(1.25);
     margin-bottom: rhythm(1);
+    margin-left: rhythm(.5);
   }
   ol * {
     list-style: decimal;
