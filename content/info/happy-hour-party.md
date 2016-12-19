@@ -19,6 +19,8 @@ series_weight = 0
 
 {{< vimeo 124862139 >}}
 
+* * *
+
 ## Happy Hour Tips
 ### In a Bar or Restaurant:
 + **Contact Restaurant in advance**
