@@ -12,4 +12,4 @@ series = ""
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Games/Stealing_Hearts/Tracey_Donald_Stealing_Hearts.mp4" >}}
+{{< plvid src="LC_Main_Show_Ideas/Games/Stealing_Hearts/Tracey_Donald_Stealing_Hearts.mp4" poster="/images/stealing-hearts.jpg" >}}

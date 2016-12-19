@@ -12,4 +12,4 @@ title = "Episode 2: Candle Connection List"
 
 +++
 
-{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Scene_2_Part_1.mp4" >}}
+{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Scene_2_Part_1.mp4" poster="/images/superhero-s2p1.jpg" >}}

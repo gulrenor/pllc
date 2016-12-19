@@ -13,4 +13,4 @@ active = true
 
 +++
 
-{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_2.mp4" poster="/images/preferred_logo.png" >}}
+{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_2.mp4" poster="/images/partylite-preferred-pt2.jpg" >}}

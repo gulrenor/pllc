@@ -9,10 +9,10 @@ General
 + Need thumbnails for info pages, the ones currently used are too low resolution and have burned in borders.
 + Rework/Rebrand(?) LC logo (for all languages).
 + Need description text for nearly all content. Might also want stock photos in some of the less graphical categories.
-+ Possible resize of 4:3 videos.
++ ~Possible resize of 4:3 videos.~
 + SRVP/Leader content probably needs to be updated.
 + "Training" embeds, using Adobe Presenter/Adobe Captivate: do we have the source files?
-+ Keep/Update book recommendations?
++ ~Keep/Update book recommendations?~
 + Facebook Party info page.
 + Facebook and your Business landing pages.
 + Search box/Back to CBC link needs testing.

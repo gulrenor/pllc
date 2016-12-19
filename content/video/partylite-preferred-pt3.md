@@ -13,4 +13,4 @@ categories = [
 
 +++
 
-{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_3.mp4" poster="/images/preferred_logo.png" >}}
+{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_3.mp4" poster="/images/partylite-preferred-pt3.jpg" >}}

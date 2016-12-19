@@ -4,6 +4,7 @@ title = "Booking Call"
 series = "Booking Call"
 categories = [
   "Selling and Booking",
+  "Host Program",
 ]
 description = ""
 active = true

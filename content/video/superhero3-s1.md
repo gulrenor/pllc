@@ -12,4 +12,4 @@ title = "Episode 6: Online Marketing"
 
 +++
 
-{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_3_Scene_1.mp4" >}}
+{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_3_Scene_1.mp4" poster="/images/superhero3-s1.jpg" >}}

@@ -11,4 +11,4 @@ categories = [
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Show_Types/DIY_Party/DIY_Party_Interview.mp4" >}}
+{{< plvid src="LC_Main_Show_Ideas/Show_Types/DIY_Party/DIY_Party_Interview.mp4" poster="/images/diy-party-qa.jpg" >}}

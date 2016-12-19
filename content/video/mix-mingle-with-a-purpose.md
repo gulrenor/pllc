@@ -11,4 +11,4 @@ series_weight = 30
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Show_Types/Mix_And_Mingle/Mix_And_Mingle_With_A_Purpose.mp4" >}}
+{{< plvid src="LC_Main_Show_Ideas/Show_Types/Mix_And_Mingle/Mix_And_Mingle_With_A_Purpose.mp4" poster="/images/mix-mingle-with-a-purpose.jpg" >}}

@@ -11,4 +11,4 @@ active = true
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Games/PartyLite_Bingo/Bingo_Hostess.flv" >}}
+{{< plvid src="LC_Main_Show_Ideas/Games/PartyLite_Bingo/Bingo_Hostess.mp4" poster="/images/bingo-hostess.jpg" >}}

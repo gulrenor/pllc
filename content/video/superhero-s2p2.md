@@ -12,4 +12,4 @@ description = ""
 
 +++
 
-{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Scene_2_Part_2.mp4" >}}
+{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Scene_2_Part_2.mp4" poster="/images/superhero-s2p2.jpg" >}}

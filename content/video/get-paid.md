@@ -1,7 +1,7 @@
 +++
 categories = [
   "Selling and Booking",
-  "",
+  "Host Program",
 ]
 description = ""
 active = true
