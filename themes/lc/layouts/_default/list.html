@@ -30,13 +30,13 @@
 <h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}} | Info:{{$lenInf}}</h4>
 -->
 
-{{ if ne "" .Key }}<a href="{{ "/series/" | relURL }}{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey head">{{ .Key }}</h4></a>{{ end }}
+{{ if ne "" .Key }}<a href="{{ "/series/" | relURL }}{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey column-header">{{ .Key }}</h4></a>{{ end }}
 <section class="section-break clearfix">
   
   <!-- Include sidebar if documents are present -->
   {{ if ne 0 $lenDoc }}
   <aside {{ if eq 0 $lenVid }}class="full-width"{{ end }}>
-    <h4 class="column-header">Documents</h4>
+    <h4 class="column-header">Related Documents</h4>
     <ul class="sidebar">
     {{ range .Pages }}
       {{ if eq "doc" .Section }}

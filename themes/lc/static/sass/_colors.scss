@@ -128,6 +128,12 @@ aside {
 .series {background-color: $red;}
 .section {background-color: $green;}
 
+.book {
+  a:link, a:hover, a:visited {
+    color: $white;  
+  }
+}
+
 footer {
   h6 {
     color: $dkblue;

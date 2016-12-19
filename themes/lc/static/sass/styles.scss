@@ -31,7 +31,7 @@ strong {
 .info {
   img:first-child {
     width: 100%;
-    height: 240px;
+    //height: 240px;
     object-fit: cover;
   }
 }
@@ -315,6 +315,21 @@ video {
   min-height: 100%;
   width: 100%;
   background-size: cover;
+}
+
+.book {
+  text-decoration: none;
+
+  img {
+    padding: rhythm(.5);
+    width: 100%;
+  }
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .video {
