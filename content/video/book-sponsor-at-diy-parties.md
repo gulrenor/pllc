@@ -1,12 +1,11 @@
 +++
 categories = [
-  "Party Types",
 ]
 description = ""
 active = true
 date = "2016-11-22T10:11:01-05:00"
 title = "Book & Sponsor at DIY Parties"
-series = "DIY Party"
+series = ""
 series_weight = 20
 
 +++

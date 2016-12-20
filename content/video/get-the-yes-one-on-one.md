@@ -1,6 +1,7 @@
 +++
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 description = ""
 active = true

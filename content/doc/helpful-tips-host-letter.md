@@ -7,6 +7,7 @@ series = ""
 categories = [
   "New Consultants",
   "Selling and Booking",
+  "Sell",
 ]
 src = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_New_Consultant/Booking_Host_Coaching/Host_Letter.pdf"
 +++

@@ -1,9 +1,6 @@
 +++
-series = "Lead With Success"
+series = ""
 categories = [
-  "Leadership Skills",
-  "Influence Your Central Unit",
-  "Lead With Success"
 ]
 description = ""
 date = "2016-11-15T13:34:22-05:00"

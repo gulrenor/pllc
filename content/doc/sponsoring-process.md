@@ -2,9 +2,6 @@
 date = "2016-11-10T15:05:03-05:00"
 title = "The Sponsoring Process at Parties"
 categories = [
-  "Sponsor",
-  "How to Sponsor",
-  "Sponsoring Process"
 ]
 description = "How to offer PartyLite at parties."
 filetype = "pdf"

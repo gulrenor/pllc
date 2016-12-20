@@ -1,11 +1,8 @@
 +++
 date = "2016-11-15T13:35:25-05:00"
 title = "Communication Training"
-series = "Lead With Success"
+series = ""
 categories = [
-  "Leadership Skills",
-  "Influence Your Central Unit",
-  "Lead With Success"
 ]
 description = ""
 filetype = "pdf"

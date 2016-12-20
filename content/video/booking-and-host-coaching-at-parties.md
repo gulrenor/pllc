@@ -4,6 +4,7 @@ title = "Booking and Host Coaching at Parties"
 categories = [
   "New Consultants",
   "Selling and Booking",
+  "Sell",
 ]
 series = ""
 description = "booking and host coaching description."

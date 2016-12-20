@@ -1,10 +1,7 @@
 +++
 title = "LeaderBucks Flyer"
-series = "LeaderBucks"
+series = ""
 categories = [
-  "New Consultants",
-  "Income and Rewards",
-  "LeaderBucks"
 ]
 description = "The monthly bonus program that rewards Leaders for growing Unit sales and for consistent Unit sponsoring."
 filetype = "pdf"

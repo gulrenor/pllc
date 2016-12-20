@@ -1,12 +1,11 @@
 +++
 categories = [
-  "Party Types",
 ]
 description = ""
 date = "2016-11-22T10:09:30-05:00"
 title = "Party Introduction"
-active = true
-series = "DIY Party"
+active = false
+series = ""
 series_weight = 10
 
 +++

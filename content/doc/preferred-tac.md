@@ -4,6 +4,7 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
   "Customer Contacts and Orders",
+  "Sell",
 ]
 description = "The Participation Agreement for your Customers."
 filetype = "pdf"

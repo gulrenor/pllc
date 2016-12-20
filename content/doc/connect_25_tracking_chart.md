@@ -3,9 +3,6 @@ date = "2016-11-15T09:59:01-05:00"
 title = "Connect 25 Tracking Chart"
 series = ""
 categories = [
-  "Generate Strong Personal Business",
-  "Leadership Skills",
-  "Connect 25"
 ]
 description = "25 ways to build your business each week! Connect with 25 people!"
 filetype = "pdf"

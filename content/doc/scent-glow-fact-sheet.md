@@ -2,8 +2,6 @@
 title = "Scent Glow Fact Sheet"
 series = ""
 categories = [
-  "Product",
-  "Product Reference",
 ]
 description = "Print a copy and share the features and benefits of ScentGlow Warmers with Guests at Parties."
 filetype = "pdf"

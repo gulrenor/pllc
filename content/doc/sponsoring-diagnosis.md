@@ -3,8 +3,6 @@ date = "2016-11-15T10:11:42-05:00"
 title = "Sponsoring Diagnosis"
 series = ""
 categories = [
-  "Leadership",
-  "Generate Strong Personal Business",
 ]
 description = ""
 filetype = "pdf"

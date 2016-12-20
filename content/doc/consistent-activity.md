@@ -1,10 +1,7 @@
 +++
 active = true
-series = "Lead With Success"
+series = ""
 categories = [
-  "Leadership Skills",
-  "Start New Consultants Strong",
-  "Lead With Success",
 ]
 description = "Consistent contact and follow-through will have the greatest impact on your new Consultant and her success in her Brite Start period. "
 date = "2016-11-15T15:27:07-05:00"

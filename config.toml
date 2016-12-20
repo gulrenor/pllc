@@ -35,17 +35,9 @@ layout = "list"
     url = "/categories/new-consultants.html"
     weight = 10
     [[languages.en.menu.main]]
-      name = "Selling & Booking"
-      parent = "new-consultants"
-      url = "/categories/selling-and-booking.html"
-    [[languages.en.menu.main]]
       name = "Host Program"
       parent = "new-consultants"
       url = "/categories/host-program.html"
-    [[languages.en.menu.main]]
-      name = "Starter Kit & Products"
-      parent = "new-consultants"
-      url = "/categories/starter-kit.html"
     [[languages.en.menu.main]]
      name = "First Parties"
      parent = "new-consultants"
@@ -54,15 +46,29 @@ layout = "list"
       name = "Income & Rewards"
       parent = "new-consultants"
       url = "/categories/income-and-rewards.html"
+    [[languages.en.menu.main]]
+      name = "Find Your Signature"
+      parent = "new-consultants"
+      url = "/categories/find-your-signature.html"
+  
+  [[languages.en.menu.main]]
+    name = "Selling and Booking"
+    identifier = "selling-and-booking"
+    url = "categories/selling-and-booking.html"
+    weight = 20
+    [[languages.en.menu.main]]
+      name = "Sell"
+      parent = "selling-and-booking"
+      url = "/categories/sell.html"
+    [[languages.en.menu.main]]
+      name = "Book"
+      parent = "selling-and-booking"
+      url = "/categories/book.html"
 
   [[languages.en.menu.main]]
     name = "Online Biz"
     identifier = "Online Biz"
     weight = 30
-    [[languages.en.menu.main]]
-      name = "Online Parties"
-      parent = "Online Biz"
-      url = "/categories/online-parties.html"
     [[languages.en.menu.main]]
       name = "Your Consultant Website"
       parent = "Online Biz"
@@ -86,18 +92,6 @@ layout = "list"
       url = "/categories/leadership-skills.html"
       weight = -20
     [[languages.en.menu.main]]
-      name = "Generate Strong Personal Business"
-      parent = "leadership"
-      url = "/categories/generate-strong-personal-business.html"
-    [[languages.en.menu.main]]
-      name = "Influence Your Central Unit"
-      parent = "leadership"
-      url = "/categories/influence-your-central-unit.html"
-    [[languages.en.menu.main]]
-      name = "Start New Consultants Strong"
-      parent = "leadership"
-      url = "/categories/start-new-consultants-strong.html"
-    [[languages.en.menu.main]]
       name = "Sponsoring"
       parent = "leadership"
       url = "/categories/sponsor.html"
@@ -111,10 +105,6 @@ layout = "list"
       name = "Product Training"
       parent = "Product"
       url = "/categories/product-training.html"
-    [[languages.en.menu.main]]
-      name = "Product Reference"
-      parent = "Product"
-      url = "/categories/product-reference.html"
     
   [[languages.en.menu.main]]
     name = "Party Ideas"

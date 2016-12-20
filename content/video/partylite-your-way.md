@@ -8,7 +8,6 @@ categories = [
   "Sponsor",
   "Tools to Share PartyLite",
   "Shareable",
-  "Online Parties"
 ]
 
 +++

@@ -3,6 +3,7 @@ series = "Get the Yes"
 series_weight = 40
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 description = ""
 active = true

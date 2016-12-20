@@ -2,9 +2,6 @@
 title = "Conversation Style Quiz"
 series = ""
 categories = [
-  "Sponsor",
-  "How to Sponsor",
-  "The Art of Conversation"
 ]
 description = "Answer the following questions to identify your primary conversation style. Circle the symbol that BEST describes how you truly behave - not how you'd like to behave - in each situation."
 filetype = "pdf"

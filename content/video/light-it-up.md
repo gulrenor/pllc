@@ -1,10 +1,7 @@
 +++
 title = "Light It Up (also at youtube UQToHco9c7w)"
-series = "StorySelling"
+series = ""
 categories = [
-  "Selling and Booking",
-  "Sell",
-  "StorySelling"
 ]
 description = "Learn all about the PartyLite brand."
 date = "2016-11-08T11:02:15-05:00"

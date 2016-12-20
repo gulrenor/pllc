@@ -1,8 +1,6 @@
 +++
-series = "StorySelling"
+series = ""
 categories = [
-  "Selling and Booking",
-  "StorySelling",
 ]
 description = "Your checklist for a PartyLite Party."
 date = "2016-11-08T11:02:38-05:00"

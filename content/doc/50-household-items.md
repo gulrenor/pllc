@@ -1,9 +1,8 @@
 +++
 filetype = "pdf"
 active = true
-series = "DIY Party"
+series = ""
 categories = [
-  "Party Types",
 ]
 date = "2016-11-22T10:18:19-05:00"
 title = "Decorate It Yourself: 50 Common Household Items"

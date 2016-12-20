@@ -6,6 +6,7 @@ title = "Happy Host Tip"
 series = ""
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 
 +++

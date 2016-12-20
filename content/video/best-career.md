@@ -6,7 +6,6 @@ series = ""
 categories = [
   "Sponsor",
   "Shareable", 
-  "Online Parties",
 ]
 description = ""
 

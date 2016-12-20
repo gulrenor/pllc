@@ -4,7 +4,6 @@ date = "2016-11-22T11:54:07-05:00"
 title = "Starter Kit Highlights"
 series = ""
 categories = [
-  "Starter Kit",
 ]
 description = ""
 filetype = "pdf"

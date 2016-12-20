@@ -1,5 +1,5 @@
 +++
-series = "Brite Start"
+series = ""
 categories = [
   "Income and Rewards",
   "Brite Start",

@@ -5,7 +5,8 @@ active = true
 series = ""
 categories = [
   "Selling and Booking",
-  "Host Coaching"
+  "Host Coaching",
+  "Sell",
 ]
 description = ""
 date = "2016-11-22T12:15:58-05:00"

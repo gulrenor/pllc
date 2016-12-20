@@ -3,6 +3,7 @@ title = "Six Booking Tips Webinar"
 series = ""
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 description = "Use these six Booking tips to ensure you have all the Parties you need."
 active = true

@@ -4,8 +4,6 @@ filetype = "pdf"
 active = true
 series = ""
 categories = [
-  "Product",
-  "Product Reference",
 ]
 description = "See how to maintain each candle form and how many hours it will burn."
 date = "2016-11-14T10:01:42-05:00"

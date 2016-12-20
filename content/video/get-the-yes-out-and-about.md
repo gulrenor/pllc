@@ -7,6 +7,7 @@ series = "Get the Yes"
 series_weight = 20
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 
 +++

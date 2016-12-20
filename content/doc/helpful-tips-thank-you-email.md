@@ -3,6 +3,7 @@ series = ""
 categories = [
   "New Consultants",
   "Selling and Booking",
+  "Sell",
 ]
 description = "Guest Email Sample"
 filetype = "pdf"

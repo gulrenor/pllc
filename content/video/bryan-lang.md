@@ -2,7 +2,6 @@
 categories = [
   "Sponsor",
   "Shareable", 
-  "Online Parties",
 ]
 description = ""
 active = true

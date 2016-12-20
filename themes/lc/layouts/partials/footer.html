@@ -5,7 +5,6 @@
       {{ range .Site.Taxonomies.categories.quicklinks }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}
-      <li><a href="{{ "/categories/product-training.html" | relURL }}">2016 Product Training</a></li>
       <li><a href="{{ "/categories/shareable.html" | relURL }}">Shareable Videos</a></li>
       <li><a href="{{ "/categories/host-program.html" | relURL }}">Host Program</a></li>
     </ul>
@@ -14,9 +13,10 @@
   <div class="columns-3">
     <h6>Programs at-a-Glance</h6>
     <ul>
-      <li><a href="{{ "/series/brite-start.html" | relURL }}">Brite Start&trade;</a></li>
+      {{ range .Site.Taxonomies.categories.programs }}
+      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
       <li><a href="{{ "/series/partylite-preferred.html" | relURL }}">PartyLite Preferred&trade;</a></li>
-      <li><a href="{{ "/series/leaderbucks.html" | relURL }}">LeaderBuck$&trade;</a></li>
     </ul>
   </div>
 

@@ -4,8 +4,6 @@ title = "Creating Your Display"
 description = "How to create your display."
 series = ""
 categories = [
-  "Starter Kit",
-  "New Consultants"
 ]
 
 +++

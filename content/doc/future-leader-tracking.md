@@ -1,8 +1,6 @@
 +++
 title = "future leader tracking"
 categories = [
-  "Leadership Skills",
-  "Start New Consultants Strong",
 ]
 description = ""
 filetype = "pdf"

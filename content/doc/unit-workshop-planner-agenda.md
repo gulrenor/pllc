@@ -2,8 +2,6 @@
 active = true
 series = ""
 categories = [
-  "Leadership Skills",
-  "Influence Your Central Unit",
 ]
 description = ""
 date = "2016-11-15T13:34:59-05:00"

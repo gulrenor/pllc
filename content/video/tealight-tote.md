@@ -6,6 +6,7 @@ title = "Booking on the Go with the Tealight Tote"
 series = ""
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 
 +++

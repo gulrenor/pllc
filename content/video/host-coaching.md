@@ -6,7 +6,8 @@ series = "Host Program"
 categories = [
   "Selling and Booking",
   "Host Program",
-  "Host Coaching"
+  "Host Coaching",
+  "Sell",
 ]
 
 +++

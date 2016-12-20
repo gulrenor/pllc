@@ -1,10 +1,7 @@
 +++
 active = true
-series = "Lead With Success"
+series = ""
 categories = [
-  "Leadership Skills",
-  "Start New Consultants Strong",
-  "Lead With Success",
 ]
 description = ""
 filetype = "pdf"

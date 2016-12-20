@@ -3,6 +3,7 @@ title = "Follow Up & Customer Service"
 series = ""
 categories = [
   "Selling and Booking",
+  "Book",
 ]
 description = ""
 active = true

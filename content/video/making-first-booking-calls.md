@@ -6,6 +6,7 @@ categories = [
   "New Consultants",
   "Selling and Booking",
   "Host Program",
+  "Book",
 ]
 
 +++

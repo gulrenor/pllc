@@ -5,7 +5,8 @@ series = ""
 categories = [
   "Selling and Booking",
   "Host Program",
-  "Host Coaching"
+  "Host Coaching",
+  "Book",
 ]
 date = "2016-11-08T11:52:49-05:00"
 

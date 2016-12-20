@@ -1,10 +1,6 @@
 +++
 series = ""
 categories = [
-  "New Consultants",
-  "Income and Rewards",
-  "Starter Kit",
-  "BusinessGuides"
 ]
 description = "The more new people you meet, the more Customers, Hosts and new Consultants you can connect with your PartyLite business. This guide will teach you multiple ways to share PartyLite products and our opportunity. Don't limit yourself to just one way. Implement all of the ideas in this guide to reach more new people, resulting in more sales, more sponsoring and ultimately, more income."
 filetype = "pdf"

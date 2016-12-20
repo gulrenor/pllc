@@ -4,8 +4,6 @@ date = "2016-11-08T09:42:29-05:00"
 title = "S.A.S.E."
 series = ""
 categories = [
-  "New Consultants",
-  "Starter Kit",
 ]
 
 +++

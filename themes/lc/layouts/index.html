@@ -2,14 +2,6 @@
 
 <div class="slider single-item section-break">
   <div>
-    <a href="http://www.google.com/">
-      <img src="{{ "/images/Brighter_World.jpg" | relURL }}" />
-      <div class="slider-title bg-dkblue">
-        <h4>Facebook Party</h4>
-      </div>
-    </a> 
-  </div>
-  <div>
     <a href="{{ "video/mock-party.html" | relURL }}">
       <img src="{{ "/images/Clearly_Creative.jpg" | relURL }}" />
       <div class="slider-title bg-red">
@@ -24,15 +16,6 @@
       <div class="slider-title bg-mdblue">
         <h4>Booking Perks Made Easy</h4>
         <p>Check out this step-by-step instructional video on how to enter Booking perks.</p>
-      </div>
-    </a>
-  </div>
-  <div>
-    <a href="">
-      <img src="{{ "/images/Zen_Embrace.jpg" | relURL }}" />
-      <div class="slider-title bg-green">
-        <h4>Winter/Spring 2016</h4>
-        <p>Decorate with fragrances.</p>
       </div>
     </a>
   </div>
@@ -55,6 +38,7 @@
       {{ range .Site.Taxonomies.categories.businessguides }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}
+      <li><a href="{{ "/series/partylite-preferred.html" | relURL }}">PartyLite Preferred&trade;</a></li>
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
