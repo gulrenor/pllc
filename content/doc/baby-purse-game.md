@@ -3,7 +3,6 @@ date = "2016-11-21T15:22:16-05:00"
 title = "Baby Purse Game"
 series = ""
 categories = [
-  "Games",
 ]
 description = ""
 filetype = "pdf"

@@ -1,10 +1,9 @@
 +++
 date = "2016-11-22T10:32:29-05:00"
 title = "Set Up & Meet and Greet"
-series = "Mix & Mingle"
+series = ""
 series_weight = 10
 categories = [
-  "Party Types",
 ]
 description = ""
 active = true

@@ -1,7 +1,6 @@
 +++
 series = ""
 categories = [
-  "Games",
 ]
 description = ""
 filetype = "pdf"

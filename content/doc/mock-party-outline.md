@@ -1,7 +1,6 @@
 +++
-series = "Mock Party"
+series = ""
 categories = [
-  "Party Types",
 ]
 description = "Party Demo Featuring Bryan Lang & Jennifer Holcomb"
 filetype = "pdf"

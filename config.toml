@@ -111,30 +111,13 @@ layout = "list"
     identifier = "Party Ideas"
     weight = 70
     [[languages.en.menu.main]]
-      name = "Party Types"
+      name = "Find Your Signature Party"
       parent = "Party Ideas"
-      url = "/categories/party-types.html"
-    [[languages.en.menu.main]]
-      name = "Theme Parties"
-      parent = "Party Ideas"
-      url = "/categories/theme-parties.html"
+      url = "/categories/find-your-signature-party.html"
     [[languages.en.menu.main]]
       name = "Games"
       parent = "Party Ideas"
       url = "/categories/games.html"
-    
-  [[languages.en.menu.main]]
-    name = "Development"
-    identifier = "Development"
-    weight = 80
-    [[languages.en.menu.main]]
-      name = "Book Recommendations"
-      parent = "Development"
-      url = "/info/book-recommendations.html"
-    [[languages.en.menu.main]]
-      name = "Personal Growth"
-      parent = "Development"
-      url = "/categories/personal-growth.html"
 
 
 #  [[languages.en.menu.main]]

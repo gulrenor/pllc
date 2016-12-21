@@ -6,8 +6,6 @@ filetype = "pdf"
 active = true
 series = ""
 categories = [
-  "Product",
-  "Product Training"
 ]
 src = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Product/Product_Training/Product_WS16/ProductStories_US_ALL_2.pdf"
 

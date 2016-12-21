@@ -1,12 +1,11 @@
 +++
 categories = [
-  "Product Training",
 ]
 description = ""
 active = true
 src = "https://commsite.partylite.com/CommSite/us/en/General_FAQs/Lisa_Hoffman_FAQs.pdf"
 title = "FAQs"
-series = "Lisa Hoffman"
+series = ""
 series_weight = 50
 categories_weight = 0
 filetype = "pdf"

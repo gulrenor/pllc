@@ -1,8 +1,5 @@
 +++
 categories = [
-  "Development",
-  "Personal Growth",
-  "Time Mapping"
 ]
 description = ""
 filetype = "pdf"

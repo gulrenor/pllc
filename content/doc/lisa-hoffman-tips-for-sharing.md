@@ -2,9 +2,8 @@
 categories_weight = 0
 description = ""
 date = "2016-11-28T13:55:47-05:00"
-series = "Lisa Hoffman"
+series = ""
 categories = [
-  "Product Training",
 ]
 filetype = "pdf"
 active = true

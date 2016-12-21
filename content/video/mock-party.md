@@ -1,7 +1,6 @@
 +++
-series = "Mock Party"
+series = ""
 categories = [
-  "Party Types",
 ]
 description = "Get 2-3 Bookings and 4-5 Sponsoring Leads using this format."
 active = true

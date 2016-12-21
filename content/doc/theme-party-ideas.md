@@ -2,8 +2,6 @@
 active = true
 series = ""
 categories = [
-  "Party Ideas",
-  "Theme Parties",
 ]
 date = "2016-11-18T14:47:53-05:00"
 title = "Theme Party Ideas"

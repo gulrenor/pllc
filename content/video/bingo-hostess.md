@@ -1,10 +1,9 @@
 +++
 date = "2016-11-21T15:37:59-05:00"
 title = "PartyLite Bingo: Hostess"
-series = "PartyLite Bingo"
+series = ""
 series_weight = 1
 categories = [
-  "Games",
 ]
 description = ""
 active = true

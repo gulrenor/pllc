@@ -1,7 +1,9 @@
 +++
 active = true
-series = ""
+series = "Unit Workshop Training"
+series_weight = 10
 categories = [
+  "Leadership Skills",
 ]
 description = ""
 date = "2016-11-15T13:34:59-05:00"

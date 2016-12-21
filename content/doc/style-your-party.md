@@ -4,8 +4,6 @@ filetype = "pdf"
 active = true
 series = ""
 categories = [
-  "Party Ideas",
-  "Theme Parties",
 ]
 date = "2016-11-18T14:45:48-05:00"
 title = "Style Your Party"

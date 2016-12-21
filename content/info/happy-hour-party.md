@@ -2,8 +2,6 @@
 series = ""
 categories_weight = 0
 categories = [
-  "Party Ideas",
-  "Party Types",
 ]
 description = ""
 active = true

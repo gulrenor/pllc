@@ -3,9 +3,6 @@ filetype = "pdf"
 active = true
 series = ""
 categories = [
-  "Development",
-  "Personal Growth",
-  "Time Mapping"
 ]
 date = "2016-11-15T10:21:11-05:00"
 title = "Time Mapping Chart (Monthly)"

@@ -1,12 +1,11 @@
 +++
 categories = [
-  "Party Types",
 ]
 description = ""
 active = true
 date = "2016-11-22T10:32:41-05:00"
 title = "Interaction with Guests"
-series = "Mix & Mingle"
+series = ""
 series_weight = 20
 
 +++

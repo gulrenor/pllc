@@ -1,8 +1,7 @@
 +++
-series = "Lisa Hoffman"
+series = ""
 series_weight = 90
 categories = [
-  "Product Training",
 ]
 categories_weight = 0
 description = ""

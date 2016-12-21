@@ -154,6 +154,44 @@ When starting local development, I generally start by running both `compass watc
 
 * * *
 
+Content Overview
+----------------
+
+### Types of Content
+There are 2 main types of content, with a 3rd type acting as a descriptive sub-type.
+
+#### Documents
+The majority of documents are .pdf. There are also some training presentations that use Adobe Presenter and Captivate.
+
+#### Videos
+Videos come from 3 main sources: Youtube, Vimeo, and self-hosted .mp4.
+
+#### Info pages
+These pages act as a kind of summary file when a landing page is needed. They're used both for descriptive lead-ins, as well as full fledged custom pages.
+
+### Content Organization
+Most content is organized and displayed using 3 methods:
++ by `section`
++ by `category`
++ by `series`
+
+#### Section
+`section`, in Hugo, is simply another word for content type. The main `section`s are `doc`, `video`, and `info`.
+
+#### Category
+`category` is the most versatile method of displaying content. You can assign unlimited categories to a piece of content, and that content will then show on all those pages. 
+
+The content is ordered by the frontmatter variable `category_weight`, and the default is zero. If you need something to diplay near the top then assign it a negative weight, and similarly if you want it to display at the end assign it a positive weight.
+
+The default order of content is descending by date, so the most recent content appears at the top.
+
+#### Series
+`series` is a means of grouping similar content, like a multi-part video series. A piece of content can only be assigned to one series.
+
+When series are displayed on a page, they will be grouped together under their series name.
+
+Series order can be adjusted the same way as categories, with the `series_weight` frontmatter variable. `series_weight` has no effect on content when it's displayed in a category template.
+
 Creating/Editing Content
 ------------------------
 

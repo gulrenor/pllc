@@ -43,11 +43,12 @@ _Is now under Booking/Selling_
 #### Income & Rewards
 + _PDF_: [View the Boutique Brochure](https://commsite.partylite.com/CommSite/us/en/Brite_Start_Program/Brite_Start_Boutique_Flyer_2015.pdf) (404)
 
-#### Programs at-a-Glance
-+ Removed
+#### ~~Programs at-a-Glance~~
++ ~~Removed~~
 
-#### Start with Success
-+ Merged with Income & Rewards
+#### ~~Start with Success~~
++ ~~Merged with Income & Rewards~~
+
 * * *
 
 Sell & Book
@@ -75,12 +76,12 @@ Online Biz
 
 ~~Product~~
 -------
-~~#### Product Training~~
-~~+ _Info Page_: [Lisa Hoffman for PartyLite](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Product_Training_Lisa_Hoffman.html)~~
+#### ~~Product Training~~
++ ~~_Info Page_: [Lisa Hoffman for PartyLite](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Product_Training_Lisa_Hoffman.html)~~
 
 * * *
 
 ~~Party Ideas~~
 -----------
-~~#### Party Types~~
+#### ~~Party Types~~
 + ~~_Info Page_: [Happy Hour Party](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Party_Types_Happy_Hour.html)~~

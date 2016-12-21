@@ -1,10 +1,8 @@
 +++
-series = ""
+series = "Unit Workshop Training"
 categories = [
-  "Sponsor",
-  "Host Program",
-  "Host Coaching",
-  "Leadership Skills"
+  "Leadership Skills",
+  "Unit Workshop Training",
 ]
 description = ""
 active = true
