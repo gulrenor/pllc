@@ -9,6 +9,9 @@
   {{- if and (eq "pdf" .Params.filetype) (isset .Params "src") -}}
     &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
   {{- end -}}
+  {{ if and (eq "doc" .Params.filetype) (isset .Params "src") -}}
+  &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i></i>&nbsp;
+  {{- end -}}
   </a>
   <!--{{ partial "series-tag.html" . }}-->
 </li>

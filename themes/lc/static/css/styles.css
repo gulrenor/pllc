@@ -1456,7 +1456,7 @@ video {
 }
 
 /* line 375, ../sass/styles.scss */
-.pdf {
+.pdf, .doc {
   height: 52.5rem;
 }
 
