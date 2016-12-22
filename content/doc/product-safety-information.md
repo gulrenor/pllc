@@ -2,7 +2,7 @@
 title = "Product Safety Information"
 description = "View safety tips to properly burn and extinguish candles."
 filetype = "pdf"
-active = true
+active = false
 series = ""
 categories = [
 ]

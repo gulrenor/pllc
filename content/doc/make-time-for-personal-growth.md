@@ -1,6 +1,6 @@
 +++
 filetype = "pdf"
-active = true
+active = false
 series = ""
 date = "2016-11-15T10:16:27-05:00"
 title = "Make Time for Personal and Professional Growth"

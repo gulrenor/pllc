@@ -1,4 +1,5 @@
 +++
+active = true
 series = "Contacts & Leads"
 categories = [
   "Customer Contacts and Orders",

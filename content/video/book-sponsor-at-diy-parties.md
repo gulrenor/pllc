@@ -2,7 +2,7 @@
 categories = [
 ]
 description = ""
-active = true
+active = false
 date = "2016-11-22T10:11:01-05:00"
 title = "Book & Sponsor at DIY Parties"
 series = ""

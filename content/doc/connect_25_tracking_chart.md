@@ -6,7 +6,7 @@ categories = [
 ]
 description = "25 ways to build your business each week! Connect with 25 people!"
 filetype = "pdf"
-active = true
+active = false
 src = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Leader_Academy/Leadership_Skills/Strong_Personal_Business/Connect_25/Connect_25_Tracking_Chart.pdf"
 
 +++

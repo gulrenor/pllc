@@ -6,7 +6,7 @@ categories = [
 ]
 description = "The Show Observation Form will help you focus on key elements of the Show you’re watching. Jot down ideas that you feel may enhance your Show"
 filetype = "pdf"
-active = true
+active = false
 src = "https://commsite.partylite.com/commsite/us/en/Forms/Show_Observation_Form.pdf"
 
 +++

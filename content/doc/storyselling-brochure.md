@@ -1,4 +1,5 @@
 +++
+active = false
 description = "Tips on how to build your own PartyLite Story."
 filetype = "pdf"
 series = ""

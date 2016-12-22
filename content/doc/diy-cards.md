@@ -1,6 +1,6 @@
 +++
 filetype = "pdf"
-active = true
+active = false
 date = "2016-11-22T10:17:12-05:00"
 title = "DIY Outline Cards"
 series = ""

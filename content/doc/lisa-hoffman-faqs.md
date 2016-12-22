@@ -2,7 +2,7 @@
 categories = [
 ]
 description = ""
-active = true
+active = false
 src = "https://commsite.partylite.com/CommSite/us/en/General_FAQs/Lisa_Hoffman_FAQs.pdf"
 title = "FAQs"
 series = ""

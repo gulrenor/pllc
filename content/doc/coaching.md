@@ -2,7 +2,7 @@
 filetype = "pdf"
 date = "2016-11-15T13:34:35-05:00"
 title = "Coaching"
-active = true
+active = false
 series = ""
 categories = [
 ]

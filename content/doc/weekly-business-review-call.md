@@ -1,6 +1,6 @@
 +++
 filetype = "pdf"
-active = true
+active = false
 date = "2016-11-15T14:51:07-05:00"
 title = "Weekly Business Review Call"
 series = ""

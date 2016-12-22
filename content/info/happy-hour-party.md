@@ -4,7 +4,7 @@ categories_weight = 0
 categories = [
 ]
 description = ""
-active = true
+active = false
 date = "2016-11-28T12:28:51-05:00"
 title = "Happy Hour Party"
 summary_file = ""

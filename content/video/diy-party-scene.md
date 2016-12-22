@@ -3,7 +3,7 @@ title = "DIY Party Scene"
 categories = [
 ]
 description = ""
-active = true
+active = false
 series = ""
 series_weight = 30
 date = "2016-11-22T10:12:42-05:00"

@@ -2,7 +2,7 @@
 categories = [
 ]
 description = ""
-active = true
+active = false
 date = "2016-11-22T10:32:54-05:00"
 title = "Mingle with a Purpose"
 series = ""

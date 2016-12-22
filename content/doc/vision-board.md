@@ -1,6 +1,6 @@
 +++
 filetype = "pdf"
-active = true
+active = false
 date = "2016-11-15T10:19:28-05:00"
 title = "Vision Board"
 series = ""

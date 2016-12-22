@@ -10,7 +10,7 @@ series_weight = 0
 categories = [
   "Lisa Hoffman",
 ]
-active = true
+active = false
 
 +++
 

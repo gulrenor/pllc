@@ -6,7 +6,7 @@ categories = [
 ]
 description = ""
 filetype = "pdf"
-active = true
+active = false
 src = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Leader_Academy/Leadership_Skills/Strong_Personal_Business/Sponsoring-Diagnosis.pdf"
 
 +++
