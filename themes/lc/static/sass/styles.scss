@@ -266,7 +266,7 @@ aside {
 
 // Footer //
 footer {
-  min-height: rhythm(10);
+  min-height: rhythm(5);
   border-top: .0625rem solid $ltgrey;
   padding-top: rhythm(1);
 }
@@ -353,6 +353,7 @@ video {
       }
     }
     p {
+      margin-top: rhythm(.5);
       padding: 0 rhythm(.5);
     }
   }
