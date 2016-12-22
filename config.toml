@@ -8,8 +8,6 @@ uglyurls = true
 #canonifyurls = false
 #relativeurls = false
 
-#SectionPagesMenu = "main"
-
 type = "book"
 layout = "list"
 
@@ -118,43 +116,3 @@ layout = "list"
       name = "Games"
       parent = "Party Ideas"
       url = "/categories/games.html"
-
-
-#  [[languages.en.menu.main]]
-#    name = "Content Types [Debug]"
-#    identifier = "Content-Types"
-#    weight = 500
-#    [[languages.en.menu.main]]
-#      name = "Video Grid"
-#      parent = "Content-Types"
-#      url = "/video.html"
-#    [[languages.en.menu.main]]
-#      name = "Document List"
-#      parent = "Content-Types"
-#      url = "/doc.html"
-  
-[languages.fr]
-  title = "Centre de Formation"
-  weight = 10
-  languageName = "Francais"
-  languageCode = "fr-CA"
-  logo="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Learning_Center_Logo.jpg"
-  
-  [[languages.fr.menu.main]]
-    name = "Nouvelles Conseillères"
-    identifier = ""
-    weight = 10
-    
-  [[languages.fr.menu.main]]
-    name = "Content Types [Debug]"
-    identifier = "Content-Types"
-    weight = 500
-    [[languages.fr.menu.main]]
-      name = "Video Grid"
-      parent = "Content-Types"
-      url = "/video.html"
-    [[languages.fr.menu.main]]
-      name = "Document List"
-      parent = "Content-Types"
-      url = "/doc.html"
-  
