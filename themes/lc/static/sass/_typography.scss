@@ -100,7 +100,9 @@ p {
 }
 
 .bullet-list {
-  list-style-type: disc;
+  li {
+    list-style: disc;  
+  }
 }
 
 nav {

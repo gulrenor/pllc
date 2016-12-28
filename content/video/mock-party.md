@@ -1,6 +1,7 @@
 +++
 series = ""
 categories = [
+  "Find Your Signature Party"
 ]
 description = "Get 2-3 Bookings and 4-5 Sponsoring Leads using this format."
 active = false

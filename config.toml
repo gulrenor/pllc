@@ -1,32 +1,37 @@
-## For Live ##
-baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
-
 theme = "lc"
+baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
+enableRobotsTXT = true
+
+### Language Config
 defaultContentLanguage = "en"
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = false
 
-uglyurls = true
-#canonifyurls = false
-#relativeurls = false
+# Google Analytics tracking ID
+googleAnalytics = ""
 
-type = "book"
-layout = "list"
+## This is required because the webserver cannot automatically forward to default .html
+uglyurls = true 
+
 
 [params]
   offsiteurl = false
 
+### Taxonomies ###
 [taxonomies]
   category = "categories"
   series = "series"
 
-## Begin Menu (English) ##
+### Begin Menu (English) ###
 [languages.en]
   title = "Learning Center"
   weight = 0
   languageName = "English"
   languageCode = "en-US"
-  logo = "images/lc-logo-enus.png"
-  logomark = "images/lc-logomark.png"
-
+  logo = "images/lc-logo-usen.svg"
+  logomark = "images/lc-logomark.svg"
+  
+  ### New Consultants ###
   [[languages.en.menu.main]]
     name = "New Consultants"
     identifier = "new-consultants"
@@ -49,6 +54,7 @@ layout = "list"
       parent = "new-consultants"
       url = "/categories/find-your-signature.html"
   
+  ### Selling and Booking ###
   [[languages.en.menu.main]]
     name = "Selling and Booking"
     identifier = "selling-and-booking"
@@ -63,6 +69,7 @@ layout = "list"
       parent = "selling-and-booking"
       url = "/categories/book.html"
 
+  ### Online Biz ###
   [[languages.en.menu.main]]
     name = "Online Biz"
     identifier = "Online Biz"
@@ -80,6 +87,7 @@ layout = "list"
       parent = "Online Biz"
       url = "/categories/customer-contacts-and-orders.html"
     
+  ### Leader Academy ###
   [[languages.en.menu.main]]
     name = "Leader Academy"
     identifier = "leadership"
@@ -95,6 +103,7 @@ layout = "list"
       url = "/categories/sponsor.html"
       weight = -10
 
+  ### Product ###
   [[languages.en.menu.main]]
     name = "Product"
     identifier = "Product"
@@ -103,7 +112,8 @@ layout = "list"
       name = "Product Training"
       parent = "Product"
       url = "/categories/product-training.html"
-    
+
+  ### Party Ideas ###
   [[languages.en.menu.main]]
     name = "Party Ideas"
     identifier = "Party Ideas"

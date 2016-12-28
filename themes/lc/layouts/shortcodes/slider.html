@@ -1,0 +1,9 @@
+<div>
+  <a href="{{ .Get "url" | relURL }}">
+    <img src="{{ .Get "src" | relURL }}" />
+    <div class="slider-title {{ .Get "color" }}">
+      <h4>{{ .Get "title" }}/h4>
+      <p>{{ .Get "desc" }}</p>
+    </div>
+  </a>
+</div>

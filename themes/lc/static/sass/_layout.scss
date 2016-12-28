@@ -171,13 +171,20 @@ img {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  padding: rhythm(.5);
   h4 {
-    white-space: nowrap;
     line-height: 100%;
+    margin-bottom: rhythm(.5);
+    border-bottom: .0625rem solid;
+    @include susy-breakpoint($bp-mobile) {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
   }
   @include susy-breakpoint($bp-mobile) {
     flex-direction: row;
     align-items: center;
+    padding: rhythm(.25);
   }
 }
 
@@ -198,8 +205,8 @@ img {
 
 .nav-logo {
   height: 100%;
-  padding: .5rem;
   width: auto;
+  padding: rhythm(.125);
 }
 
 .info { // Special formatting for text only info pages

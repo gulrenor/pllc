@@ -1,33 +1,13 @@
 <footer class="grid">
-  <div class="columns-3">
-    <h6>Quick Links</h6>
-    <ul>
-      {{ range .Site.Taxonomies.categories.quicklinks }}
-      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
-      {{ end }}
-      <li><a href="{{ "/categories/shareable.html" | relURL }}">Shareable Videos</a></li>
-      <li><a href="{{ "/categories/host-program.html" | relURL }}">Host Program</a></li>
-    </ul>
-  </div>
-  
-  <div class="columns-3">
-    <h6>Programs at-a-Glance</h6>
-    <ul>
-      {{ range .Site.Taxonomies.categories.programs }}
-      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
-      {{ end }}
-      <li><a href="{{ "/series/partylite-preferred.html" | relURL }}">PartyLite Preferred&trade;</a></li>
-    </ul>
-  </div>
-
-  <div class="columns-3">
+  <div class="copyright-block">
     <a href="http://www.partylite.com/">
       <img src="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/LC_Main_Graphics/Partylite_logo_Small.png" alt="PartyLite" />
+      <p class="copyright">&copy;{{ .Now.Year }} PartyLite Worldwide Inc. All rights reserved.</p>
     </a>
   </div>
 </footer>
 
-<p class="copyright">&copy;{{ .Now.Year }} PartyLite Worldwide Inc. All rights reserved.</p>
+
 
 <!-- Scripts -->
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery-3.1.1.min.js"></script>

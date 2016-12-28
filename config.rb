@@ -1,3 +1,5 @@
+### Compass Configuration file ###
+
 css_dir = "themes/lc/static/css"
 sass_dir = "themes/lc/static/sass"
 images_dir = "static/images"

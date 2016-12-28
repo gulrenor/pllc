@@ -18,9 +18,31 @@
 
 // Styles //
 .copyright {
-  margin: rhythm(.5) 0;
-  text-align: right;
   opacity: .5;
+}
+
+.copyright-block {
+  flex-direction: column;
+  margin-left: auto;
+  width: 100%;
+  @include susy-breakpoint($bp-mobile) {
+    width: 50%;
+  }
+  @include susy-breakpoint($bp-small) {
+    width: 40%;
+  }
+  @include susy-breakpoint($bp-medium) {
+    width: 30%;
+  }
+  p {
+    width: auto;
+    text-align: right;
+  }
+  a {
+    display: inline;
+  }
+  img {
+  }
 }
 
 strong {
