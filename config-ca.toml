@@ -3,7 +3,7 @@ baseurl = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center/LC_New/"
 enableRobotsTXT = true
 
 ### Language Config
-defaultContentLanguage = "fr"
+defaultContentLanguage = "en"
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
 defaultContentLanguageInSubdir = false
 contentDir = "content-ca"
