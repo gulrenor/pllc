@@ -6,6 +6,7 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
 defaultContentLanguageInSubdir = false
+contentDir = "content-us"
 
 # Google Analytics tracking ID
 googleAnalytics = ""

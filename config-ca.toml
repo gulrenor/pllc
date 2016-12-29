@@ -1,0 +1,234 @@
+theme = "lc"
+baseurl = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center/LC_New/"
+enableRobotsTXT = true
+
+### Language Config
+defaultContentLanguage = "fr"
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = false
+contentDir = "content-ca"
+
+# Google Analytics tracking ID
+googleAnalytics = ""
+
+## This is required because the webserver cannot automatically forward to default .html
+uglyurls = true 
+
+
+[params]
+  offsiteurl = false
+
+### Taxonomies ###
+[taxonomies]
+  category = "categories"
+  series = "series"
+
+### Begin Menu (English) ###
+[languages.en]
+  title = "Learning Centre"
+  weight = 0
+  languageName = "English"
+  languageCode = "en-CA"
+  logo = "images/lc-logo-usen.svg"
+  logomark = "images/lc-logomark.svg"
+  
+  ### New Consultants ###
+  [[languages.en.menu.main]]
+    name = "New Consultants"
+    identifier = "new-consultants"
+    url = "/categories/new-consultants.html"
+    weight = 10
+    [[languages.en.menu.main]]
+      name = "Host Program"
+      parent = "new-consultants"
+      url = "/categories/host-program.html"
+    [[languages.en.menu.main]]
+     name = "First Parties"
+     parent = "new-consultants"
+     url = "/categories/first-parties.html"
+    [[languages.en.menu.main]]
+      name = "Income & Rewards"
+      parent = "new-consultants"
+      url = "/categories/income-and-rewards.html"
+    [[languages.en.menu.main]]
+      name = "Find Your Signature"
+      parent = "new-consultants"
+      url = "/categories/find-your-signature.html"
+  
+  ### Selling and Booking ###
+  [[languages.en.menu.main]]
+    name = "Selling and Booking"
+    identifier = "selling-and-booking"
+    url = "categories/selling-and-booking.html"
+    weight = 20
+    [[languages.en.menu.main]]
+      name = "Sell"
+      parent = "selling-and-booking"
+      url = "/categories/sell.html"
+    [[languages.en.menu.main]]
+      name = "Book"
+      parent = "selling-and-booking"
+      url = "/categories/book.html"
+
+  ### Online Biz ###
+  [[languages.en.menu.main]]
+    name = "Online Biz"
+    identifier = "Online Biz"
+    weight = 30
+    [[languages.en.menu.main]]
+      name = "Your Consultant Website"
+      parent = "Online Biz"
+      url = "/categories/your-consultant-website.html"
+    [[languages.en.menu.main]]
+      name = "Social Networking"
+      parent = "Online Biz"
+      url = "/categories/social-networking.html"
+    [[languages.en.menu.main]]
+      name = "Customer Contacts & Orders"
+      parent = "Online Biz"
+      url = "/categories/customer-contacts-and-orders.html"
+    
+  ### Leader Academy ###
+  [[languages.en.menu.main]]
+    name = "Leader Academy"
+    identifier = "leadership"
+    weight = 50
+    [[languages.en.menu.main]]
+      name = "Leadership Skills"
+      parent = "leadership"
+      url = "/categories/leadership-skills.html"
+      weight = -20
+    [[languages.en.menu.main]]
+      name = "Sponsoring"
+      parent = "leadership"
+      url = "/categories/sponsor.html"
+      weight = -10
+
+  ### Product ###
+  [[languages.en.menu.main]]
+    name = "Product"
+    identifier = "Product"
+    weight = 60
+    [[languages.en.menu.main]]
+      name = "Product Training"
+      parent = "Product"
+      url = "/categories/product-training.html"
+
+  ### Party Ideas ###
+  [[languages.en.menu.main]]
+    name = "Party Ideas"
+    identifier = "Party Ideas"
+    weight = 70
+    [[languages.en.menu.main]]
+      name = "Find Your Signature Party"
+      parent = "Party Ideas"
+      url = "/categories/find-your-signature-party.html"
+    [[languages.en.menu.main]]
+      name = "Games"
+      parent = "Party Ideas"
+      url = "/categories/games.html"
+
+### Begin Menu (French) ###
+[languages.fr]
+  title = "Centre de Formation"
+  weight = 0
+  languageName = "French"
+  languageCode = "fr-CA"
+  logo = "images/lc-logo-usen.svg"
+  logomark = "images/lc-logomark.svg"
+  
+  ### New Consultants ###
+  [[languages.fr.menu.main]]
+    name = "Nouvelles Conseillères"
+    identifier = "new-consultants"
+    url = "/categories/new-consultants.html"
+    weight = 10
+    [[languages.fr.menu.main]]
+      name = "Encadrement Des Hôtesses"
+      parent = "new-consultants"
+      url = "/categories/host-program.html"
+    [[languages.fr.menu.main]]
+     name = "Vos premières présentations"
+     parent = "new-consultants"
+     url = "/categories/first-parties.html"
+    [[languages.fr.menu.main]]
+      name = "Revenu et récompenses"
+      parent = "new-consultants"
+      url = "/categories/income-and-rewards.html"
+    [[languages.fr.menu.main]]
+      name = "Trouvez votre Signature"
+      parent = "new-consultants"
+      url = "/categories/find-your-signature.html"
+  
+  ### Selling and Booking ###
+  [[languages.fr.menu.main]]
+    name = "Ventes & Engagements"
+    identifier = "selling-and-booking"
+    url = "categories/selling-and-booking.html"
+    weight = 20
+    [[languages.fr.menu.main]]
+      name = "Ventes"
+      parent = "selling-and-booking"
+      url = "/categories/sell.html"
+    [[languages.fr.menu.main]]
+      name = "Engagements"
+      parent = "selling-and-booking"
+      url = "/categories/book.html"
+
+  ### Online Biz ###
+  [[languages.fr.menu.main]]
+    name = "En Ligne"
+    identifier = "Online Biz"
+    weight = 30
+    [[languages.fr.menu.main]]
+      name = "Votre Site De Conseillère"
+      parent = "Online Biz"
+      url = "/categories/your-consultant-website.html"
+    [[languages.fr.menu.main]]
+      name = "Réseaux Sociaux"
+      parent = "Online Biz"
+      url = "/categories/social-networking.html"
+    [[languages.fr.menu.main]]
+      name = "Customer Contacts & Orders"
+      parent = "Online Biz"
+      url = "/categories/customer-contacts-and-orders.html"
+    
+  ### Leader Academy ###
+  [[languages.fr.menu.main]]
+    name = "Leader Academy"
+    identifier = "leadership"
+    weight = 50
+    [[languages.fr.menu.main]]
+      name = "Compétences En Leadership"
+      parent = "leadership"
+      url = "/categories/leadership-skills.html"
+      weight = -20
+    [[languages.fr.menu.main]]
+      name = "Parrainage"
+      parent = "leadership"
+      url = "/categories/sponsor.html"
+      weight = -10
+
+  ### Product ###
+  [[languages.fr.menu.main]]
+    name = "Produits"
+    identifier = "Product"
+    weight = 60
+    [[languages.fr.menu.main]]
+      name = "Formation Produits"
+      parent = "Product"
+      url = "/categories/product-training.html"
+
+  ### Party Ideas ###
+  [[languages.fr.menu.main]]
+    name = "Idées Présentations"
+    identifier = "Party Ideas"
+    weight = 70
+    [[languages.fr.menu.main]]
+      name = "Find Your Signature Party"
+      parent = "Party Ideas"
+      url = "/categories/find-your-signature-party.html"
+    [[languages.fr.menu.main]]
+      name = "Jeux"
+      parent = "Party Ideas"
+      url = "/categories/games.html"

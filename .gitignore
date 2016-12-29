@@ -116,7 +116,7 @@ build-iPhoneSimulator/
 
 ### Hugo ###
 hugo.exe
-/public/
+/public*/
 
 ### Windows ###
 # Windows image file caches

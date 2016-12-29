@@ -124,17 +124,14 @@ When starting local development, I generally start by running both `compass watc
 + `config.rb`  
   Compass configuration file.
   
-+ `config.toml`  
-  Hugo site configuration file.
++ `config-{us | ca}.toml`  
+  Hugo site configuration file, one for each country `us | ca`.
   
 + `Gemfile`  
   Bundler configuration file. Used to install Compass, Susy, and Breakpoint.
   
 + `Gemfile.lock`  
   Logs the specific versions installed so that they can be reinstalled using Bundler. If you remove this file and re-bundle you may end up with incompatible versions of applications.
-
-+ `gulpfile.js`  
-  Gulp configuration file.
   
 + `package.json`  
   Node.js/npm project and configuration file.
@@ -142,7 +139,7 @@ When starting local development, I generally start by running both `compass watc
 + `README.md`  
   This file, and what's uploaded as the default readme on Github.
   
-+ `/content/robots.txt`  
++ `/content-{us | ca}/robots.txt`  
   This is the site's robots.txt file, but is currently ineffective because it doesnt reside on the root directory of the server. It should be moved there for proper SEO and spidering directives.
   
 + `/themes/lc/theme.toml`  
@@ -150,6 +147,9 @@ When starting local development, I generally start by running both `compass watc
   
 + `/themes/lc/LICENSE.md`  
   The theme's license for redistribution. Default MIT license.
+
++ `serve.bat, serve.sh, build.bat, build.sh`
+  Small Windows/\*nix shell files to assist with multi-site development and deployment. Accepts country as a parameter, where country = `us | ca`.
   
 
 * * *
@@ -165,6 +165,8 @@ The majority of documents are .pdf. There are also some training presentations t
 
 #### Videos
 Videos come from 3 main sources: Youtube, Vimeo, and self-hosted .mp4.
++ PartyLite's US YouTube account is [https://www.youtube.com/user/PartyLiteGifts](https://www.youtube.com/user/PartyLiteGifts).
++ PartyLite's CA YouTube account is [https://www.youtube.com/user/PartyLiteCanada](https://www.youtube.com/user/PartyLiteCanada). This account posts both English and French content.
 
 #### Info pages
 These pages act as a kind of summary file when a landing page is needed. They're used both for descriptive lead-ins, as well as full fledged custom pages.
@@ -197,7 +199,7 @@ Creating/Editing Content
 
 ### Main Content
 
-Content can be edited simply by directly editing the markdown files in the `/content` directory. For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Content can be edited simply by directly editing the markdown files in the `/content-{us | ca}` directory. For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Markdown allows for easy content editing for people who may not be familiar with HTML and want a more text based option. Using Hugo's shortcodes, it also allows for easy embedding of media.
 
@@ -243,5 +245,9 @@ Markdown allows for easy content editing for people who may not be familiar with
 
 ### Nav Menu
 
-+ Edit menu entries directly in [`config.toml`](/config.toml).
++ Edit menu entries directly in [`config-us.toml`](/config-us.toml) and [`config-ca.toml`](/config-ca.toml).
 + Menu entries for both languages are located here.
++ Other location specific variables include:
+  + Site Logo SVG
+  + Site Title
+  
