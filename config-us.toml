@@ -1,5 +1,5 @@
 theme = "lc"
-baseurl = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
+baseURL = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
 enableRobotsTXT = true
 
 ### Language Config
@@ -14,9 +14,15 @@ googleAnalytics = ""
 ## This is required because the webserver cannot automatically forward to default .html
 uglyurls = true 
 
+port = 1313
 
 [params]
   offsiteurl = false
+  ## Fix this, especially when going live
+  videodir = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/"
+  locale = "en-US"
+  copyright = "All rights reserved."
+  backtocbc = "Back to CBC"
 
 ### Taxonomies ###
 [taxonomies]

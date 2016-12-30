@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ .Site.Params.languagecode }}">
 
 <head>
   <meta charset="UTF-8">
@@ -26,13 +26,13 @@
       <form id="header-search" name="cbcSearch" method="GET" action="https://my.partylite.com/portal/olc/restartFromOlc.aspx" target="blank">
         <input name="c" type="hidden" value="110">
         <input name="l" type="hidden" value="ENG">
-        <input type="text" name="q" maxlength="256" value="Search the Learning Center" class="text">
+        <input type="text" name="q" maxlength="256" value="Search the {{ .Site.Title }}" class="text">
         <!--<input type="submit" name="btncbcSearch" value="Search" title="Consultant Search" class="submit">-->
       </form>
 
       <nav class="nav-header">
         <ul>
-          <li><a href="https://my.partylite.com/"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;Back to the CBC</i></a></li>
+          <li><a href="https://my.partylite.com/"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;{{ .Site.Params.backtocbc }}</i></a></li>
         </ul>
       </nav>
     </div>

@@ -1,5 +1,5 @@
 theme = "lc"
-baseurl = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center/LC_New/"
+baseURL = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center/LC_New/"
 enableRobotsTXT = true
 
 ### Language Config
@@ -14,9 +14,12 @@ googleAnalytics = ""
 ## This is required because the webserver cannot automatically forward to default .html
 uglyurls = true 
 
+port = 1314
 
 [params]
   offsiteurl = false
+  ## Fix this, especially when going live
+  videodir = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/"
 
 ### Taxonomies ###
 [taxonomies]
@@ -29,8 +32,10 @@ uglyurls = true
   weight = 0
   languageName = "English"
   languageCode = "en-CA"
-  logo = "images/lc-logo-usen.svg"
+  logo = "images/lc-logo-caen.svg"
   logomark = "images/lc-logomark.svg"
+  copyright = "All rights reserved."
+  backtocbc = "Back to CBC"
   
   ### New Consultants ###
   [[languages.en.menu.main]]
@@ -134,8 +139,10 @@ uglyurls = true
   weight = 0
   languageName = "French"
   languageCode = "fr-CA"
-  logo = "images/lc-logo-usen.svg"
+  logo = "images/lc-logo-cafr.svg"
   logomark = "images/lc-logomark.svg"
+  copyright = "Tous droits réservés."
+  backtocbc = "Retour au Centre d'Affaires"
   
   ### New Consultants ###
   [[languages.fr.menu.main]]
