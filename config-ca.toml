@@ -1,25 +1,28 @@
 theme = "lc"
-baseURL = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center/LC_New/"
+baseURL = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/New/"
+ignoreFiles = [ ".sass-cache" ]
 enableRobotsTXT = true
 
 ### Language Config
 defaultContentLanguage = "en"
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 contentDir = "content-ca"
 
 # Google Analytics tracking ID
 googleAnalytics = ""
 
-## This is required because the webserver cannot automatically forward to default .html
-uglyurls = true 
-
-port = 1314
+uglyurls = false
+canonifyURLS = true
 
 [params]
   offsiteurl = false
+  countrycode = "ca"
   ## Fix this, especially when going live
   videodir = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/"
+  locale = "en-CA"
+  copyright = "All rights reserved."
+  backtocbc = "Back to CBC"
 
 ### Taxonomies ###
 [taxonomies]
@@ -28,6 +31,7 @@ port = 1314
 
 ### Begin Menu (English) ###
 [languages.en]
+  baseURL = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/New/en/"
   title = "Learning Centre"
   weight = 0
   languageName = "English"
@@ -41,39 +45,39 @@ port = 1314
   [[languages.en.menu.main]]
     name = "New Consultants"
     identifier = "new-consultants"
-    url = "/categories/new-consultants.html"
+    url = "/categories/new-consultants/index.html"
     weight = 10
     [[languages.en.menu.main]]
       name = "Host Program"
       parent = "new-consultants"
-      url = "/categories/host-program.html"
+      url = "/categories/host-program/index.html"
     [[languages.en.menu.main]]
      name = "First Parties"
      parent = "new-consultants"
-     url = "/categories/first-parties.html"
+     url = "/categories/first-parties/index.html"
     [[languages.en.menu.main]]
       name = "Income & Rewards"
       parent = "new-consultants"
-      url = "/categories/income-and-rewards.html"
+      url = "/categories/income-and-rewards/index.html"
     [[languages.en.menu.main]]
       name = "Find Your Signature"
       parent = "new-consultants"
-      url = "/categories/find-your-signature.html"
+      url = "/categories/find-your-signature/index.html"
   
   ### Selling and Booking ###
   [[languages.en.menu.main]]
     name = "Selling and Booking"
     identifier = "selling-and-booking"
-    url = "categories/selling-and-booking.html"
+    url = "categories/selling-and-booking/index.html"
     weight = 20
     [[languages.en.menu.main]]
       name = "Sell"
       parent = "selling-and-booking"
-      url = "/categories/sell.html"
+      url = "/categories/sell/index.html"
     [[languages.en.menu.main]]
       name = "Book"
       parent = "selling-and-booking"
-      url = "/categories/book.html"
+      url = "/categories/book/index.html"
 
   ### Online Biz ###
   [[languages.en.menu.main]]
@@ -83,15 +87,15 @@ port = 1314
     [[languages.en.menu.main]]
       name = "Your Consultant Website"
       parent = "Online Biz"
-      url = "/categories/your-consultant-website.html"
+      url = "/categories/your-consultant-website/index.html"
     [[languages.en.menu.main]]
       name = "Social Networking"
       parent = "Online Biz"
-      url = "/categories/social-networking.html"
+      url = "/categories/social-networking/index.html"
     [[languages.en.menu.main]]
       name = "Customer Contacts & Orders"
       parent = "Online Biz"
-      url = "/categories/customer-contacts-and-orders.html"
+      url = "/categories/customer-contacts-and-orders/index.html"
     
   ### Leader Academy ###
   [[languages.en.menu.main]]
@@ -101,12 +105,12 @@ port = 1314
     [[languages.en.menu.main]]
       name = "Leadership Skills"
       parent = "leadership"
-      url = "/categories/leadership-skills.html"
+      url = "/categories/leadership-skills/index.html"
       weight = -20
     [[languages.en.menu.main]]
       name = "Sponsoring"
       parent = "leadership"
-      url = "/categories/sponsor.html"
+      url = "/categories/sponsor/index.html"
       weight = -10
 
   ### Product ###
@@ -117,7 +121,7 @@ port = 1314
     [[languages.en.menu.main]]
       name = "Product Training"
       parent = "Product"
-      url = "/categories/product-training.html"
+      url = "/categories/product-training/index.html"
 
   ### Party Ideas ###
   [[languages.en.menu.main]]
@@ -127,14 +131,15 @@ port = 1314
     [[languages.en.menu.main]]
       name = "Find Your Signature Party"
       parent = "Party Ideas"
-      url = "/categories/find-your-signature-party.html"
+      url = "/categories/find-your-signature-party/index.html"
     [[languages.en.menu.main]]
       name = "Games"
       parent = "Party Ideas"
-      url = "/categories/games.html"
+      url = "/categories/games/index.html"
 
 ### Begin Menu (French) ###
 [languages.fr]
+  baseURL = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/fr/"
   title = "Centre de Formation"
   weight = 0
   languageName = "French"
@@ -148,39 +153,39 @@ port = 1314
   [[languages.fr.menu.main]]
     name = "Nouvelles Conseillères"
     identifier = "new-consultants"
-    url = "/categories/new-consultants.html"
+    url = "/categories/new-consultants/index.html"
     weight = 10
     [[languages.fr.menu.main]]
       name = "Encadrement Des Hôtesses"
       parent = "new-consultants"
-      url = "/categories/host-program.html"
+      url = "/categories/host-program/index.html"
     [[languages.fr.menu.main]]
      name = "Vos premières présentations"
      parent = "new-consultants"
-     url = "/categories/first-parties.html"
+     url = "/categories/first-parties/index.html"
     [[languages.fr.menu.main]]
       name = "Revenu et récompenses"
       parent = "new-consultants"
-      url = "/categories/income-and-rewards.html"
+      url = "/categories/income-and-rewards/index.html"
     [[languages.fr.menu.main]]
       name = "Trouvez votre Signature"
       parent = "new-consultants"
-      url = "/categories/find-your-signature.html"
+      url = "/categories/find-your-signature/index.html"
   
   ### Selling and Booking ###
   [[languages.fr.menu.main]]
     name = "Ventes & Engagements"
     identifier = "selling-and-booking"
-    url = "categories/selling-and-booking.html"
+    url = "categories/selling-and-booking/index.html"
     weight = 20
     [[languages.fr.menu.main]]
       name = "Ventes"
       parent = "selling-and-booking"
-      url = "/categories/sell.html"
+      url = "/categories/sell/index.html"
     [[languages.fr.menu.main]]
       name = "Engagements"
       parent = "selling-and-booking"
-      url = "/categories/book.html"
+      url = "/categories/book/index.html"
 
   ### Online Biz ###
   [[languages.fr.menu.main]]
@@ -190,15 +195,15 @@ port = 1314
     [[languages.fr.menu.main]]
       name = "Votre Site De Conseillère"
       parent = "Online Biz"
-      url = "/categories/your-consultant-website.html"
+      url = "/categories/your-consultant-website/index.html"
     [[languages.fr.menu.main]]
       name = "Réseaux Sociaux"
       parent = "Online Biz"
-      url = "/categories/social-networking.html"
+      url = "/categories/social-networking/index.html"
     [[languages.fr.menu.main]]
       name = "Customer Contacts & Orders"
       parent = "Online Biz"
-      url = "/categories/customer-contacts-and-orders.html"
+      url = "/categories/customer-contacts-and-orders/index.html"
     
   ### Leader Academy ###
   [[languages.fr.menu.main]]
@@ -208,12 +213,12 @@ port = 1314
     [[languages.fr.menu.main]]
       name = "Compétences En Leadership"
       parent = "leadership"
-      url = "/categories/leadership-skills.html"
+      url = "/categories/leadership-skills/index.html"
       weight = -20
     [[languages.fr.menu.main]]
       name = "Parrainage"
       parent = "leadership"
-      url = "/categories/sponsor.html"
+      url = "/categories/sponsor/index.html"
       weight = -10
 
   ### Product ###
@@ -224,7 +229,7 @@ port = 1314
     [[languages.fr.menu.main]]
       name = "Formation Produits"
       parent = "Product"
-      url = "/categories/product-training.html"
+      url = "/categories/product-training/index.html"
 
   ### Party Ideas ###
   [[languages.fr.menu.main]]
@@ -234,8 +239,8 @@ port = 1314
     [[languages.fr.menu.main]]
       name = "Find Your Signature Party"
       parent = "Party Ideas"
-      url = "/categories/find-your-signature-party.html"
+      url = "/categories/find-your-signature-party/index.html"
     [[languages.fr.menu.main]]
       name = "Jeux"
       parent = "Party Ideas"
-      url = "/categories/games.html"
+      url = "/categories/games/index.html"

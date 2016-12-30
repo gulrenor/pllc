@@ -1,6 +1,6 @@
 <!-- Display categories this content is associated with -->
 {{ range .Params.categories }}
-  <a href="{{- "/categories/" | relLangURL -}}{{- . | urlize -}}.html">
+  <a href="{{- "/categories/" | relURL -}}{{- . | urlize -}}.html">
     <span class="tag category">{{- . -}}</span>
   </a>
 {{ end }}

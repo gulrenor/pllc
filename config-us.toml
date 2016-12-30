@@ -1,5 +1,6 @@
 theme = "lc"
 baseURL = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
+ignoreFiles = [ ".sass-cache" ]
 enableRobotsTXT = true
 
 ### Language Config
@@ -11,13 +12,12 @@ contentDir = "content-us"
 # Google Analytics tracking ID
 googleAnalytics = ""
 
-## This is required because the webserver cannot automatically forward to default .html
-uglyurls = true 
-
-port = 1313
+uglyurls = false
+canonifyURLS = true
 
 [params]
   offsiteurl = false
+  countrycode = "us"
   ## Fix this, especially when going live
   videodir = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/"
   locale = "en-US"
@@ -42,39 +42,39 @@ port = 1313
   [[languages.en.menu.main]]
     name = "New Consultants"
     identifier = "new-consultants"
-    url = "/categories/new-consultants.html"
+    url = "/categories/new-consultants/index.html"
     weight = 10
     [[languages.en.menu.main]]
       name = "Host Program"
       parent = "new-consultants"
-      url = "/categories/host-program.html"
+      url = "/categories/host-program/index.html"
     [[languages.en.menu.main]]
      name = "First Parties"
      parent = "new-consultants"
-     url = "/categories/first-parties.html"
+     url = "/categories/first-parties/index.html"
     [[languages.en.menu.main]]
       name = "Income & Rewards"
       parent = "new-consultants"
-      url = "/categories/income-and-rewards.html"
+      url = "/categories/income-and-rewards/index.html"
     [[languages.en.menu.main]]
       name = "Find Your Signature"
       parent = "new-consultants"
-      url = "/categories/find-your-signature.html"
+      url = "/categories/find-your-signature/index.html"
   
   ### Selling and Booking ###
   [[languages.en.menu.main]]
     name = "Selling and Booking"
     identifier = "selling-and-booking"
-    url = "categories/selling-and-booking.html"
+    url = "categories/selling-and-booking/index.html"
     weight = 20
     [[languages.en.menu.main]]
       name = "Sell"
       parent = "selling-and-booking"
-      url = "/categories/sell.html"
+      url = "/categories/sell/index.html"
     [[languages.en.menu.main]]
       name = "Book"
       parent = "selling-and-booking"
-      url = "/categories/book.html"
+      url = "/categories/book/index.html"
 
   ### Online Biz ###
   [[languages.en.menu.main]]
@@ -84,15 +84,15 @@ port = 1313
     [[languages.en.menu.main]]
       name = "Your Consultant Website"
       parent = "Online Biz"
-      url = "/categories/your-consultant-website.html"
+      url = "/categories/your-consultant-website/index.html"
     [[languages.en.menu.main]]
       name = "Social Networking"
       parent = "Online Biz"
-      url = "/categories/social-networking.html"
+      url = "/categories/social-networking/index.html"
     [[languages.en.menu.main]]
       name = "Customer Contacts & Orders"
       parent = "Online Biz"
-      url = "/categories/customer-contacts-and-orders.html"
+      url = "/categories/customer-contacts-and-orders/index.html"
     
   ### Leader Academy ###
   [[languages.en.menu.main]]
@@ -102,12 +102,12 @@ port = 1313
     [[languages.en.menu.main]]
       name = "Leadership Skills"
       parent = "leadership"
-      url = "/categories/leadership-skills.html"
+      url = "/categories/leadership-skills/index.html"
       weight = -20
     [[languages.en.menu.main]]
       name = "Sponsoring"
       parent = "leadership"
-      url = "/categories/sponsor.html"
+      url = "/categories/sponsor/index.html"
       weight = -10
 
   ### Product ###
@@ -118,7 +118,7 @@ port = 1313
     [[languages.en.menu.main]]
       name = "Product Training"
       parent = "Product"
-      url = "/categories/product-training.html"
+      url = "/categories/product-training/index.html"
 
   ### Party Ideas ###
   [[languages.en.menu.main]]
@@ -128,8 +128,8 @@ port = 1313
     [[languages.en.menu.main]]
       name = "Find Your Signature Party"
       parent = "Party Ideas"
-      url = "/categories/find-your-signature-party.html"
+      url = "/categories/find-your-signature-party/index.html"
     [[languages.en.menu.main]]
       name = "Games"
       parent = "Party Ideas"
-      url = "/categories/games.html"
+      url = "/categories/games/index.html"

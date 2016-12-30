@@ -17,7 +17,7 @@
 <body>
   <header>
 
-    <a href="{{ .Site.BaseURL }}index.html">
+    <a href="{{ .Site.BaseURL | relLangURL }}index.html">
       <img class="site-logo" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Title }}" />
     </a>
 
@@ -33,6 +33,7 @@
       <nav class="nav-header">
         <ul>
           <li><a href="https://my.partylite.com/"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;{{ .Site.Params.backtocbc }}</i></a></li>
+          <li><a href="{{ .Site.BaseURL }}{{ if eq "fr-CA" $.Site.LanguageCode }}en/index.html">English{{ else }}fr/index.html">Français{{ end }}</a></li>
         </ul>
       </nav>
     </div>
