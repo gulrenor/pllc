@@ -10,4 +10,4 @@ active = false
 
 +++
 
-{{< plvid src="LC_Main_Show_Ideas/Show_Types/Mix_And_Mingle/Mix_And_Mingle_Meet_And_Greet.mp4" poster="/images/mix-mingle-meet-greet.jpg" >}}
+{{< plvid src="LC_Main_Show_Ideas/Show_Types/Mix_And_Mingle/Mix_And_Mingle_Meet_And_Greet.mp4" poster="images/mix-mingle-meet-greet.jpg" >}}

@@ -1,6 +1,6 @@
 <!-- Content type tag -->
 {{ if .Params.filetype }}
-<a href="{{- .Params.src -}}" download="{{- .Title | urlize -}}">
+<a href="{{- .Params.src | relLangURL -}}" download="{{- .Title | urlize -}}">
   <span class="tag section">Download&nbsp;{{- .Params.filetype -}}&nbsp;<i class="fa fa-download" aria-hidden="true"></i></span>
 </a>
 {{ end }}

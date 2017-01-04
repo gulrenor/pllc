@@ -10,4 +10,4 @@ title = "How It All Began"
 
 +++
 
-{{< plvid src="LC_Main_New_Consultant/First_Parties/How_It_All_Began.mp4" poster="/images/how-it-all-began.jpg" >}}
+{{< plvid src="LC_Main_New_Consultant/First_Parties/How_It_All_Began.mp4" poster="images/how-it-all-began.jpg" >}}

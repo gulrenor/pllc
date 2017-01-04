@@ -1,73 +1,76 @@
 {{ partial "header.html" . }}
 <main>
   
-<!-- IDEA TODO: Some Regex stuff to attempt to hide the -->
-<!-- current category tag from displaying on lists -->
-{{ $currentURL := .Permalink | replaceRE "^http?://.*/([^/]+).html" "$1" }}
-{{ $.Scratch.Add "currentURL" $currentURL }}
+  <!-- IDEA TODO: Some Regex stuff to attempt to hide the current category tag from displaying on lists -->
+  {{ $currentURL := .Permalink | replaceRE "^http?://.*/([^/]+).html" "$1" }}
+  {{ $.Scratch.Add "currentURL" $currentURL }}
 
 
-<h2>{{ .Title }}</h2>
-<!-- If there's an info page with summary_file = true, -->
-<!-- then display the summary markdown. -->
-{{ range where .Data.Pages "Section" "info" }}
-  {{ if eq "true" .Params.summary_file }}
-  <div class="info clearfix">
-  {{ .Content }}
-  </div>
-  {{ end }}
-{{ end }}
-<hr class="dotted-rule" />
-
-<!-- Group results by series (if defined) with undefined series -->
-<!-- displaying first. -->
-{{ range .Data.Pages.GroupByParam "series" }}
-
-<!-- Get quantity of content types for eval -->
-{{ $lenDoc := (len (where .Pages "Section" "doc" )) }}
-{{ $lenVid := (len (where .Pages "Section" "video" )) }}
-{{ $lenInf := (len (where .Pages "Section" "info" )) }}
-
-<!-- Handy for Debugging -->
-<!--
-<h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}} | Info:{{$lenInf}}</h4>
--->
-
-{{ if ne "" .Key }}<a href="{{ "/series/" | relURL }}{{ .Key | urlize }}.html"><h4 class="fg-white bg-bodygrey column-header">{{ .Key }}</h4></a>{{ end }}
-<section class="section-break clearfix">
+  <h2>{{ .Title }}</h2>
   
-  <!-- Include sidebar if documents are present -->
-  {{ if ne 0 $lenDoc }}
-  <aside {{ if eq 0 $lenVid }}class="full-width"{{ end }}>
-    <h4 class="column-header">Related Documents</h4>
-    <ul class="sidebar">
-    {{ range .Pages }}
-      {{ if eq "doc" .Section }}
-        {{ .Render "sidebar" }}
-      {{ end }}
+  <!-- If there's an info page with summary_file = true, then display the summary markdown. -->
+  {{ range where .Data.Pages "Section" "info" }}
+    {{ if eq "true" .Params.summary_file }}
+      <div class="info clearfix">
+        {{ .Content }}
+      </div>
     {{ end }}
-    </ul>
-  </aside>
   {{ end }}
+  
+  <hr class="dotted-rule" />
 
-  <!-- Show videos/info in grid layout -->
-  {{ if or (ne 0 $lenVid) (ne 0 $lenInf) }}
-  <div class="grid">
-    {{ range .Pages }}
-      <!-- Display videos and info pages, as long as summary_file isn't true -->
-      {{ if or (eq "video" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb))) }}
-        <!-- If there's documents (and a sidebar) then adjust size accordingly -->
-        <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
-          {{ .Render "grid" }}
+  <!-- Group results by series (if defined) with undefined series displaying first. -->
+  {{ range .Data.Pages.GroupByParam "series" }}
+    
+    <!-- Get quantity of content types for eval -->
+    {{ $lenDoc := (len (where .Pages "Section" "doc" )) }}
+    {{ $lenVid := (len (where .Pages "Section" "video" )) }}
+    {{ $lenInf := (len (where .Pages "Section" "info" )) }}
+
+    <!-- Handy for Debugging -->
+    <!--
+    <h4>{{if ne "" .Key}}Series: {{ .Key }} | {{end}}Docs:{{$lenDoc}} | Vids:{{$lenVid}} | Info:{{$lenInf}}</h4>
+    -->
+
+    {{ if ne "" .Key }}
+      <a href="{{ "/series/" | absLangURL }}{{ .Key | urlize }}/index.html">
+        <h4 class="fg-white bg-bodygrey column-header">{{ .Key }}</h4>
+      </a>
+    {{ end }}
+    
+    <section class="section-break clearfix">
+      
+      <!-- Include sidebar if documents are present -->
+      {{ if ne 0 $lenDoc }}
+        <aside {{ if eq 0 $lenVid }}class="full-width"{{ end }}>
+          <h4 class="column-header">Related Documents</h4>
+          <ul class="sidebar">
+            {{ range .Pages }}
+              {{ if eq "doc" .Section }}
+                {{ .Render "sidebar" }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        </aside>
+      {{ end }}
+
+      <!-- Show videos/info in grid layout -->
+      {{ if or (ne 0 $lenVid) (ne 0 $lenInf) }}
+        <div class="grid">
+          {{ range .Pages }}
+            <!-- Display videos and info pages, as long as summary_file isn't true -->
+            {{ if or (eq "video" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb))) }}
+              <!-- If there's documents (and a sidebar) then adjust size accordingly -->
+              <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
+                {{ .Render "grid" }}
+              </div>
+            {{ end }}
+          {{ end }}
         </div>
       {{ end }}
-    {{ end }}
-  </div>
+      
+    </section>
   {{ end }}
-  
-</section>
-{{ end }}
 
 </main>
-
 {{ partial "footer.html" . }}

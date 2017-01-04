@@ -1,17 +1,17 @@
 <li>
   <a href="{{- if and (isset .Params "src") (eq true .Site.Params.offsiteurl) -}}
-  {{- .Params.src }}
+    {{- .Params.src }}
   {{- else -}}
-  {{- .Permalink -}}
+    {{- .Permalink -}}
   {{- end -}}">
     {{- .Title -}}
-  <!-- Show filetype icon if .pdf -->
-  {{- if and (eq "pdf" .Params.filetype) (isset .Params "src") -}}
-    &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-  {{- end -}}
-  {{ if and (eq "doc" .Params.filetype) (isset .Params "src") -}}
-  &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i></i>&nbsp;
-  {{- end -}}
+    <!-- Show filetype icon if .pdf -->
+    {{- if and (eq "pdf" .Params.filetype) (isset .Params "src") -}}
+      &nbsp;<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    {{- end -}}
+    {{ if and (eq "doc" .Params.filetype) (isset .Params "src") -}}
+      &nbsp;<i class="fa fa-file-word-o" aria-hidden="true"></i></i>&nbsp;
+    {{- end -}}
   </a>
   <!--{{ partial "series-tag.html" . }}-->
 </li>

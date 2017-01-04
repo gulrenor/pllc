@@ -12,4 +12,4 @@ categories = [
 
 +++
 
-{{< plvid src="LC_Main_New_Consultants/First_Parties/Brite_Start_6_Circles_Consultant.mp4" poster="/images/creating-a-contact-list.jpg">}}
+{{< plvid src="LC_Main_New_Consultants/First_Parties/Brite_Start_6_Circles_Consultant.mp4" poster="images/creating-a-contact-list.jpg">}}

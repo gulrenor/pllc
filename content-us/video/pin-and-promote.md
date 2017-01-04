@@ -10,4 +10,4 @@ title = "Pin & Promote"
 
 +++
 
-{{< plvid src="LC_Main_Online_Biz/Social_Networking/Pinterest/Pinterest.mp4" poster="/images/pin-and-promote.jpg" >}}
+{{< plvid src="LC_Main_Online_Biz/Social_Networking/Pinterest/Pinterest.mp4" poster="images/pin-and-promote.jpg" >}}

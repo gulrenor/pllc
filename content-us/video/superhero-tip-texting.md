@@ -12,4 +12,4 @@ categories = [
 
 +++
 
-{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Tip_Texting_1.mp4" poster="/images/superhero-tip-texting.jpg" >}}
+{{< plvid src="LC_Main_Online_Biz/Your_Consultant_Website/Expand_Your_Online_Business/Superhero_Tip_Texting_1.mp4" poster="images/superhero-tip-texting.jpg" >}}

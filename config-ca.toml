@@ -5,7 +5,8 @@ enableRobotsTXT = true
 
 ### Language Config
 defaultContentLanguage = "en"
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+# Renders the default content language in subdir, e.g. /en/. 
+# The root directory / will redirect to /en/
 defaultContentLanguageInSubdir = true
 contentDir = "content-ca"
 

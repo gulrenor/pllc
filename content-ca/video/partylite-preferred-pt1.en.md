@@ -14,4 +14,4 @@ title = "PartyLite Preferred: Introduction"
 
 +++
 
-{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_1.mp4" poster="/images/partylite-preferred-pt1.jpg" >}}
+{{< plvid src="LC_Main_Sell_And_Book/Sell/Partylite_Preferred/Preferred_2013_Video_1.mp4" poster="images/partylite-preferred-pt1.jpg" >}}

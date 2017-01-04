@@ -1,9 +1,9 @@
 <div class="video">
   <video poster="
     {{ if eq "" (.Get "poster") }}
-      {{ "images/video_placeholder.png" | relURL }}
+      {{ "images/video_placeholder.png" | absURL }}
     {{ else }}
-      {{ ((.Get "poster") | relURL) }}
+      {{ ((.Get "poster") | absURL) }}
     {{ end }}
     ">
     <source src="{{ .Site.Params.videodir }}{{ .Get "src" }}">
