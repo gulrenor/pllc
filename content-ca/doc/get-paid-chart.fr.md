@@ -1,9 +1,12 @@
 +++
-series = "Booking Call"
+series = "l'Appel d'Engagement"
 categories = [
   "Selling and Booking",
+  "Ventes & Engagements",
   "Host Program",
+  "Programme d'Hôtesses-Hôtes",
   "Book",
+  "Engagements",
 ]
 date = "2016-11-22T12:35:24-05:00"
 title = "Tableau Obtenez/Payez"

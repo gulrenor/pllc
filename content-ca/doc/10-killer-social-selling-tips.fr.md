@@ -1,7 +1,9 @@
 +++
 categories = [
   "Online Biz",
+  "En Ligne",
   "Social Networking",
+  "Réseaux Sociaux",
 ]
 description = ""
 filetype = "pdf"

@@ -1,13 +1,16 @@
 +++
 date = "2016-11-03T14:38:35-04:00"
-title = "Booking and Host Coaching at Parties"
+title = "Obtenir Des Engagements"
 categories = [
   "New Consultants",
+  "Nouvelles Conseillères",
   "Selling and Booking",
+  "Ventes & Engagements",
   "Sell",
+  "Ventes",
 ]
 series = ""
-description = "booking and host coaching description."
+description = ""
 
 +++
 

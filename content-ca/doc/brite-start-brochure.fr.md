@@ -2,8 +2,11 @@
 series = ""
 categories = [
   "Income and Rewards",
+  "Revenu et Récompenses",
   "Brite Start",
-  "Programs at a Glance"
+  "Brillant Départ",
+  "Programs at a Glance",
+  "Les Programmes d'un Seul Coup d'Œil",
 ]
 description = ""
 filetype = "pdf"

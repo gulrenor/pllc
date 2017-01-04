@@ -2,7 +2,9 @@
 series = ""
 categories = [
   "First Parties",
+  "Vos Premières Présentations",
   "Grand Opening",
+  "Cérémonie d'Ouverture",
 ]
 date = "2016-11-08T09:43:15-05:00"
 title = "Créez une Liste de Contacts"
