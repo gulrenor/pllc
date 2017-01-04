@@ -1,0 +1,17 @@
++++
+description = "Learn how the apprentice program can boost your sponsoring success."
+filetype = "pdf"
+active = true
+date = "2016-11-10T15:20:28-05:00"
+title = "Apprentice Program Flyer"
+series = ""
+categories = [
+  "Sponsor",
+  "How to Sponsor",
+  "The Apprentice Program"
+]
+src = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/LC_Main_Sponsor/How_To_Sponsor/Apprentice_Program.pdf"
+
++++
+
+{{< pdf src="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/LC_Main_Sponsor/How_To_Sponsor/Apprentice_Program.pdf" >}}

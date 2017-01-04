@@ -1,0 +1,15 @@
++++
+series = ""
+categories = [
+  "Games",
+]
+description = ""
+filetype = "pdf"
+active = true
+date = "2016-11-21T15:19:57-05:00"
+title = "Envelope Game"
+src="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/LC_Main_Show_Ideas/Games/Envelope_Game.pdf"
+
++++
+
+{{< pdf src="http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/LC_Main/LC_Main_Show_Ideas/Games/Envelope_Game.pdf" >}}
