@@ -9,7 +9,6 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
   "Customer Contacts and Orders",
-  "Sell",
 ]
 
 +++

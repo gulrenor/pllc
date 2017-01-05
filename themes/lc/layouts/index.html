@@ -34,6 +34,16 @@
       </div>
     </a>
   </div>
+
+  <div>
+    <a href="{{ "/video/find-your-signature-experience.html" | relURL }}">
+      <img src="{{ "/images/fys_webinar.jpg" | relURL }}" />
+      <div class="slider-title bg-orange">
+        <h4>Find Your Signature Webinar</h4>
+        <p>Led by PartyLite Home Office field trainers, this webinar will introduce you to the new Find Your Signature Party and how it is revolutionizing PartyLite businesses around the world!</p>
+      </div>
+    </a>
+  </div>
   
   <div>
     <a href="{{ "video/mock-party.html" | relURL }}">
@@ -64,6 +74,7 @@
     <img src="{{ "/images/Product Shot3.jpg" | relURL }}" />
     <h5 class="column-header bg-red fg-white">Webinars</h5>
     <ul>
+      <li><a href="">Find Your Signature Webinar</a></li>
       {{ range .Site.Taxonomies.categories.webinars }}
       <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
       {{ end }}

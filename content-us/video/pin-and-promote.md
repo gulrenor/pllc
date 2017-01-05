@@ -1,8 +1,6 @@
 +++
 series = ""
 categories = [
-  "Online Biz",
-  "Social Networking",
 ]
 description = "Use PartyLite Magazine, Pinterest and more to draw people to your website."
 date = "2016-11-10T14:19:28-05:00"

@@ -9,7 +9,6 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
   "Customer Contacts and Orders",
-  "Sell",
 ]
 src="https://commsite.partylite.com/CommSite/ca/en/PartyLite_Preferred/En_Preferred_Flyer.pdf"
 

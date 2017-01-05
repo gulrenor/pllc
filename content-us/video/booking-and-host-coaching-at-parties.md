@@ -7,7 +7,7 @@ categories = [
   "Sell",
 ]
 series = ""
-description = "booking and host coaching description."
+description = ""
 
 +++
 

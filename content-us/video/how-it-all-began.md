@@ -4,7 +4,7 @@ categories = [
   "First Parties"
 ]
 series = ""
-description = "Wonder what other new consultants were thinking when they first started?"
+description = "Wondering what other Consultants were thinking when they first started?"
 date = "2016-11-03T10:36:15-04:00"
 title = "How It All Began"
 
