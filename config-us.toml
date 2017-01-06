@@ -1,5 +1,5 @@
 theme = "lc"
-baseURL = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New"
+baseURL = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/"
 ignoreFiles = [ ".sass-cache" ]
 enableRobotsTXT = true
 

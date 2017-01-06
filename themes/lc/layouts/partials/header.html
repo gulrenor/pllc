@@ -33,6 +33,9 @@
       <nav class="nav-header">
         <ul>
           <li><a href="https://my.partylite.com/"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;{{ .Site.Params.backtocbc }}</i></a></li>
+          
+          <!-- Language Selection, CA only -->
+          {{- if ne "en-US" $.Site.Params.locale -}}
           <li>
           {{- if eq "fr-CA" $.Site.LanguageCode -}}
             <a href="{{ .Site.BaseURL }}en/index.html">English</a>
@@ -40,9 +43,12 @@
             <a href="{{ .Site.BaseURL }}fr/index.html">Français</a>
           {{- end -}}
           </li>
+          {{- end -}}
         </ul>
       </nav>
+      
     </div>
     
   </header>
+  
   {{ partial "nav.html" . }}
