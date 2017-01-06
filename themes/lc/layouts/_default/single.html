@@ -9,6 +9,11 @@
 
 <hr class="dotted-rule" />
   
+{{ if .Data.Pages.Section "info"}}
+<div class="info clearfix">
+  {{ .Content }}
+</div>
+{{ else }}
 {{ .Content }}
-
+{{ end }}
 {{ partial "footer.html" . }}

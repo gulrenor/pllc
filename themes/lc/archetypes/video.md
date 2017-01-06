@@ -1,8 +1,8 @@
 +++
 series = ""
-series_weight = 0
+series_weight = 50
 categories = ["", ""]
-categories_weight = 0
+categories_weight = 50
 description = ""
 active = true
 +++

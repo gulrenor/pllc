@@ -14,10 +14,14 @@
     bottom: rhythm(1);
     padding: rhythm(1);
   }
-  max-width: 100vw;
+  max-width: 80vw;
   p {
     margin: 0;
     padding-left: rhythm(.5);
+    max-width: 80vw;
+    @include susy-breakpoint($bp-mobile) {
+      max-width: 40rem;
+    }
   }
 }
 
