@@ -3,12 +3,13 @@ description = ""
 active = true
 date = "2016-11-15T09:38:10-05:00"
 title = "Superhero Tip: Texting"
-series = "Superhero"
+series = "Build Your Online Business"
 series_weight = 80
 categories = [
   "Online Biz",
   "Your Consultant Website",
 ]
+categories_weight = 57
 
 +++
 

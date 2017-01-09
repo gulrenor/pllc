@@ -1,10 +1,9 @@
 +++
 title = "Enroll Your Customers in Preferred"
-series = "PartyLite Preferred"
+series = ""
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
-  "Customer Contacts and Orders",
 ]
 description = ""
 active = true

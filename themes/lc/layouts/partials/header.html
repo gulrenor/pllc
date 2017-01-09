@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  
-  <link rel="shortcut icon" href="http://www.partylite.com/regional/sharedfiles/websites/Corporate-US/images/en_US/favicon.ico" />
-  
+
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" />
+
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/styles.css">
-  
+
   <script src="https://use.fontawesome.com/b107476d60.js"></script>
 
   <title>{{ .Site.Title }}&nbsp;&ndash;&nbsp;{{ .Title }}</title>
@@ -22,7 +22,7 @@
     </a>
 
     <div class="header-sidebar">
-      
+
       <form id="header-search" name="cbcSearch" method="GET" action="https://my.partylite.com/portal/olc/restartFromOlc.aspx" target="blank">
         <input name="c" type="hidden" value="110">
         <input name="l" type="hidden" value="ENG">
@@ -32,23 +32,26 @@
 
       <nav class="nav-header">
         <ul>
-          <li><a href="https://my.partylite.com/"><i class="fa fa-backward" aria-hidden="true"></i>&nbsp;{{ .Site.Params.backtocbc }}</i></a></li>
-          
+          <li>
+            <a href="https://my.partylite.com/">
+              <i class="fa fa-backward" aria-hidden="true"></i>
+              &nbsp;{{ .Site.Params.backtocbc }}
+            </a>
+          </li>
+
           <!-- Language Selection, CA only -->
           {{- if ne "en-US" $.Site.Params.locale -}}
           <li>
-          {{- if eq "fr-CA" $.Site.LanguageCode -}}
-            <a href="{{ .Site.BaseURL }}en/index.html">English</a>
-          {{- else -}}
-            <a href="{{ .Site.BaseURL }}fr/index.html">Français</a>
-          {{- end -}}
+            {{- if eq "fr-CA" $.Site.LanguageCode -}}
+            <a href="{{ .Site.BaseURL }}en/index.html">English</a> {{- else -}}
+            <a href="{{ .Site.BaseURL }}fr/index.html">Français</a> {{- end -}}
           </li>
           {{- end -}}
         </ul>
       </nav>
-      
+
     </div>
-    
+
   </header>
-  
+
   {{ partial "nav.html" . }}

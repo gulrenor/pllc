@@ -90,9 +90,9 @@ canonifyURLS = true
       parent = "Online Biz"
       url = "/categories/social-networking/index.html"
     [[languages.en.menu.main]]
-      name = "Customer Contacts & Orders"
+      name = "PartyLite Preferred"
       parent = "Online Biz"
-      url = "/categories/customer-contacts-and-orders/index.html"
+      url = "/categories/partylite-preferred/index.html"
     
   ### Leader Academy ###
   [[languages.en.menu.main]]
@@ -128,7 +128,7 @@ canonifyURLS = true
     [[languages.en.menu.main]]
       name = "Find Your Signature Party"
       parent = "Party Ideas"
-      url = "/categories/find-your-signature-party/index.html"
+      url = "/categories/find-your-signature/index.html"
     [[languages.en.menu.main]]
       name = "Games"
       parent = "Party Ideas"

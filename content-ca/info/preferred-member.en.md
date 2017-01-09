@@ -1,10 +1,10 @@
 +++
 active = true
-series = "PartyLite Preferred"
+series = ""
 series_weight = 0
 categories = [
   "PartyLife Preferred",
-  "Customer Contacts and Orders",
+  "PartyLite Preferred",
 ]
 categories_weight = -10
 description = "PartyLite Preferred Member Program"
@@ -14,6 +14,8 @@ summary_file = "true"
 thumb = "/images/preferred_logo.png"
 
 +++
+
+<img class="columns-2 right" src="/images/preferred_logo.png" />
 
 ### Program Information
 

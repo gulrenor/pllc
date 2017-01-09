@@ -2,7 +2,7 @@
   <a href="{{- if and (isset .Params "src") (eq true .Site.Params.offsiteurl) -}}
     {{- .Params.src }}
   {{- else -}}
-    {{- .Permalink -}}
+    {{- .Permalink -}}index.html
   {{- end -}}">
     {{- .Title -}}
     <!-- Show filetype icon if .pdf -->

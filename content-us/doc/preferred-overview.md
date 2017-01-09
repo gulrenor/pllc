@@ -1,9 +1,8 @@
 +++
-series = "PartyLite Preferred"
+series = ""
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
-  "Customer Contacts and Orders",
 ]
 description = "Details about the Preferred Program for you and your customers."
 filetype = "pdf"

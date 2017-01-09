@@ -10,7 +10,7 @@ active = true
 thumb = "images/fys_webinar.jpg"
 date = "2017-01-06T11:33:42-05:00"
 title = "find your signature webinar"
-categories_weight = 0
+categories_weight = 50
 
 +++
 

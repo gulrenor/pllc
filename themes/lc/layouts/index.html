@@ -16,8 +16,8 @@
   -->
   
   <div>
-    <a href="{{ "/video/find-your-signature-experience/index.html" | relURL }}">
-      <img src="{{ "/images/find-your-signature-experience.jpg" | relURL }}" />
+    <a href="{{ "/video/find-your-signature-experience/index.html" | relLangURL }}">
+      <img src="{{ "/images/find-your-signature-experience.jpg" | relURL }}" alt="Find Your Signature Experience" />
       <div class="slider-title bg-mdblue">
         <h4>Find Your Signature Experience</h4>
         <p>Learn what Find Your Signature is all about!</p>
@@ -26,8 +26,8 @@
   </div>
   
   <div>
-    <a href="{{ "/video/find-your-signature-party/index.html" | relURL }}">
-      <img src="{{ "/images/find-your-signature-party.jpg" | relURL }}" />
+    <a href="{{ "/video/find-your-signature-party/index.html" | relLangURL }}">
+      <img src="{{ "/images/find-your-signature-party.jpg" | relURL }}" alt="Find Your Signature Party" />
       <div class="slider-title bg-green">
         <h4>Holding Your Find Your Signature Party</h4>
         <p>Here's an overview of our Find Your Signature Party.</p>
@@ -36,8 +36,8 @@
   </div>
 
   <div>
-    <a href="{{ "/info/find-your-signature-webinar/index.html" | relURL }}">
-      <img src="{{ "/images/fys_webinar.jpg" | relURL }}" />
+    <a href="{{ "/info/find-your-signature-webinar/index.html" | relLangURL }}">
+      <img src="{{ "/images/fys_webinar.jpg" | relURL }}" alt="Find Your Signature Webinar" />
       <div class="slider-title bg-orange">
         <h4>Find Your Signature Webinar</h4>
         <p>Led by PartyLite Home Office field trainers, this webinar will introduce you to the new Find Your Signature Party and how it is revolutionizing PartyLite businesses around the world!</p>
@@ -46,10 +46,10 @@
   </div>
   
   <div>
-    <a href="{{ "video/mock-party/index.html" | relURL }}">
-      <img src="{{ "/images/Product Shot3.jpg" | relURL }}" />
+    <a href="{{ "video/mock-party/index.html" | relLangURL }}">
+      <img src="{{ "/images/Product Shot3.jpg" | relURL }}" alt="Getting Leads" />
       <div class="slider-title bg-red">
-        <h4>Party Video</h4>
+        <h4>Getting Leads</h4>
         <p>Get 2&ndash;3 bookings and 4&ndash;5 Sponsoring Leads using this format.</p>
       </div>
     </a>
@@ -57,7 +57,7 @@
   
   <div>
     <a href="{{ "/video/booking-perks-made-easy/index.html" | relURL }}">
-      <img src="{{ "/images/Product shot1.jpg" | relURL }}" />
+      <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Booking Perks Made Easy" />
       <div class="slider-title bg-mdblue">
         <h4>Booking Perks Made Easy</h4>
         <p>Check out this step-by-step instructional video on how to enter Booking perks.</p>
@@ -74,9 +74,9 @@
     <img src="{{ "/images/Product Shot3.jpg" | relURL }}" />
     <h5 class="column-header bg-red fg-white">Webinars</h5>
     <ul>
-      <li><a href="">Find Your Signature Webinar</a></li>
+      <li><a href="{{ "/info/find-your-signature-webinar/index.html" | relLangURL }}">Find Your Signature Webinar</a></li>
       {{ range .Site.Taxonomies.categories.webinars }}
-      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </div>
@@ -85,9 +85,9 @@
     <h5 class="column-header bg-mdblue fg-white">Business Guides</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.businessguides }}
-      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
       {{ end }}
-      <li><a href="{{ "/series/partylite-preferred.html" | relLangURL }}">PartyLite Preferred&trade;</a></li>
+      <li><a href="{{ "/categories/partylite-preferred/index.html" | relLangURL }}">PartyLite Preferred&trade;</a></li>
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
@@ -95,7 +95,7 @@
     <h5 class="column-header bg-green fg-white">Tutorials</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.tutorials }}
-      <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </div>

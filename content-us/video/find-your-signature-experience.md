@@ -5,10 +5,9 @@ active = true
 series = ""
 series_weight = 0
 categories = [
-  "Find Your Signature Party",
   "Find Your Signature",
 ]
-categories_weight = 0
+categories_weight = 51
 description = "Learn what Find Your Signature is all about!"
 
 +++

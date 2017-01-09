@@ -2,7 +2,7 @@
 active = true
 series = "Contacts & Leads"
 categories = [
-  "Customer Contacts and Orders",
+  "PartyLite Preferred",
   "Online Biz",
 ]
 description = "Contacts & Leads: Favorites"

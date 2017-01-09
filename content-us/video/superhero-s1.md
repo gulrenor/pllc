@@ -2,12 +2,13 @@
 active = true
 date = "2016-11-15T09:35:10-05:00"
 title = "Episode 1: Candle Connection Report"
-series = "Superhero"
+series = "Build Your Online Business"
 series_weight = 10
 categories = [
   "Online Biz",
   "Your Consultant Website",
 ]
+categories_weight = 50
 description = ""
 
 +++

@@ -2,12 +2,13 @@
 active = true
 date = "2016-11-15T09:35:35-05:00"
 title = "Episode 3: Customer Emails"
-series = "Superhero"
+series = "Build Your Online Business"
 series_weight = 30
 categories = [
   "Online Biz",
   "Your Consultant Website",
 ]
+categories_weight = 52
 description = ""
 
 +++

@@ -1,10 +1,9 @@
 +++
-series = "PartyLite Preferred"
+series = ""
 series_weight = 10
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
-  "Customer Contacts and Orders",
 ]
 description = ""
 active = true

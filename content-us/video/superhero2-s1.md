@@ -1,11 +1,12 @@
 +++
 title = "Episode 5, Scene 1: Facebook"
-series = "Superhero"
+series = "Build Your Online Business"
 series_weight = 50
 categories = [
   "Online Biz",
   "Your Consultant Website",
 ]
+categories_weight = 54
 description = ""
 active = true
 date = "2016-11-15T09:36:23-05:00"

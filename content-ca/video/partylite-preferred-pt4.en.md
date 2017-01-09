@@ -2,12 +2,11 @@
 active = true
 date = "2016-11-18T12:26:42-05:00"
 title = "PartyLite Preferred: Advertising the Preferred Program"
-series = "PartyLite Preferred"
+series = ""
 series_weight = 40
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
-  "Customer Contacts and Orders",
 ]
 description = ""
 

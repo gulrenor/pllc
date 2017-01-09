@@ -3,12 +3,11 @@ description = ""
 date = "2016-11-18T12:26:39-05:00"
 title = "PartyLite Preferred: Customer Service & Follow-up"
 active = true
-series = "PartyLite Preferred"
+series = ""
 series_weight = 30
 categories = [
   "Selling and Booking",
   "PartyLite Preferred",
-  "Customer Contacts and Orders",
 ]
 
 +++
