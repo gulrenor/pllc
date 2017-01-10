@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-15T13:34:03-05:00"
 title = "Show Observation Form"
 series = ""

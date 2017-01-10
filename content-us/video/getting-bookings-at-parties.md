@@ -3,6 +3,8 @@ categories = [
   "Selling and Booking",
   "Book",
 ]
+categories_weight = 50
+series_weight = 50
 description = ""
 active = true
 series = ""

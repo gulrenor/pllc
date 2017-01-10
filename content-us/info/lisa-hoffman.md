@@ -1,12 +1,12 @@
 +++
-categories_weight = 0
+categories_weight = 50
 description = ""
 date = "2016-11-28T13:38:56-05:00"
 summary_file = ""
 thumb = "/images/lisa-hoffman-background.jpg"
 series = "Lisa Hoffman"
 title = "Lisa Hoffman for PartyLite"
-series_weight = 0
+series_weight = 50
 categories = [
   "Lisa Hoffman",
 ]

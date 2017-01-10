@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "Candle Care and Burn Time"
 filetype = "pdf"
 active = false

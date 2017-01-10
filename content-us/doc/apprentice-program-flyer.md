@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 description = "Learn how the apprentice program can boost your sponsoring success."
 filetype = "pdf"
 active = true

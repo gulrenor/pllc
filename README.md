@@ -12,11 +12,11 @@ PartyLite Learning Center
 
 About this Site
 ---------------
-The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS. It also won't parse `index.html` (or any other default) files at the root of a directory, so links must be directly to the html.
+The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS. It also won't redirect to `index.html` (or any other default) files at the root of a directory, so links must be directly to the html.
 
-Hugo was chosen as a means of providing some form of templating to greatly reduce (eliminate) existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily searched for SEO and for a more logical sitemap creation.
+Hugo was chosen as a means of providing some form of templating to greatly reduce (and hopefully eliminate) existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily crawled for SEO and for a more logical sitemap creation, not to mention ease of use.
 
-Hugo also cuts down on content repetition as pieces of content can be cross-referenced in multiple places without having to recreate it. 
+Hugo also cuts down on content repetition as pieces of content can be cross-referenced in multiple places without having to duplicate it. 
 
 Finally, Hugo offers a multilingual option, which will build the site with support for multiple languages, which is a requirement for this particular site.
 
@@ -25,12 +25,17 @@ Finally, Hugo offers a multilingual option, which will build the site with suppo
 Site Locations
 --------------
 + **Existing/Live**
-  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/Master_FrametX_RVP.html)
-  + [CA English](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/Master_FrametX_RVP.html)
-  + [CA French](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Master_FrametX_RVP.html)
+  + [US-en](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/Master_FrametX_RVP.html)
+  + [CA-en](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/English/Master_FrametX_RVP.html)
+  + [CA-fr](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/French/Master_FrametX_RVP.html)
++ **Staging**
+  + [US-en](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/index.html)
+  + [CA-en](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/New/en/index.html)
+  + [CA-fr](http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/New/fr/index.html)
 + **Dev**
-  + [US English](http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_New/index.html) (Hugo Staging)
-  + [US English](http://localhost:1313) (Localhost)
+  + [US-en](http://localhost:1313/o15/u/USOLC/Learning_Center/LC_New/)
+  + [CA-en](http://localhost:1314/o15/u/CAOLC/Learning_Center_Canada/New/en/)
+  + [CA-fr](http://localhost:1314/o15/u/CAOLC/Learning_Center_Canada/New/fr/)
 
 * * *
 
@@ -47,9 +52,6 @@ Technology/Languages Used
   
 + **[Hugo](https://gohugo.io/)**  
   Static site generator
-  
-+ **[Gulp](https://gulpjs.com/)**  
-  JS-based task runner
   
 + **[Compass](https://compass-style.org/)**  
   CSS/Sass library/compiler
@@ -81,7 +83,7 @@ Local Theme Development & Site Configuration
 
 You'll need to have several programs installed to do local development on this site. 
 
-1. The first thing you'll probably want to install is **[git](https://git-scm.com/downloads)**. I installed using the built in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
+1. The first thing you'll probably want to install is **[git](https://git-scm.com/downloads)**. I installed it using the built-in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
 
 2. Install **[nodejs](https://nodejs.org/en/)** so you can use `npm`.
 
@@ -91,11 +93,16 @@ You'll need to have several programs installed to do local development on this s
 
 5. Install **[bundler](http://bundler.io/)** in your terminal using `gem install bundler`. Once installation is complete, you can install **[Compass](https://compass-style.org/)**, **[Susy](http://susy.oddbird.net/)**, and **[Breakpoint](http://breakpoint-sass.com/)** using the command `bundle install`.
 
-When starting local development, I generally start by running both `compass watch` and `hugo server`. I also have the **[LiveReload](http://livereload.com/)** plugin running on my browser.
+#### Custom Scripts
+I've also included two scripts, both for Windows and \*nix which will automate the build process and starting the local development server. They're appropriately named `build.bat | build.sh` and `serve.bat | serve.sh`. Both scripts accept one parameter, the country abbreviation (`us | ca`).
+
+When starting local development, I generally start by running both `compass watch` and `./serve.sh $country`. I also have the **[LiveReload](http://livereload.com/)** plugin running on my browser.
 
 ### Command Line Reference
 
 #### Hugo
+
+These are Hugo's built in commands, but in order to make them country specific, you'll have to also include the `--config` switch. I've also included [scripts](#custom-scripts) that will do this automatically for you
 
 + Start local development server:  
   `hugo server`
@@ -179,12 +186,12 @@ Most content is organized and displayed using 3 methods:
 + by `series`
 
 #### Section
-`section`, in Hugo, is simply another word for content type. The main `section`s are `doc`, `video`, and `info`.
+`section`, in Hugo, is simply another word for content type. The main `section`s for this site are `doc`, `video`, and `info`.
 
 #### Category
 `category` is the most versatile method of displaying content. You can assign unlimited categories to a piece of content, and that content will then show on all those pages. 
 
-The content is ordered by the frontmatter variable `category_weight`, and the default is zero. If you need something to diplay near the top then assign it a negative weight, and similarly if you want it to display at the end assign it a positive weight.
+The content is ordered by the frontmatter variable `category_weight`, and the default is 50. If you need something to diplay near the top then assign it a lower weight (> 0), and similarly if you want it to display at the end assign it a higher weight (< 100).
 
 The default order of content is descending by date, so the most recent content appears at the top.
 
@@ -195,12 +202,14 @@ When series are displayed on a page, they will be grouped together under their s
 
 Series order can be adjusted the same way as categories, with the `series_weight` frontmatter variable. `series_weight` has no effect on content when it's displayed in a category template.
 
+When displayed on a category page, series are grouped alphabetically.
+
 Creating/Editing Content
 ------------------------
 
 ### Main Content
 
-Content can be edited simply by directly editing the markdown files in the `/content-{us | ca}` directory. For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Content can be edited simply by directly editing/copying the markdown files in the `/content-{us | ca}` directory. For a reference on markdown, refer to [this guide and parser at daringfireball.net](https://daringfireball.net/projects/markdown/) as well as [this cheatsheet on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Markdown allows for easy content editing for people who may not be familiar with HTML and want a more text based option. Using Hugo's shortcodes, it also allows for easy embedding of media.
 

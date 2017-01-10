@@ -1,5 +1,5 @@
 +++
-categories_weight = 0
+categories_weight = 50
 description = ""
 date = "2016-11-28T13:55:47-05:00"
 series = ""

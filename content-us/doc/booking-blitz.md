@@ -1,7 +1,7 @@
 +++
 active = true
 series_weight = 50
-categories_weight = 0
+categories_weight = 50
 description = ""
 date = "2016-12-21T13:35:14-05:00"
 title = "Booking Blitz"

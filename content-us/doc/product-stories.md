@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-14T09:47:12-05:00"
 title = "Product Stories"
 description = ""

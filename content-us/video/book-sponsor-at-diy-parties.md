@@ -1,12 +1,13 @@
 +++
 categories = [
 ]
+categories_weight = 50
 description = ""
 active = false
 date = "2016-11-22T10:11:01-05:00"
 title = "Book & Sponsor at DIY Parties"
 series = ""
-series_weight = 20
+series_weight = 50
 
 +++
 

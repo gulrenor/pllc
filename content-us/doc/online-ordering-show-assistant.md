@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "Party Assistant & Host Emails"
 description = "Learn how to set up your Host in Party Assistant so her friends who can't attend can shop for her Party online."
 filetype = "pdf"

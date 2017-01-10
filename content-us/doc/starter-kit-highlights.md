@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 active = false
 date = "2016-11-22T11:54:07-05:00"
 title = "Starter Kit Highlights"

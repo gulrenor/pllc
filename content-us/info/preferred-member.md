@@ -1,7 +1,7 @@
 +++
 active = true
 series = ""
-series_weight = 0
+series_weight = 50
 categories = [
   "PartyLife Preferred",
   "PartyLite Preferred",

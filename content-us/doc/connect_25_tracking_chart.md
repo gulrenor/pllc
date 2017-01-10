@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-15T09:59:01-05:00"
 title = "Connect 25 Tracking Chart"
 series = ""

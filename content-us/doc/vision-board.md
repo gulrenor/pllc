@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 filetype = "pdf"
 active = false
 date = "2016-11-15T10:19:28-05:00"

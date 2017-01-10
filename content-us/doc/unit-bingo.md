@@ -10,7 +10,7 @@ src = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main
 categories = [
   "Leadership Skills",
 ]
-categories_weight = 0
+categories_weight = 50
 
 +++
 

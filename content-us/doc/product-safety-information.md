@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "Product Safety Information"
 description = "View safety tips to properly burn and extinguish candles."
 filetype = "pdf"

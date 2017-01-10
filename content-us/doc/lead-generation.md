@@ -10,7 +10,7 @@ categories = [
   "Leadership Skills",
 ]
 date = "2016-12-21T13:36:32-05:00"
-categories_weight = 0
+categories_weight = 50
 
 +++
 

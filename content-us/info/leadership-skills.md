@@ -1,5 +1,5 @@
 +++
-categories_weight = 0
+categories_weight = 50
 description = ""
 active = true
 series = ""
@@ -10,7 +10,7 @@ categories = [
 date = "2016-12-13T14:22:33-05:00"
 summary_file = "true"
 thumb = ""
-series_weight = 0
+series_weight = 50
 title = "Leadership Skills"
 
 +++

@@ -7,6 +7,7 @@ series = ""
 series_weight = 40
 categories = [
 ]
+categories_weight = 50
 
 +++
 

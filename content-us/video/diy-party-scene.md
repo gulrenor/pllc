@@ -2,6 +2,7 @@
 title = "DIY Party Scene"
 categories = [
 ]
+categories_weight = 50
 description = ""
 active = false
 series = ""

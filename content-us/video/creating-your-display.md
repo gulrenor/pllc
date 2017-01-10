@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 active = false
 date = "2016-11-04T10:32:19-04:00"
 title = "Creating Your Display"

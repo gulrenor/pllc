@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 active = true
 description = "Don't think you know enough people? View this step-by-step tutorial and start building your contact list. You'll get more Customers and Guests at your Parties."
 date = "2016-11-08T09:42:57-05:00"

@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-21T15:33:17-05:00"
 title = "PartyLite Jeopardy Trivia"
 description = ""

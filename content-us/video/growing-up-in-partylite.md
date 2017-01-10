@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "Growing Up in PartyLite"
 series = "My Story"
 categories = [

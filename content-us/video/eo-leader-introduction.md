@@ -4,6 +4,7 @@ series_weight = 10
 categories = [
   "Leadership Skills",
 ]
+categories_weight = 50
 description = ""
 active = true
 date = "2016-11-15T10:44:58-05:00"

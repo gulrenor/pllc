@@ -9,6 +9,7 @@ categories = [
   "Selling and Booking",
   "Book",
 ]
+categories_weight = 50
 
 +++
 

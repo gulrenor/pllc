@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 active = false
 description = "Tips on how to build your own PartyLite Story."
 filetype = "pdf"

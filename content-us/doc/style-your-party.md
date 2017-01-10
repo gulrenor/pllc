@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 description = "Meet the needs of all your Customers by offering choices."
 filetype = "pdf"
 active = false

@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 filetype = "pdf"
 date = "2016-11-15T13:34:35-05:00"
 title = "Coaching"

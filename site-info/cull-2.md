@@ -29,3 +29,5 @@
 + get youtube info -- make sure all videos are viewable on pllc and not just youtube:
   + CA - booking-call
   + US - get-paid, booking-call
++ finish adding categories_weight = 50 and series_weight = 50 to all content
+  + ended us/video/influencing-new-consultants

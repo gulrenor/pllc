@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "Follow Up & Customer Service"
 series = ""
 categories = [

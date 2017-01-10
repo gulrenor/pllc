@@ -1,6 +1,6 @@
 +++
 series = ""
-categories_weight = 0
+categories_weight = 50
 categories = [
 ]
 description = ""
@@ -9,7 +9,7 @@ date = "2016-11-28T12:28:51-05:00"
 title = "Happy Hour Party"
 summary_file = ""
 thumb = "http://partylite.vo.llnwd.net/o15/u/USOLC/Learning_Center/LC_Main/LC_Main_Header_Image/Sponsor_10_Most_Commonly_Asked_Questions.jpg"
-series_weight = 0
+series_weight = 50
 
 +++
 
