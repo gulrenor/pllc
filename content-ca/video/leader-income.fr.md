@@ -2,9 +2,13 @@
 series = ""
 categories = [
   "New Consultants",
+  "Nouvelles Conseillères",
   "Income and Rewards",
+  "Revenu et Récompenses",
   "Shareable",
+  "Partageable",
   "Leadership Skills",
+  "Compétences en Leadership",
 ]
 description = "Earn more as a Leader! It's really simple."
 date = "2016-11-08T09:44:40-05:00"

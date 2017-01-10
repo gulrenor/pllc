@@ -41,6 +41,7 @@ canonifyURLS = true
   logomark = "images/lc-logomark.svg"
   copyright = "All rights reserved."
   backtocbc = "Back to CBC"
+  relateddocuments = "Related Documents"
   
   ### New Consultants ###
   [[languages.en.menu.main]]
@@ -149,6 +150,7 @@ canonifyURLS = true
   logomark = "images/lc-logomark.svg"
   copyright = "Tous droits réservés."
   backtocbc = "Retour au Centre d'Affaires"
+  relateddocuments = "Documents Connexes"
   
   ### New Consultants ###
   [[languages.fr.menu.main]]
@@ -157,21 +159,25 @@ canonifyURLS = true
     url = "/categories/new-consultants/index.html"
     weight = 10
     [[languages.fr.menu.main]]
+      ## Host Program ##
       name = "Encadrement Des Hôtesses"
       parent = "new-consultants"
-      url = "/categories/host-program/index.html"
+      url = "/categories/programme-d'hôtesses-hôtes/index.html"
     [[languages.fr.menu.main]]
-     name = "Vos premières présentations"
-     parent = "new-consultants"
-     url = "/categories/first-parties/index.html"
+      ## First Parties ##
+      name = "Vos premières présentations"
+      parent = "new-consultants"
+      url = "/categories/vos-premières-présentations/index.html"
     [[languages.fr.menu.main]]
+      ## Income and Rewards ##
       name = "Revenu et récompenses"
       parent = "new-consultants"
-      url = "/categories/income-and-rewards/index.html"
+      url = "/categories/revenu-et-récompenses/index.html"
     [[languages.fr.menu.main]]
+      ## Find Your Signature ##
       name = "Trouvez votre Signature"
       parent = "new-consultants"
-      url = "/categories/find-your-signature/index.html"
+      url = "/categories/trouvez-votre-signature/index.html"
   
   ### Selling and Booking ###
   [[languages.fr.menu.main]]
@@ -180,13 +186,15 @@ canonifyURLS = true
     url = "categories/selling-and-booking/index.html"
     weight = 20
     [[languages.fr.menu.main]]
+      ## Selling ##
       name = "Ventes"
       parent = "selling-and-booking"
-      url = "/categories/sell/index.html"
+      url = "/categories/ventes/index.html"
     [[languages.fr.menu.main]]
+      ## Booking ##
       name = "Engagements"
       parent = "selling-and-booking"
-      url = "/categories/book/index.html"
+      url = "/categories/engagements/index.html"
 
   ### Online Biz ###
   [[languages.fr.menu.main]]
@@ -194,14 +202,17 @@ canonifyURLS = true
     identifier = "Online Biz"
     weight = 30
     [[languages.fr.menu.main]]
+      ## Your Consultant Website ##
       name = "Votre Site De Conseillère"
       parent = "Online Biz"
-      url = "/categories/your-consultant-website/index.html"
+      url = "/categories/votre-site-de-conseillère/index.html"
     [[languages.fr.menu.main]]
+      ## Social Networking ##
       name = "Réseaux Sociaux"
       parent = "Online Biz"
-      url = "/categories/social-networking/index.html"
+      url = "/categories/réseaux-sociaux/index.html"
     [[languages.fr.menu.main]]
+      ## PartyLite Preferred ##
       name = "PartyLite Preferred"
       parent = "Online Biz"
       url = "/categories/partylite-preferred/index.html"
@@ -212,14 +223,16 @@ canonifyURLS = true
     identifier = "leadership"
     weight = 50
     [[languages.fr.menu.main]]
+      ## Leadership Skills ##
       name = "Compétences En Leadership"
       parent = "leadership"
-      url = "/categories/leadership-skills/index.html"
+      url = "/categories/compétences-en-leadership/index.html"
       weight = -20
     [[languages.fr.menu.main]]
+      ## Sponsoring ##
       name = "Parrainage"
       parent = "leadership"
-      url = "/categories/sponsor/index.html"
+      url = "/categories/parrainage/index.html"
       weight = -10
 
   ### Product ###
@@ -228,9 +241,10 @@ canonifyURLS = true
     identifier = "Product"
     weight = 60
     [[languages.fr.menu.main]]
+      ## Product Training ##
       name = "Formation Produits"
       parent = "Product"
-      url = "/categories/product-training/index.html"
+      url = "/categories/formation-produits/index.html"
 
   ### Party Ideas ###
   [[languages.fr.menu.main]]
@@ -238,10 +252,12 @@ canonifyURLS = true
     identifier = "Party Ideas"
     weight = 70
     [[languages.fr.menu.main]]
-      name = "Find Your Signature Party"
+      ## Find Your Signature Party ##
+      name = "Présentations de Trouvez Votre Signature"
       parent = "Party Ideas"
-      url = "/categories/find-your-signature/index.html"
+      url = "/categories/trouvez-votre-signature/index.html"
     [[languages.fr.menu.main]]
+      ## Games ##
       name = "Jeux"
       parent = "Party Ideas"
-      url = "/categories/games/index.html"
+      url = "/categories/jeux/index.html"

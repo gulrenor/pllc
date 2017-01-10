@@ -5,7 +5,6 @@ active = true
 series = ""
 categories = [
   "Leadership Skills",
-  "",
 ]
 date = "2016-12-13T14:22:33-05:00"
 summary_file = "true"

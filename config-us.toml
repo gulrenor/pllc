@@ -23,6 +23,7 @@ canonifyURLS = true
   locale = "en-US"
   copyright = "All rights reserved."
   backtocbc = "Back to CBC"
+  relateddocuments = "Related Documents"
 
 ### Taxonomies ###
 [taxonomies]

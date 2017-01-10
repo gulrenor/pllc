@@ -59,4 +59,6 @@ People respond to different forms of communication, so if your Host invites only
 Helpful Tools
 -------------
 ### The Host Coaching Checklist
-Download and use this handy Host Coaching Checklist to help keep track of everything! Available in your _Start With Success_ guide or downloadable here {{< button src="host-coaching-checklist.md" text="Host Coaching Checklist" >}}
+Download and use this handy Host Coaching Checklist to help keep track of everything! Available in your _Start With Success_ guide or downloadable here
+
+{{< button src="/doc/host-coaching-checklist/index.html" text="Host Coaching Checklist" >}}

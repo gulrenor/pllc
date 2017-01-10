@@ -4,7 +4,6 @@ series = ""
 series_weight = 0
 categories = [
   "PartyLife Preferred",
-  "PartyLite Preferred",
 ]
 categories_weight = -10
 description = "PartyLite Preferred Member Program"
@@ -19,12 +18,12 @@ thumb = "/images/preferred_logo.png"
 
 ### Program Information
 
-+ **[Program Overview]({{< relref "preferred-overview.en.md" >}})**  
++ **[Program Overview](/en/doc/preferred-overview/index.html)**  
 Details about the Preferred Program for you and your Customers.
-+ **[Participation Agreement]({{< relref "preferred-tac.en.md" >}})**  
++ **[Participation Agreement](/en/doc/preferred-tac/index.html)**  
 The Participation agreement for your customers.
 
 ### Support Materials
 
-+ **[Preferred Program Flyer for Parties]({{< relref "preferred-flyer.en.md" >}})**  
++ **[Preferred Program Flyer for Parties](/en/doc/preferred-flyer/index.html)**  
 Keep this flyer on your display table to remind your customers to become a Preferred Member.

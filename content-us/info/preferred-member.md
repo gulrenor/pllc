@@ -19,12 +19,12 @@ thumb = "/images/preferred_logo.png"
 
 ### Program Information
 
-+ **[Program Overview]({{< relref "preferred-overview.md" >}})**  
++ **[Program Overview](/doc/preferred-overview/index.html)**  
 Details about the Preferred Program for you and your Customers.
-+ **[Participation Agreement]({{< relref "preferred-tac.md" >}})**  
++ **[Participation Agreement](doc/preferred-tac/index.html)**  
 The Participation agreement for your customers.
 
 ### Support Materials
 
-+ **[Preferred Program Flyer for Parties]({{< relref "preferred-flyer.md" >}})**  
++ **[Preferred Program Flyer for Parties](/doc/preferred-flyer/index.html)**  
 Keep this flyer on your display table to remind your customers to become a Preferred Member.
