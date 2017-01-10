@@ -1,7 +1,7 @@
 <nav class="nav-main">
   <div class="hamburger">
     <img class="nav-logo" src="{{ .Site.BaseURL }}{{- .Site.Params.logomark -}}" alt="" />
-    <h4 class="nav-title"><a href="{{- .Site.BaseURL | relLangURL -}}/index.html">Learning Center</a></h4>
+    <h4 class="nav-title"><a href="{{- .Site.BaseURL | relLangURL -}}/index.html">{{ .Site.Title }}</a></h4>
     <a>
       <i class="hamburger-button fa fa-bars" aria-hidden="true"></i>
     </a>

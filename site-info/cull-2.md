@@ -4,9 +4,6 @@
 + ~~find your signature experience = video in us is correct, push to ca~~
 + ~~correct related docs abs/rel link~~
 + ~~host coaching checklist > add to canada~~
-+ get youtube info -- make sure all videos are viewable on pllc and not just youtube:
-  + CA - booking-call
-  + US - get-paid, booking-call
 + ~~delete tammy mormann description~~
 + ~~include six booking tips + party of five on canada~~
 + ~~fix broken preferred link on customer contacts and orders~~
@@ -27,4 +24,8 @@
 + Check series tag links on both sites
 + remove games section? (discussed in meeting)
 + remove logomark from logo; just text
+  + Verify logo consistency across sites
 + remove search bar? not needed/site is streamlined enough to not require it. if we want one, we can use a standard google search hook
++ get youtube info -- make sure all videos are viewable on pllc and not just youtube:
+  + CA - booking-call
+  + US - get-paid, booking-call

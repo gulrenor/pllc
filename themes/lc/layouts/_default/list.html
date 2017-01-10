@@ -6,7 +6,7 @@
   {{ $.Scratch.Add "currentURL" $currentURL }}
 
 
-  <h2>{{ .Title }}</h2>
+  <h2>{{ .Title | humanize }}</h2>
   
   <!-- If there's an info page with summary_file = true, then display the summary markdown. -->
   {{ range where .Data.Pages "Section" "info" }}
