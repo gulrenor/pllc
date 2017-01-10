@@ -6,6 +6,7 @@ PartyLite Learning Center
 + [Technology/Languages Used](#technologylanguages-used)
 + [Local Theme Development & Site Configuration](#local-theme-development--site-configuration)
 + [Creating/Editing Content](#creatingediting-content)
++ [English/French Translation Matrix](/site-info/translation-matrix.md)
 
 * * *
 
