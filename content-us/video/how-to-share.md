@@ -1,6 +1,5 @@
 +++
 title = "How to Share"
-categories_weight = 0
 description = ""
 active = false
 series = ""
