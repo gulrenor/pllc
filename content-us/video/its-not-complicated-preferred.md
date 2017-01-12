@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 title = "It's Not Complicated - Preferred"
 description = ""
 active = false

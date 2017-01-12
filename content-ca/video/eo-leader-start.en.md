@@ -7,6 +7,7 @@ series_weight = 40
 categories = [
   "Leadership Skills",
 ]
+categories_weight = 50
 description = ""
 
 +++

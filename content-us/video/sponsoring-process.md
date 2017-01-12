@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 description = "How to offer PartyLite at parties."
 active = false
 date = "2016-11-10T15:05:20-05:00"

@@ -1,5 +1,5 @@
 +++
-series_weight = 0
+series_weight = 50
 categories = [
   "Find Your Signature",
   "Trouvez Votre Signature",

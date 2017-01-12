@@ -26,8 +26,9 @@
 + remove logomark from logo; just text
   + Verify logo consistency across sites
 + remove search bar? not needed/site is streamlined enough to not require it. if we want one, we can use a standard google search hook
-+ get youtube info -- make sure all videos are viewable on pllc and not just youtube:
-  + CA - booking-call
-  + US - get-paid, booking-call
++ ~~get youtube info -- make sure all videos are viewable on pllc and not just youtube:~~
+  + ~~CA - booking-call~~
+  + ~~US - get-paid, booking-call~~
 + finish adding categories_weight = 50 and series_weight = 50 to all content
   + ended us/video/influencing-new-consultants
++ CA - Find Your Signature even in French, but not trademarked

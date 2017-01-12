@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 description = "a description"
 filetype = "pdf"
 date = "2016-11-07T11:51:14-05:00"

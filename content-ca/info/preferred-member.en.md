@@ -1,11 +1,11 @@
 +++
 active = true
 series = ""
-series_weight = 0
+series_weight = 50
 categories = [
   "PartyLife Preferred",
 ]
-categories_weight = -10
+categories_weight = 40
 description = "PartyLite Preferred Member Program"
 date = "2016-11-08T09:46:07-05:00"
 title = "Preferred Member Program"

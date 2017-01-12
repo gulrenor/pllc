@@ -5,6 +5,7 @@ series_weight = 10
 categories = [
   "Leadership Skills",
 ]
+categories_weight = 50
 description = "Learn how to plan an effective Unit Workshop."
 date = "2016-11-15T13:34:59-05:00"
 title = "Unit Workshop Planner/Agenda"

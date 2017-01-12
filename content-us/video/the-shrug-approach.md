@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-10T15:28:08-05:00"
 title = "The Shrug Approach"
 series = ""

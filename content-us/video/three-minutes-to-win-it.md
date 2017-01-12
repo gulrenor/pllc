@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-10T15:31:29-05:00"
 title = "3 Minutes to Win It"
 series = ""

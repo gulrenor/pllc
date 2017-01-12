@@ -9,6 +9,7 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
 ]
+categories_weight = 50
 
 +++
 

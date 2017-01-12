@@ -6,6 +6,7 @@ categories = [
   "Selling and Booking",
   "Book",
 ]
+categories_weight = 50
 description = ""
 active = true
 date = "2016-11-22T12:41:06-05:00"

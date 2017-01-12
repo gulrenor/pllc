@@ -1,6 +1,7 @@
 +++
 categories = [
 ]
+categories_weight = 50
 description = ""
 date = "2016-11-22T10:09:30-05:00"
 title = "Party Introduction"

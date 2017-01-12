@@ -5,6 +5,7 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
 ]
+categories_weight = 50
 description = ""
 active = true
 date = "2016-11-18T12:26:33-05:00"

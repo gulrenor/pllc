@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 active = false
 title = "Light It Up (also at youtube UQToHco9c7w)"
 series = ""

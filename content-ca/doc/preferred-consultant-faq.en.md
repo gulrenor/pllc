@@ -1,4 +1,6 @@
 +++
+categories_weight = 50
+series_weight = 50
 date = "2016-11-18T13:52:27-05:00"
 title = "Frequently Asked Questions for Consultants"
 series = ""

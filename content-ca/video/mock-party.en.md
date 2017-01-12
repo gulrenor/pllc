@@ -1,5 +1,6 @@
 +++
 series = ""
+series_weight = 50
 categories = [
   "Find Your Signature"
 ]

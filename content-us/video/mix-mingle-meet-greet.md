@@ -5,6 +5,7 @@ series = ""
 series_weight = 10
 categories = [
 ]
+categories_weight = 50
 description = ""
 active = false
 

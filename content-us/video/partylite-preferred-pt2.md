@@ -7,6 +7,7 @@ categories = [
   "Selling and Booking",
   "PartyLite Preferred",
 ]
+categories_weight = 50
 description = ""
 active = true
 
