@@ -2,7 +2,6 @@
 series_weight = 50
 categories = [
   "Find Your Signature",
-  "Trouvez Votre Signature",
 ]
 categories_weight = 50
 description = ""

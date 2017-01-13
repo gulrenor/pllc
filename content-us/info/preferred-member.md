@@ -3,7 +3,6 @@ active = true
 series = ""
 series_weight = 50
 categories = [
-  "PartyLife Preferred",
   "PartyLite Preferred",
 ]
 categories_weight = -10

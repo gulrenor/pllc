@@ -67,9 +67,11 @@ html {
 }
 
 body {
-  @include nav-shadow;
   color: $bodygrey;
   background-color: $white;
+  @include susy-breakpoint($bp-mobile) {
+    @include nav-shadow;
+  }
 }
 
 a {

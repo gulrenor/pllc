@@ -2,7 +2,6 @@
 series_weight = 50
 categories = [
   "Find Your Signature",
-  "Trouvez Votre Signature",
 ]
 categories_weight = 52
 date = "2016-12-21T13:22:13-05:00"

@@ -56,7 +56,7 @@
   </div>
   
   <div>
-    <a href="{{ "/video/booking-perks-made-easy/index.html" | relURL }}">
+    <a href="{{ "/video/booking-perks-made-easy/index.html" | relLangURL }}">
       <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Booking Perks Made Easy" />
       <div class="slider-title bg-mdblue">
         <h4>Booking Perks Made Easy</h4>
@@ -71,7 +71,7 @@
 <section class="grid section-break">
   
   <div class="columns-3 bg-ltgrey triptych">
-    <img src="{{ "/images/Product Shot3.jpg" | relURL }}" />
+    <img src="{{ "/images/Product Shot3.jpg" | relURL }}" alt="Product Shot" />
     <h5 class="column-header bg-red fg-white">Webinars</h5>
     <ul>
       <li><a href="{{ "/info/find-your-signature-webinar/index.html" | relLangURL }}">Find Your Signature Webinar</a></li>
@@ -81,7 +81,7 @@
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
-    <img src="{{ "/images/Product shot1.jpg" | relURL }}" />
+    <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Product Shot"/>
     <h5 class="column-header bg-mdblue fg-white">Business Guides</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.businessguides }}
@@ -91,7 +91,7 @@
     </ul>
   </div>
   <div class="columns-3 bg-ltgrey triptych">
-    <img src="{{ "/images/Product Shot5.jpg" | relURL }}" />
+    <img src="{{ "/images/Product Shot5.jpg" | relURL }}" alt="Product Shot"/>
     <h5 class="column-header bg-green fg-white">Tutorials</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.tutorials }}

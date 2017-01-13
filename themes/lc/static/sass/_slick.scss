@@ -13,8 +13,8 @@
   @include susy-breakpoint($bp-mobile) {
     bottom: rhythm(1);
     padding: rhythm(1);
+    max-width: 80vw;
   }
-  max-width: 80vw;
   p {
     margin: 0;
     padding-left: rhythm(.5);

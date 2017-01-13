@@ -472,106 +472,111 @@ html {
 
 /* line 69, ../sass/_colors.scss */
 body {
-  -webkit-box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
   color: #767676;
   background-color: white;
 }
+@media (min-width: 32em) {
+  /* line 69, ../sass/_colors.scss */
+  body {
+    -webkit-box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 16px 36px 0px rgba(0, 0, 0, 0.3);
+  }
+}
 
-/* line 75, ../sass/_colors.scss */
+/* line 77, ../sass/_colors.scss */
 a {
   transition: color .1s ease-in;
 }
-/* line 76, ../sass/_colors.scss */
+/* line 78, ../sass/_colors.scss */
 a:link, a:visited, a:active {
   color: #767676;
 }
-/* line 82, ../sass/_colors.scss */
+/* line 84, ../sass/_colors.scss */
 a:hover {
   color: #549cdc;
 }
 
-/* line 87, ../sass/_colors.scss */
+/* line 89, ../sass/_colors.scss */
 aside {
   background-color: #e4e4e4;
 }
 
-/* line 91, ../sass/_colors.scss */
+/* line 93, ../sass/_colors.scss */
 .nav-main {
   background-color: #002e5f;
   color: white;
 }
 @media (min-width: 32em) {
-  /* line 97, ../sass/_colors.scss */
+  /* line 99, ../sass/_colors.scss */
   .nav-main ul
   li:hover {
     background-color: #549cdc;
   }
 }
-/* line 105, ../sass/_colors.scss */
+/* line 107, ../sass/_colors.scss */
 .nav-main ul ul {
   background-color: white;
 }
-/* line 106, ../sass/_colors.scss */
+/* line 108, ../sass/_colors.scss */
 .nav-main ul ul li {
   color: #002e5f;
 }
-/* line 108, ../sass/_colors.scss */
+/* line 110, ../sass/_colors.scss */
 .nav-main ul ul li:hover {
   background-color: #549cdc;
   color: white;
 }
 
-/* line 116, ../sass/_colors.scss */
+/* line 118, ../sass/_colors.scss */
 .nav-header li {
   background-color: #ec7c2f;
 }
-/* line 118, ../sass/_colors.scss */
+/* line 120, ../sass/_colors.scss */
 .nav-header li a {
   color: white;
 }
-/* line 120, ../sass/_colors.scss */
+/* line 122, ../sass/_colors.scss */
 .nav-header li a:hover {
   text-decoration: underline;
 }
 
-/* line 127, ../sass/_colors.scss */
+/* line 129, ../sass/_colors.scss */
 .category {
   background-color: #2578d5;
 }
 
-/* line 128, ../sass/_colors.scss */
+/* line 130, ../sass/_colors.scss */
 .series {
   background-color: #eb4b55;
 }
 
-/* line 129, ../sass/_colors.scss */
+/* line 131, ../sass/_colors.scss */
 .section {
   background-color: #8cc747;
 }
 
-/* line 132, ../sass/_colors.scss */
+/* line 134, ../sass/_colors.scss */
 .book a:link, .book a:hover, .book a:visited {
   color: white;
 }
 
-/* line 138, ../sass/_colors.scss */
+/* line 140, ../sass/_colors.scss */
 footer h6 {
   color: #002e5f;
 }
 
-/* line 143, ../sass/_colors.scss */
+/* line 145, ../sass/_colors.scss */
 .hamburger {
   background-color: #002e5f;
 }
 
-/* line 147, ../sass/_colors.scss */
+/* line 149, ../sass/_colors.scss */
 .nav-logo {
   background-color: white;
 }
 
-/* line 151, ../sass/_colors.scss */
+/* line 153, ../sass/_colors.scss */
 .content-header {
   background-color: #e4e4e4;
 }
@@ -788,13 +793,13 @@ pre {
   position: absolute;
   bottom: 0;
   padding: 0.875rem 1.75rem;
-  max-width: 80vw;
 }
 @media (min-width: 32em) {
   /* line 7, ../sass/_slick.scss */
   .slider-title {
     bottom: 1.75rem;
     padding: 1.75rem;
+    max-width: 80vw;
   }
 }
 /* line 18, ../sass/_slick.scss */
@@ -1013,24 +1018,25 @@ pre {
 /* line 123, ../sass/_slick-theme.scss */
 [dir="rtl"] .slick-next {
   left: -25px;
+  left: 0;
   right: auto;
 }
-/* line 127, ../sass/_slick-theme.scss */
+/* line 128, ../sass/_slick-theme.scss */
 .slick-next:before {
   content: "›";
 }
-/* line 129, ../sass/_slick-theme.scss */
+/* line 130, ../sass/_slick-theme.scss */
 [dir="rtl"] .slick-next:before {
   content: "‹";
 }
 
 /* Dots */
-/* line 137, ../sass/_slick-theme.scss */
+/* line 138, ../sass/_slick-theme.scss */
 .slick-dotted.slick-slider {
   margin-bottom: 5rem;
 }
 
-/* line 142, ../sass/_slick-theme.scss */
+/* line 143, ../sass/_slick-theme.scss */
 .slick-dots {
   position: absolute;
   bottom: -25px;
@@ -1041,7 +1047,7 @@ pre {
   margin: 0;
   width: 100%;
 }
-/* line 151, ../sass/_slick-theme.scss */
+/* line 152, ../sass/_slick-theme.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -1051,7 +1057,7 @@ pre {
   padding: 0;
   cursor: pointer;
 }
-/* line 159, ../sass/_slick-theme.scss */
+/* line 160, ../sass/_slick-theme.scss */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -1065,15 +1071,15 @@ pre {
   padding: 5px;
   cursor: pointer;
 }
-/* line 171, ../sass/_slick-theme.scss */
+/* line 172, ../sass/_slick-theme.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-/* line 173, ../sass/_slick-theme.scss */
+/* line 174, ../sass/_slick-theme.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 177, ../sass/_slick-theme.scss */
+/* line 178, ../sass/_slick-theme.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -1090,7 +1096,7 @@ pre {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 194, ../sass/_slick-theme.scss */
+/* line 195, ../sass/_slick-theme.scss */
 .slick-dots li.slick-active button:before {
   color: #002e5f;
   opacity: 0.75;

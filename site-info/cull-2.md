@@ -14,14 +14,14 @@
   + ~~adobe presenter~~
 + ~~change superhero series to build your online business~~
   + ~~Reorder~~
-  + Should this be pushed to CA?
-+ Canada = no _Your Consultant Website_?
+  + ~~Should this be pushed to CA?~~
++ ~~Canada = no _Your Consultant Website_?~~
 + ~~Canada - product training/Spring summer catalog download link works, but not embed~~
 + ~~US - Host coaching for parties/host coaching checklist button doesnt work~~
-+ partylite preferred info page text links broken
++ ~~partylite preferred info page text links broken~~
 + CA - your consultant website, videos are located on US server but not CA so links are broken (but thumbnails work)
-+ CA hamburger home link missing a slash
-+ Check series tag links on both sites
++ ~~CA hamburger home link missing a slash~~
++ ~~Check series tag links on both sites~~
 + remove games section? (discussed in meeting)
 + remove logomark from logo; just text
   + Verify logo consistency across sites
@@ -29,6 +29,6 @@
 + ~~get youtube info -- make sure all videos are viewable on pllc and not just youtube:~~
   + ~~CA - booking-call~~
   + ~~US - get-paid, booking-call~~
-+ finish adding categories_weight = 50 and series_weight = 50 to all content
-  + ended us/video/influencing-new-consultants
++ ~~finish adding categories_weight = 50 and series_weight = 50 to all content~~
+  + ~~ended us/video/influencing-new-consultants~~
 + CA - Find Your Signature even in French, but not trademarked

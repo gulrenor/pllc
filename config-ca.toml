@@ -175,9 +175,9 @@ canonifyURLS = true
       url = "/categories/revenu-et-récompenses/index.html"
     [[languages.fr.menu.main]]
       ## Find Your Signature ##
-      name = "Trouvez votre Signature"
+      name = "Find Your Signature"
       parent = "new-consultants"
-      url = "/categories/trouvez-votre-signature/index.html"
+      url = "/categories/find-your-signature/index.html"
   
   ### Selling and Booking ###
   [[languages.fr.menu.main]]
@@ -253,9 +253,9 @@ canonifyURLS = true
     weight = 70
     [[languages.fr.menu.main]]
       ## Find Your Signature Party ##
-      name = "Présentations de Trouvez Votre Signature"
+      name = "Présentations de Find Your Signature"
       parent = "Party Ideas"
-      url = "/categories/trouvez-votre-signature/index.html"
+      url = "/categories/find-your-signature/index.html"
     [[languages.fr.menu.main]]
       ## Games ##
       name = "Jeux"

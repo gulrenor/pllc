@@ -33,7 +33,7 @@
     -->
 
     {{ if ne "" .Key }}
-      <a href="{{ "/series/" | absLangURL }}{{ .Key | urlize }}/index.html">
+      <a href="{{ $.Site.BaseURL }}{{ $.LanguagePrefix }}/series/{{ .Key | urlize }}/index.html">
         <h4 class="fg-white bg-bodygrey column-header">{{ .Key }}</h4>
       </a>
     {{ end }}

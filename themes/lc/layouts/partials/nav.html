@@ -1,11 +1,17 @@
 <nav class="nav-main">
+  
+  <!-- Mobile size menu -->
   <div class="hamburger">
+    <!-- 
     <img class="nav-logo" src="{{ .Site.BaseURL }}{{- .Site.Params.logomark -}}" alt="" />
-    <h4 class="nav-title"><a href="{{- .Site.BaseURL | relLangURL -}}/index.html">{{ .Site.Title }}</a></h4>
+    -->
+    <h4 class="nav-title"><a href="{{- .Site.BaseURL -}}index.html">{{ .Site.Title }}</a></h4>
     <a>
       <i class="hamburger-button fa fa-bars" aria-hidden="true"></i>
     </a>
   </div>
+  
+  <!-- Desktop size menu -->
   <ul>
     {{ $currentNode := . }} 
     {{ range .Site.Menus.main }} 
@@ -28,4 +34,5 @@
     </a>
     {{ end }} {{ end }}
   </ul>
+  
 </nav>
