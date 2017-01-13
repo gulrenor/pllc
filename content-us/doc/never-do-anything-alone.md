@@ -1,5 +1,4 @@
 +++
-active = true
 categories_weight = 50
 series_weight = 50
 series = ""
