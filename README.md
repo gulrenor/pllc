@@ -12,11 +12,27 @@ PartyLite Learning Center
 
 About this Site
 ---------------
-The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's currently no way to install anything server-side, and that means no option for a server-side language like PHP, or a CMS. It also won't redirect to `index.html` (or any other default) files at the root of a directory, so links must be directly to the html.
+This is a redesign of an existing multilingual/multinational training site. Some of the initial goals in the redesign were to:
++ **Update content**
+  + Update existing content, and create new content where applicable.
+  + Synchronize design and content between several localized/language bases.
++ **Modernize design**
+  + Take queues from existing corporate site.
+  + Unify branding across sites.
++ **Improve usability**
+  + Design to accessibility standards.
+  + Utilize/create responsive design framework for cross-platform use.
+  + Simplify and flatten site depth to reduce number of clicks.
+  + Group similar content in consistent locations to improve content discoverability.
++ **Upkeep/Management**
+  + Content must be editable by non-technical staff.
+  + Utilize existing server infrastructure and asset locations.
 
-Hugo was chosen as a means of providing some form of templating to greatly reduce (and hopefully eliminate) existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily crawled for SEO and for a more logical sitemap creation, not to mention ease of use.
+The first thing you'll probably notice about this site is that in its current form, it's hosted on a CDN (LimeLight Network). There's no application server, which means no option for a server-side language like PHP, or a CMS like WordPress or Drupal. It also won't redirect to `index.html` (or any other default) files at the root of a directory, so links must be directly to the html.
 
-Hugo also cuts down on content repetition as pieces of content can be cross-referenced in multiple places without having to duplicate it. 
+[Hugo](https://gohugo.io) (a static site generator) was chosen as a means of providing some form of templating to greatly reduce and hopefully eliminate existing repetition. It also provides a way to eliminate the need for `iframe`, making the site more easily crawled for SEO and for a more logical sitemap creation, not to mention ease of use.
+
+Hugo also cuts down on content repetition as pieces of content can be cross-referenced in multiple places without having to duplicate them. 
 
 Finally, Hugo offers a multilingual option, which will build the site with support for multiple languages, which is a requirement for this particular site.
 
@@ -83,7 +99,7 @@ Local Theme Development & Site Configuration
 
 You'll need to have several programs installed to do local development on this site. 
 
-1. The first thing you'll probably want to install is **[git](https://git-scm.com/downloads)**. I installed it using the built-in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
+1. If you'd like to use source control, the first thing you'll probably want to install is **[git](https://git-scm.com/downloads)**. I installed it using the built-in MINGW terminal so that I could use \*nix syntax and commands, but if you're on Windows and have any problems with the below programs you'll probably want to use the built in command prompt option.
 
 2. Install **[nodejs](https://nodejs.org/en/)** so you can use `npm`.
 
@@ -94,7 +110,7 @@ You'll need to have several programs installed to do local development on this s
 5. Install **[bundler](http://bundler.io/)** in your terminal using `gem install bundler`. Once installation is complete, you can install **[Compass](https://compass-style.org/)**, **[Susy](http://susy.oddbird.net/)**, and **[Breakpoint](http://breakpoint-sass.com/)** using the command `bundle install`.
 
 #### Custom Scripts
-I've also included two scripts, both for Windows and \*nix which will automate the build process and starting the local development server. They're appropriately named `build.bat | build.sh` and `serve.bat | serve.sh`. Both scripts accept one parameter, the country abbreviation (`us | ca`).
+I've also included two scripts, both for Windows and \*nix which will automate the build process and start the local development server. They're appropriately named `build.bat | build.sh` and `serve.bat | serve.sh`. Both scripts accept one parameter, the country abbreviation (`us | ca`).
 
 When starting local development, I generally start by running both `compass watch` and `./serve.sh $country`. I also have the **[LiveReload](http://livereload.com/)** plugin running on my browser.
 
@@ -102,7 +118,7 @@ When starting local development, I generally start by running both `compass watc
 
 #### Hugo
 
-These are Hugo's built in commands, but in order to make them country specific, you'll have to also include the `--config` switch. I've also included [scripts](#custom-scripts) that will do this automatically for you
+These are Hugo's built in commands, but in order to make them country specific, you'll have to also include the `--config` switch. I've also included [scripts](#custom-scripts) that will do this automatically for you.
 
 + Start local development server:  
   `hugo server`
@@ -155,10 +171,9 @@ These are Hugo's built in commands, but in order to make them country specific, 
   
 + `/themes/lc/LICENSE.md`  
   The theme's license for redistribution. Default MIT license.
-
+  
 + `serve.bat, serve.sh, build.bat, build.sh`
   Small Windows/\*nix shell files to assist with multi-site development and deployment. Accepts country as a parameter, where country = `us | ca`.
-  
 
 * * *
 
@@ -173,8 +188,15 @@ The majority of documents are .pdf. There are also some training presentations t
 
 #### Videos
 Videos come from 3 main sources: Youtube, Vimeo, and self-hosted .mp4.
+
+##### YouTube
 + PartyLite's US YouTube account is [https://www.youtube.com/user/PartyLiteGifts](https://www.youtube.com/user/PartyLiteGifts).
 + PartyLite's CA YouTube account is [https://www.youtube.com/user/PartyLiteCanada](https://www.youtube.com/user/PartyLiteCanada). This account posts both English and French content.
+
+##### Vimeo
+
+##### PartyLite Hosted Videos
+
 
 #### Info pages
 These pages act as a kind of summary file when a landing page is needed. They're used both for descriptive lead-ins, as well as full fledged custom pages.
