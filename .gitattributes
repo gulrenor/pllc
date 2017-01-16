@@ -1,2 +1,3 @@
 /themes/lc/static/slick/* linguist-vendored
+/themes/lc/static/css/* linguist-vendored
 /site-info/* linguist-documentation
