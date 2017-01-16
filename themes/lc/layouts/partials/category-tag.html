@@ -1,6 +1,6 @@
 <!-- Display categories this content is associated with -->
 {{ range .Params.categories }}
-  <a href="{{ $.Site.BaseURL }}{{ $.LanguagePrefix }}/categories/{{- . | urlize -}}/index.html">
-    <span class="tag category">{{- . -}}</span>
-  </a>
+<a href="{{ $.Site.BaseURL }}{{ $.LanguagePrefix }}/categories/{{- . | urlize -}}/index.html">
+  <span class="tag category">{{- . -}}</span>
+</a>
 {{ end }}
