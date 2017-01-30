@@ -24,6 +24,7 @@ canonifyURLS = true
   copyright = "All rights reserved."
   backtocbc = "Back to CBC"
   relateddocuments = "Related Documents"
+  pllogo = "images/partylite-logo.svg"
 
 ### Taxonomies ###
 [taxonomies]
@@ -37,6 +38,7 @@ canonifyURLS = true
   languageName = "English"
   languageCode = "en-US"
   logo = "images/lc-logo-usen.svg"
+  logomobile = "images/lc-logo-usen-ko.svg"
   logomark = "images/lc-logomark.svg"
   
   ### New Consultants ###

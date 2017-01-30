@@ -1,25 +1,35 @@
 .slider {
-  & > div {
-    margin: 0 -1.5rem; //HACK
+  max-width: 100vw;
+  @include susy-breakpoint($bp-mobile) {
+    & > div {
+      margin: 0 -1.5rem; //HACK
+    }  
   }
 }
+
 
 .slider-title {
   //padding: rhythm(.25) 0;
   color: $white;
   position: absolute;
   bottom: 0;
-  padding: rhythm(.5) rhythm(1);
+  padding: rhythm(.25);
+  max-width: 100%;
   @include susy-breakpoint($bp-mobile) {
     bottom: rhythm(1);
     padding: rhythm(1);
     max-width: 80vw;
   }
+  div {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
   p {
     margin: 0;
-    padding-left: rhythm(.5);
-    max-width: 80vw;
+    padding-left: rhythm(.25);
     @include susy-breakpoint($bp-mobile) {
+      padding-left: rhythm(.5);
       max-width: 40rem;
     }
   }

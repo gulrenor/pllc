@@ -49,6 +49,7 @@ body {
   width: 100%;
   margin: 0;
   padding: ($body-padding / 2);
+  padding-right: $body-padding;
   margin-top: rhythm(2);
   @include susy-breakpoint($bp-mobile) {
     padding: $body-padding;
@@ -205,8 +206,14 @@ img {
 
 .nav-logo {
   height: 100%;
-  width: auto;
-  padding: rhythm(.125);
+  max-width: 80%;
+  left: 0;
+  padding: rhythm(.33) 0;
+  padding-left: rhythm(.5);
+  img {
+    max-height: 100%;
+    margin: auto 0;
+  }
 }
 
 .info { // Special formatting for text only info pages

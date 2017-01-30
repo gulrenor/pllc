@@ -5,7 +5,10 @@
     <!-- 
     <img class="nav-logo" src="{{ .Site.BaseURL }}{{- .Site.Params.logomark -}}" alt="" />
     -->
-    <h4 class="nav-title"><a href="{{- .Site.BaseURL -}}index.html">{{ .Site.Title }}</a></h4>
+    <!--<h4 class="nav-title"><a href="{{- .Site.BaseURL -}}index.html">{{ .Site.Title }}</a></h4>-->
+    <div class="nav-logo">
+      <img src="{{ .Site.BaseURL }}{{ .Site.Params.logomobile }}" alt="{{.Site.Title}}" />
+    </div>
     <a>
       <i class="hamburger-button fa fa-bars" aria-hidden="true"></i>
     </a>
@@ -13,8 +16,8 @@
   
   <!-- Desktop size menu -->
   <ul>
-    {{ $currentNode := . }} 
-    {{ range .Site.Menus.main }} 
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
     {{ if .HasChildren }}
     <li>
       <p>{{ .Name }}</p>

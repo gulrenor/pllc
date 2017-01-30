@@ -6,13 +6,13 @@
 @import 'breakpoint';
 
 // Partials
-@import '_layout.scss';
-@import '_colors.scss';
-@import '_typography.scss';
-@import '_common.scss';
+@import 'layout';
+@import 'colors';
+@import 'typography';
+@import 'common';
 
-@import '_slick.scss';
-@import '_slick-theme.scss';
+@import 'slick';
+@import 'slick-theme';
 //@import '../slick/slick-theme.scss';
 
 
@@ -25,22 +25,28 @@
   flex-direction: column;
   margin-left: auto;
   width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
     width: 50%;
   }
+
   @include susy-breakpoint($bp-small) {
     width: 40%;
   }
+
   @include susy-breakpoint($bp-medium) {
     width: 30%;
   }
+
   p {
     width: auto;
     text-align: right;
   }
+
   a {
     display: inline;
   }
+
   img {
   }
 }
@@ -225,10 +231,13 @@ nav {
   //display: none; //NOTE: Reference nav-scroll.js
   ul { // Primary menu
     margin: 0;
-    padding: 0;
+    padding: 0 rhythm(.25);
     width: 100%;
     display: none;
     flex-direction: column;
+    @include susy-breakpoint($bp-mobile) {
+      padding: 0;
+    }
     li {
       padding: .5rem;
       &:last-child ul {
@@ -422,6 +431,7 @@ video {
     width: rhythm(2);
     height: rhythm(2);
     text-align: center;
+    margin-right: rhythm(.5);
   }
   @include susy-breakpoint($bp-mobile) {
     display: none;
@@ -430,6 +440,7 @@ video {
 
 .nav-title {
   line-height: rhythm(2);
+  margin-left: rhythm(.5);
   font-size: 1.2rem;
   a {
     color: white;
