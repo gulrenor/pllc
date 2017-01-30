@@ -15,13 +15,13 @@
   </div>
   
   <!-- Desktop size menu -->
-  <ul>
+  <ul class="primary-menu">
     {{ $currentNode := . }}
     {{ range .Site.Menus.main }}
     {{ if .HasChildren }}
     <li>
       <p>{{ .Name }}</p>
-      <ul>
+      <ul class="secondary-menu">
         {{ range .Children }}
         <a href="{{ .URL | relLangURL }}">
           <li class="menu-item">{{ .Name }}</li>

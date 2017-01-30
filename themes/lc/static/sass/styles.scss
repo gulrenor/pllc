@@ -13,8 +13,6 @@
 
 @import 'slick';
 @import 'slick-theme';
-//@import '../slick/slick-theme.scss';
-
 
 // Styles //
 .copyright {
@@ -39,15 +37,12 @@
   }
 
   p {
-    width: auto;
     text-align: right;
+    width: auto;
   }
 
   a {
     display: inline;
-  }
-
-  img {
   }
 }
 
@@ -58,21 +53,22 @@ strong {
 
 .info {
   img:first-child {
-    width: 100%;
     //height: 240px;
     object-fit: cover;
+    width: 100%;
   }
 }
 
 button,
 .submit {
-  font-family: $font-body;
-  text-transform: uppercase;
-  color: $dkblue;
   border: 0;
   border-radius: 5px;
+  color: $dkblue;
+  font-family: $font-body;
   margin: .25rem;
   padding: .25rem;
+  text-transform: uppercase;
+
   &:hover {
     background-color: $ltblue;
     color: $white;
@@ -82,9 +78,10 @@ button,
 .tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-right: 0;
-  flex-wrap: wrap;
+
   @include susy-breakpoint($bp-mobile) {
     justify-content: flex-end;
   }
@@ -92,97 +89,100 @@ button,
 
 .tag {
   $tag-padding: .25rem;
-  display: inline-block;
-  font-size: .7rem;
-  padding: rhythm(.125) rhythm(.25);
   color: $white;
-  text-transform: uppercase;
+  display: inline-block;
   float: none;
+  font-size: .7rem;
   margin: rhythm(.125);
   //margin: inherit;
+  padding: rhythm(.125) rhythm(.25);
+  text-transform: uppercase;
+
   &:hover {
     text-decoration: underline;
-  }
-  @include susy-breakpoint($bp-mobile) {
-    //margin: -(rhythm(.125)) rhythm(.25);
-    //float: right;
   }
 }
 
 .list {
+  background-color: $ltgrey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: $ltgrey;
-  padding: 1rem;
   margin: .5rem;
+  padding: 1rem;
 }
 
 .inset-rule-box {
-  width: 100%;
+  height: 100%;
   padding: 2rem;
   text-align: center;
-  height: 100%;
-  & > div {
+  width: 100%;
+
+  > div {
     border: .25rem solid $white;
-    padding: 1rem;
     height: 100%;
+    padding: 1rem;
   }
 }
 
 
 // Header //
 header {
-  left: 0;
-  top: 0;
   background-color: $white;
-  //position: fixed;
-  width: 100%;
   flex-direction: column;
+  left: 0;
   padding-bottom: 0;
+  //position: fixed;
+  top: 0;
+  width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
-    position: relative;
-    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1rem 0;
+    position: relative;
   }
 }
 
-#header-search {
+.header-search {
+  color: $dkblue;
   font-family: $font-body;
   font-weight: bold;
-  color: $dkblue;
+
   .text {
-    width: 100%;
-    height: 2rem;
+    background-color: $ltgrey;
     border: 0;
     color: $bodygrey;
-    background-color: $ltgrey;
+    height: 2rem;
     padding: .5rem;
     text-align: right;
+    width: 100%;
   }
 }
 
 .header-sidebar {
   display: none; //NOTE: Reference nav-scroll.js
   width: 100%;
-  form {
-    padding: 0;
-    width: 100%;
-    margin: 0;
-    margin-bottom: .5rem;
-  }
+
   @include susy-breakpoint($bp-mobile) {
-    width: 40%;
+    align-self: flex-end;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-self: flex-end;
     margin-left: auto;
+    width: 40%;
+
     input {
       width: 100%;
     }
+  }
+
+  form {
+    margin: 0;
+    margin-bottom: .5rem;
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -192,29 +192,32 @@ header {
 }
 
 nav {
+  @include susy-breakpoint($bp-mobile) {
+    flex-direction: row;
+  }
+
   * {
     cursor: pointer;
     margin: 0;
     padding: 0;
     transition: background-color .5s, color .25s ease-out;
   }
-  @include susy-breakpoint($bp-mobile) {
-    flex-direction: row;
-  }
 }
 
 .nav-header {
   background-color: inherit;
   width: 100%;
+
   ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
     li {
-      padding: 0 rhythm(.5);
-      border-radius: rhythm(.25);
       background-color: $orange;
+      border-radius: rhythm(.25);
       margin-left: rhythm(.5);
+      padding: 0 rhythm(.5);
     }
   }
 }
@@ -223,114 +226,90 @@ nav {
 // (maintain specificity)
 // break out .nav-main and nav to be modular
 .nav-main {
-  position: fixed;
   left: 0;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 190;
   //display: none; //NOTE: Reference nav-scroll.js
-  ul { // Primary menu
-    margin: 0;
-    padding: 0 rhythm(.25);
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    @include susy-breakpoint($bp-mobile) {
-      padding: 0;
-    }
+
+  @include susy-breakpoint ($bp-mobile) {
+    display: flex;
+    margin: 0 (-$body-padding); //HACK
+    padding: 0 ($body-padding);
+    position: inherit;
+    width: auto;
+  }
+}
+
+.primary-menu { // Primary menu
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 rhythm(.25);
+  width: 100%;
+
+  @include susy-breakpoint($bp-mobile) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+
     li {
-      padding: .5rem;
-      &:last-child ul {
-        right: 0;
-      }
-      ul { // Secondary menu
-        display: none;
-        padding-left: 0;
-        width: 100%;
-        @include nav-shadow;
-        @include susy-breakpoint($bp-mobile) {
-          margin: .5rem auto auto -0.5rem;
-        }
+      position: relative;
+
+      &:hover > .secondary-menu {
+        display: flex;
+        position: absolute;
+        width: 12rem;
       }
     }
   }
-  @include susy-breakpoint ($bp-mobile) {
-    display: flex;
-    position: inherit;
-    width: auto;
-    margin: 0 (-$body-padding); //HACK
-    padding: 0 ($body-padding);
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      li {
-        position: relative;
-        &:hover > ul {
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          width: 12rem;
-        }
-      }
+
+  li {
+    padding: .5rem;
+
+    &:last-child ul {
+      right: 0;
     }
+  }
+}
+
+.secondary-menu { // Secondary menu
+  @include nav-shadow;
+  display: none;
+  flex-direction: column;
+  padding-left: 0;
+  width: 100%;
+
+  @include susy-breakpoint($bp-mobile) {
+    margin: .5rem auto auto -.5rem;
   }
 }
 
 // Sidebar //
 aside {
   background-color: $ltgrey;
-  height: 100%;
-  width: 100%;
   float: none;
+  height: 100%;
+  margin-bottom: rhythm(1);
   margin-left: auto;
   order: 50;
-  order: 50;
-  margin-bottom: rhythm(1);
   padding-bottom: rhythm(1);
+  width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
-    width: 32%;
     float: right;
+    width: 32%;
   }
 }
 
 
 // Footer //
 footer {
-  min-height: rhythm(5);
   border-top: .0625rem solid $ltgrey;
+  min-height: rhythm(5);
   padding-top: rhythm(1);
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    li {
-      display: block;
-    }
-  }
-  & > ul {
-    text-transform: uppercase;
-    letter-spacing: .0625rem;
-    color: $dkblue;
-    padding: rhythm(.5);
-    transition: color .5s, background-color .5s;
-    // Begins second level of menu
-    ul {
-      li {
-        font-size: .7rem;
-        color: $dkblue;
-      }
-    }
-  }
 }
 
 // Content Types //
@@ -339,13 +318,13 @@ iframe {
 }
 
 video {
-  position: absolute;
-  left: 0;  
-  top: 0;
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
   background-size: cover;
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .book {
@@ -355,8 +334,12 @@ video {
     padding: rhythm(.5);
     width: 100%;
   }
-  a:link, a:visited, a:active {
+
+  a:link,
+  a:visited,
+  a:active {
     text-decoration: none;
+
     &:hover {
       text-decoration: underline;
     }
@@ -364,86 +347,93 @@ video {
 }
 
 .video {
-  position: relative;
-  width: 100%;
+  background-size: cover;
   height: 0;
   min-width: 100%;
-  padding-bottom: 56.25%; //Keep 16:9 ratio
   overflow: hidden;
-  background-size: cover;
+  padding-bottom: 56.25%; //Keep 16:9 ratio
+  position: relative;
+  width: 100%;
+
   div {
     padding: 0;
   }
+
   img {
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    width: 100%;
   }
-  & + div {
+
+  + div {
     &:hover {
       h5 {
         text-decoration: underline;
       }
     }
+
     p {
       margin-top: rhythm(.5);
       padding: 0 rhythm(.5);
     }
   }
-  img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
-  }
 }
 
 .plvid {
-  position: relative;
-  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 
-.pdf, .doc {
+.pdf,
+.doc {
   height: rhythm(30);
 }
 
 // Mobile Nav //
 .hamburger {
+  border-bottom: .0625rem solid $white;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  height: rhythm(2);
+  justify-content: space-between;
   left: 0;
   top: 0;
   width: 100%;
-  height: rhythm(2);
-  border-bottom: .0625rem solid $white;
+
+  @include susy-breakpoint($bp-mobile) {
+    display: none;
+  }
+
   h5 {
     width: 100%;
   }
+
   i {
     color: $ltblue;
     font-size: 2rem;
     line-height: rhythm(2);
   }
+
   .hamburger-button {
     display: block;
-    width: rhythm(2);
     height: rhythm(2);
-    text-align: center;
     margin-right: rhythm(.5);
-  }
-  @include susy-breakpoint($bp-mobile) {
-    display: none;
+    text-align: center;
+    width: rhythm(2);
   }
 }
 
 .nav-title {
+  font-size: 1.2rem;
   line-height: rhythm(2);
   margin-left: rhythm(.5);
-  font-size: 1.2rem;
+
   a {
-    color: white;
+    color: $white;
   }
 }
 
@@ -466,34 +456,40 @@ video {
 // (maintain specificity)
 .float {
   position: fixed !important; // Needed to override the default class
-  width: 100%;
   top: 0;
+  width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
+
   @include susy-breakpoint($bp-small) {
-    width: 90%;
     margin: 0 5%;
+    width: 90%;
   }
+
   @include susy-breakpoint($bp-medium) {
-    width: 80%;
     margin: 0 10%;
+    width: 80%;
   }
+
   @include susy-breakpoint($bp-large) {
-    width: 70%;
     margin: 0 15%;
+    width: 70%;
   }
 }
 
 .pl-button {
-  display: inline;
-  padding: rhythm(.5);
-  border-radius: rhythm(.25);
   background-color: $orange;
+  border-radius: rhythm(.25);
+  display: inline;
   margin-left: rhythm(.5);
+  padding: rhythm(.5);
+
   a {
     color: $white;
+
     &:hover {
       text-decoration: underline;
     }

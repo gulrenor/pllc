@@ -4,12 +4,12 @@
 }
 
 pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-x: scroll;
-  width: 100%;
-  max-width: 100%;
   font-size: 1rem;
+  max-width: 100%;
+  overflow-x: scroll;
+  white-space: pre-wrap;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .clearfix {
@@ -19,9 +19,9 @@ pre {
 
 .dotted-rule {
   border: 0;
-  margin: rhythm(.5) 0 rhythm(1) 0;
-  padding: 0;
   border-bottom: .125rem dotted $bodygrey;
+  margin: rhythm(.5) 0 rhythm(1);
+  padding: 0;
 }
 
 .section-break {

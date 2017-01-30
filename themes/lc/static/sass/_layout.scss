@@ -12,6 +12,7 @@ $body-padding: rhythm(1);
 * {
   z-index: 0;
 }
+
 .right {
   float: right;
 }
@@ -19,64 +20,60 @@ $body-padding: rhythm(1);
 // JS breakpoint listener,
 // Reference: https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
 body {
-  &:before {
-  display: none;
-  content: 'mobile';
-  }
+  margin: 0;
+  margin-bottom: 5rem;
+  margin-top: rhythm(2);
+  padding: ($body-padding / 2);
+  padding-right: $body-padding;
+  width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
-    &:before {
+    margin: 0;
+    padding: $body-padding;
+    width: 100%;
+
+    &::before {
       content: 'small';
     }
   }
+
   @include susy-breakpoint($bp-small) {
-    &:before {
-       content: 'medium';
+    margin: 0 5%;
+    width: 90%;
+
+    &::before {
+      content: 'medium';
     }
   }
+
   @include susy-breakpoint($bp-medium) {
-    &:before {
+    margin: 0 10%;
+    width: 80%;
+
+    &::before {
       content: 'large';
     }
   }
+
   @include susy-breakpoint($bp-large) {
-    &:before {
+    margin: 0 15%;
+    width: 70%;
+
+    &::before {
       content: 'exlarge';
     }
   }
-}
 
-body {
-  width: 100%;
-  margin: 0;
-  padding: ($body-padding / 2);
-  padding-right: $body-padding;
-  margin-top: rhythm(2);
-  @include susy-breakpoint($bp-mobile) {
-    padding: $body-padding;
-    width: 100%;
-    margin: 0;
+  &::before {
+    content: 'mobile';
+    display: none;
   }
-  @include susy-breakpoint($bp-small) {
-    width: 90%;
-    margin: 0 5%;
-  }
-  @include susy-breakpoint($bp-medium) {
-    width: 80%;
-    margin: 0 10%;
-  }
-  @include susy-breakpoint($bp-large) {
-    width: 70%;
-    margin: 0 15%;
-  }
-}
-
-body {
-  margin-bottom: 5rem;
 }
 
 main {
   padding: rhythm(.5) 0;
 }
+
 .centered {
   text-align: center;
 }
@@ -88,70 +85,78 @@ main {
 .column-header {
   margin: 0;
   //margin-bottom: rhythm(.25);
-  padding: rhythm(.5) rhythm(.5);
-  & + ul {
+  padding: rhythm(.5);
+
+  + ul {
     margin-top: rhythm(.5);
   }
 }
 
 
 .columns-6 {
-  width: 48.5%;
-  max-width: 48.5%;
   margin-bottom: rhythm(1);
   margin-right: 1%;
+  max-width: 48.5%;
+  width: 48.5%;
+
   @include susy-breakpoint($bp-mobile) {
-    width: 32%;
     max-width: 32%;
+    width: 32%;
   }
+
   @include susy-breakpoint($bp-small) {
-    width: 23%;
     max-width: 23%;
+    width: 23%;
   }
+
   @include susy-breakpoint($bp-large) {
-    width: 15.5%;
     max-width: 15.5%;
+    width: 15.5%;
   }
 }
 
 .columns-4 {
-  width: 48.5%;
-  max-width: 48.5%;
   margin-bottom: rhythm(1);
   margin-right: 1%;
+  max-width: 48.5%;
+  width: 48.5%;
+
   @include susy-breakpoint($bp-mobile) {
-    width: 23%;
     max-width: 23%;
+    width: 23%;
   }
 }
 
 .columns-3 {
-  width: 100%;
-  max-width: 100%;
-  margin-right: 0;
   margin-bottom: rhythm(1);
+  margin-right: 0;
+  max-width: 100%;
+  width: 100%;
+
   @include susy-breakpoint($bp-mobile) {
-    width: 48.5%;
-    max-width: 48.5%;
     margin-right: 1.5%;
+    max-width: 48.5%;
+    width: 48.5%;
   }
+
   @include susy-breakpoint($bp-medium) {
-    width: 32%;
-    max-width: 32%;
     margin-bottom: rhythm(1);
     margin-right: 1.33%;
+    max-width: 32%;
+    width: 32%;
   }
 }
 
 .columns-2 {
-  width: 100%;
-  max-width: 100%;
-  margin-right: 0;
   margin-bottom: rhythm(1);
+  margin-right: 0;
+  max-width: 100%;
+  width: 100%;
+
   @include susy-breakpoint($bp-medium) {
-    width: 48.5%;
-    max-width: 48.5%;
     margin-right: 1.5%;
+    max-width: 48.5%;
+    width: 48.5%;
   }
 }
 
@@ -167,37 +172,41 @@ img {
 }
 
 .content-header {
-  margin: rhythm(.5) 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: rhythm(.5) 0;
   padding: rhythm(.5);
+
+  @include susy-breakpoint($bp-mobile) {
+    align-items: center;
+    flex-direction: row;
+    padding: rhythm(.25);
+  }
+
   h4 {
+    border-bottom: .0625rem solid;
     line-height: 100%;
     margin-bottom: rhythm(.5);
-    border-bottom: .0625rem solid;
+
     @include susy-breakpoint($bp-mobile) {
-      margin-bottom: 0;
       border-bottom: 0;
+      margin-bottom: 0;
     }
-  }
-  @include susy-breakpoint($bp-mobile) {
-    flex-direction: row;
-    align-items: center;
-    padding: rhythm(.25);
   }
 }
 
 .grid {
   display: flex;
-  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .site-logo {
   display: none;
+
   @include susy-breakpoint($bp-mobile) {
     display: inherit;
     width: 20rem;
@@ -206,41 +215,54 @@ img {
 
 .nav-logo {
   height: 100%;
-  max-width: 80%;
   left: 0;
+  max-width: 80%;
   padding: rhythm(.33) 0;
   padding-left: rhythm(.5);
+
   img {
-    max-height: 100%;
     margin: auto 0;
+    max-height: 100%;
   }
 }
 
 .info { // Special formatting for text only info pages
   margin-top: rhythm(1);
-  h1, h2 {
+
+  h1,
+  h2 {
     margin-bottom: rhythm(.25);
   }
+
   p {
     padding-left: rhythm(.5);
   }
-  h4, h5, h6 {
+
+  h4,
+  h5,
+  h6 {
     padding-left: rhythm(.25);
   }
-  ul, ol {
-    padding-left: rhythm(1.25);
+
+  ul,
+  ol {
     margin-bottom: rhythm(1);
     margin-left: rhythm(.5);
+    padding-left: rhythm(1.25);
   }
+
   ol * {
     list-style: decimal;
   }
+
   ul * {
     list-style: disc;
   }
+
   a:link {
     text-decoration: underline;
   }
+
   em {
     font-style: oblique;
   }

@@ -14,9 +14,11 @@ $rhythm-unit: 'rem';
 // Responsive root declaration
 html {
   font-size: .8rem;
+
   @include susy-breakpoint($bp-mobile) {
     font-size: .85rem;
   }
+
   @include susy-breakpoint($bp-medium) {
     font-size: .9rem;
   }
@@ -45,13 +47,12 @@ h6 {
   text-transform: uppercase;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  font-weight: bold;
   font-weight: 700;
 }
 
@@ -66,8 +67,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
   color: $dkblue;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -101,27 +102,26 @@ p {
 
 .bullet-list {
   li {
-    list-style: disc;  
+    list-style: disc;
   }
 }
 
 nav {
-  text-transform: uppercase;
   letter-spacing: .09375rem; // =1.5px on main site
-  & * {
+  text-transform: uppercase;
+
+  * {
     z-index: 200;
   }
+
+  p {
+    font-size: .75rem;
+  }
+
   ul {
     li {
-      p {
-        font-size: .75rem;  
-      }
-      ul {
-        li {
-          font-size: .7rem;
-          letter-spacing: .0625rem; // =1px on main site  
-        }
-      }
+      font-size: .7rem;
+      letter-spacing: .0625rem; // =1px on main site
     }
   }
 }
@@ -131,8 +131,8 @@ nav {
 }
 
 li {
-  margin-bottom: rhythm(.25);
   list-style: none;
+  margin-bottom: rhythm(.25);
 }
 
 ul {
