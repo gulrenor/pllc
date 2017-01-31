@@ -2,77 +2,9 @@
 
 <!-- Slick slider begins -->
 <div class="slider single-item section-break">
-  <!-- Template below-->
-  <!--
-    <div>
-      <a href="{{ "%URL%" | relURL }}">
-        <img src="{{ "%IMAGE%" | relURL }}" />
-        <div class="slider-title %BGCOLOR%">
-          <h4>%TITLE%</h4>
-          <p>%DESCRIPTION%</p>
-        </div>
-      </a>
-    </div>
-  -->
-  
-  <div>
-    <a href="{{ "/video/find-your-signature-experience/index.html" | relLangURL }}">
-      <img src="{{ "/images/find-your-signature-experience.jpg" | relURL }}" alt="Find Your Signature Experience" />
-      <div class="slider-title bg-mdblue">
-        <div>
-        <h4>Find Your Signature Experience</h4>
-        <p>Learn what Find Your Signature is all about!</p>
-      </div>
-      </div>
-    </a>
-  </div>
-  
-  <div>
-    <a href="{{ "/video/find-your-signature-party/index.html" | relLangURL }}">
-      <img src="{{ "/images/find-your-signature-party.jpg" | relURL }}" alt="Find Your Signature Party" />
-      <div class="slider-title bg-green">
-        <div>
-        <h4>Holding Your Find Your Signature Party</h4>
-        <p>Here's an overview of our Find Your Signature Party.</p>
-      </div>
-      </div>
-    </a>
-  </div>
-
-  <div>
-    <a href="{{ "/info/find-your-signature-webinar/index.html" | relLangURL }}">
-      <img src="{{ "/images/fys_webinar.jpg" | relURL }}" alt="Find Your Signature Webinar" />
-      <div class="slider-title bg-orange">
-        <div>
-        <h4>Find Your Signature Webinar</h4>
-        <p>Led by PartyLite Home Office field trainers, this webinar will introduce you to the new Find Your Signature Party and how it is revolutionizing PartyLite businesses around the world!</p>
-      </div>
-      </div>
-    </a>
-  </div>
-  
-  <div>
-    <a href="{{ "video/mock-party/index.html" | relLangURL }}">
-      <img src="{{ "/images/Product Shot3.jpg" | relURL }}" alt="Getting Leads" />
-      <div class="slider-title bg-red">
-        <div>
-        <h4>Getting Leads</h4>
-        <p>Get 2&ndash;3 bookings and 4&ndash;5 Sponsoring Leads using this format.</p>
-      </div>
-      </div>
-    </a>
-  </div>
-  
-  <div>
-    <a href="{{ "/video/booking-perks-made-easy/index.html" | relLangURL }}">
-      <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Booking Perks Made Easy" />
-      <div class="slider-title bg-mdblue">
-        <h4>Booking Perks Made Easy</h4>
-        <p>Check out this step-by-step instructional video on how to enter Booking perks.</p>
-      </div>
-    </a>
-  </div>
-
+  {{ range where .Data.Pages "Section" "slider" }}
+    {{ .Render "slider" }}
+  {{ end }}
 </div>
 
 <!-- Info Triptych begins-->
@@ -81,9 +13,8 @@
   <!-- Webinars -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product Shot3.jpg" | relURL }}" alt="Product Shot" />
-    <h5 class="column-header bg-red fg-white">Webinars</h5>
+    <h5 class="column-header bg-red fg-white">{{ .Site.Params.webinars }}</h5>
     <ul>
-      <li><a href="{{ "/info/find-your-signature-webinar/index.html" | relLangURL }}">Find Your Signature Webinar</a></li>
       {{ range .Site.Taxonomies.categories.webinars }}
       <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
       {{ end }}
@@ -93,19 +24,18 @@
   <!-- Business Guides -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Product Shot"/>
-    <h5 class="column-header bg-mdblue fg-white">Business Guides</h5>
+    <h5 class="column-header bg-mdblue fg-white">{{ .Site.Params.businessguides }}</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.businessguides }}
       <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
       {{ end }}
-      <li><a href="{{ "/categories/partylite-preferred/index.html" | relLangURL }}">PartyLite Preferred&trade;</a></li>
     </ul>
   </div>
   
   <!-- Tutorials -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product Shot5.jpg" | relURL }}" alt="Product Shot"/>
-    <h5 class="column-header bg-green fg-white">Tutorials</h5>
+    <h5 class="column-header bg-green fg-white">{{ .Site.Params.tutorials }}</h5>
     <ul>
       {{ range .Site.Taxonomies.categories.tutorials }}
       <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>

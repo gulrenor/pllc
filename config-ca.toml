@@ -45,6 +45,11 @@ canonifyURLS = true
   copyright = "All rights reserved."
   backtocbc = "Back to CBC"
   relateddocuments = "Related Documents"
+  webinars = "Webinars"
+  businessguides = "Business Guides"
+  tutorials = "Tutorials"
+  download = "Download"
+  
   
   ### New Consultants ###
   [[languages.en.menu.main]]
@@ -156,18 +161,22 @@ canonifyURLS = true
   copyright = "Tous droits réservés."
   backtocbc = "Retour au Centre d'Affaires"
   relateddocuments = "Documents Connexes"
+  webinars = "Webinaires"
+  businessguides = "Guides d'Affaires"
+  tutorials = "Tutoriels"
+  download = "Télécharger"
   
   ### New Consultants ###
   [[languages.fr.menu.main]]
-    name = "Nouvelles Conseillères"
+    name = "Nouvelles(eaux) Conseillères(ers)"
     identifier = "new-consultants"
     url = "/categories/new-consultants/index.html"
     weight = 10
     [[languages.fr.menu.main]]
       ## Host Program ##
-      name = "Encadrement Des Hôtesses"
+      name = "Programme d'Hôtesse(Hôte)"
       parent = "new-consultants"
-      url = "/categories/programme-d'hôtesses-hôtes/index.html"
+      url = "/categories/programme-dhôtessehôte/index.html"
     [[languages.fr.menu.main]]
       ## First Parties ##
       name = "Vos premières présentations"
@@ -218,13 +227,13 @@ canonifyURLS = true
       url = "/categories/réseaux-sociaux/index.html"
     [[languages.fr.menu.main]]
       ## PartyLite Preferred ##
-      name = "PartyLite Preferred"
+      name = "PartyLite Préféré (MC)"
       parent = "Online Biz"
       url = "/categories/partylite-preferred/index.html"
     
   ### Leader Academy ###
   [[languages.fr.menu.main]]
-    name = "Leader Academy"
+    name = "Académie des Leaders"
     identifier = "leadership"
     weight = 50
     [[languages.fr.menu.main]]
@@ -253,7 +262,7 @@ canonifyURLS = true
 
   ### Party Ideas ###
   [[languages.fr.menu.main]]
-    name = "Idées Présentations"
+    name = "Idées de Présentations"
     identifier = "Party Ideas"
     weight = 70
     [[languages.fr.menu.main]]

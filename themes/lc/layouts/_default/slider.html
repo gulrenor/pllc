@@ -1,0 +1,10 @@
+<div>
+  <a href="{{ .Params.contenturl | relLangURL }}">
+    <img src="{{ .Params.thumb }}" alt="{{ .Title }}" />
+    <div class="slider-title bg-{{ .Params.color }}">
+      <div>
+        {{ .Content }}
+      </div>
+    </div>
+  </a>
+</div>

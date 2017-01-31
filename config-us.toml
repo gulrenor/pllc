@@ -40,6 +40,11 @@ canonifyURLS = true
   logo = "images/lc-logo-usen.svg"
   logomobile = "images/lc-logo-usen-ko.svg"
   logomark = "images/lc-logomark.svg"
+  webinars = "Webinars"
+  businessguides = "Business Guides"
+  tutorials = "Tutorials"
+  download = "Download"
+
   
   ### New Consultants ###
   [[languages.en.menu.main]]
