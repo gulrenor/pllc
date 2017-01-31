@@ -3,7 +3,7 @@ categories_weight = 50
 series_weight = 50
 date = "2016-11-10T15:20:16-05:00"
 title = "Apprentice Program Training"
-active = true
+active = false
 series = ""
 categories = [
   "Sponsor",

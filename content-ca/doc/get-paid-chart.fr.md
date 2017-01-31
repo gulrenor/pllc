@@ -6,7 +6,7 @@ categories = [
   "Selling and Booking",
   "Ventes & Engagements",
   "Host Program",
-  "Programme d'Hôtesses-Hôtes",
+  "Programme d'Hôtesse(Hôte)",
   "Book",
   "Engagements",
 ]

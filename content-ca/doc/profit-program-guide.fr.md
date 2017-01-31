@@ -5,7 +5,7 @@ series_weight = 50
 series = ""
 categories = [
   "New Consultants",
-  "Nouvelles Conseillères",
+  "Nouvelles(eaux) Conseillères(ers)",
   "Income and Rewards",
   "Les Programmes d'un Seul Coup d'Œil",
   "BusinessGuides",

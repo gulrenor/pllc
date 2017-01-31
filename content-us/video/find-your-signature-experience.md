@@ -8,7 +8,7 @@ categories = [
   "Find Your Signature",
 ]
 categories_weight = 51
-description = "Learn what Find Your Signature is all about!"
+description = "Learn what Find Your Signature is all about!?"
 
 +++
 

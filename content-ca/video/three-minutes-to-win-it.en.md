@@ -10,7 +10,7 @@ categories = [
   "Games"
 ]
 description = "Quick sponsoring game you can play in just 3 minutes."
-active = true
+active = false
 
 +++
 

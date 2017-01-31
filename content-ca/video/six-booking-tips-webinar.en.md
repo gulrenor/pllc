@@ -8,7 +8,7 @@ categories = [
   "Book",
 ]
 description = "Use these six booking tips to ensure you have all the Parties you need."
-active = true
+active = false
 date = "2016-11-22T12:32:12-05:00"
 
 +++

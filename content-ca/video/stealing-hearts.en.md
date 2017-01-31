@@ -7,7 +7,7 @@ categories = [
   "Games"
 ]
 description = "Use this interactive sponsoring game to guide you through the most important points of our opportunity."
-active = true
+active = false
 date = "2016-11-10T15:31:41-05:00"
 title = "The 'Stealing Hearts' Game"
 series = ""

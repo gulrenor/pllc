@@ -14,7 +14,7 @@ title = "Leadership Skills"
 
 +++
 
-### Now that you have become a Leader – what next? 
+### Now that you have become a Leader – what's next? 
 Simply continue to do the things that got you to Leadership &mdash; building your personal business, continuing to build your team, and sharing what you have learned with your new team.
 
 ### Be sure to review some of the new tools available to you on the CBC including:

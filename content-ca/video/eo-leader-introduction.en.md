@@ -6,7 +6,7 @@ categories = [
 ]
 categories_weight = 50
 description = ""
-active = true
+active = false
 date = "2016-11-15T10:44:58-05:00"
 title = "Leader Introduction"
 

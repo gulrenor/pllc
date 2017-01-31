@@ -9,7 +9,7 @@ categories = [
   "The Apprentice Program"
 ]
 description = "Learn how the apprentice program can boost your sponsoring success."
-active = true
+active = false
 date = "2016-11-10T15:20:06-05:00"
 
 +++

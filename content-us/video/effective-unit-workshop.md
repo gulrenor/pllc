@@ -7,7 +7,7 @@ categories = [
   "Unit Workshop Training",
 ]
 description = ""
-active = true
+active = false
 date = "2016-11-10T15:54:28-05:00"
 title = "Holding an Effective Unit Workshop"
 

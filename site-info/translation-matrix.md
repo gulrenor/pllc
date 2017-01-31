@@ -26,16 +26,16 @@ Games|Jeux
 Grand Opening Party|Cérémonie d'Ouverture
 Home (page)|Page d'Accueil
 Host Coach|Encadrement des Hôtesses
-Host Program|Programme d'Hôtesses-Hôtes
+Host Program|Programme d'Hôtesse(Hôte)
 How to Sponsor|Comment Parrainer
 Income & Rewards|Revenu et Récompenses
 Leadership 101|Leadership 101
 Leadership Skills|Compétences en Leadership
 Motivation|Motivation
-New Consultants|Nouvelles Conseillères
+New Consultants|Nouvelles(eaux) Conseillères(ers)
 Online Biz|En Ligne
 Online Parties|Présentations en Ligne
-Party Ideas|Idées Présentations
+Party Ideas|Idées de Présentations
 Party Types|Types de Présentations
 PartyLite Preferred|PartyLite Préféré
 Personal Growth|Développement Personnel

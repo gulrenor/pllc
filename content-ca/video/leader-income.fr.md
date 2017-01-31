@@ -5,7 +5,7 @@ series_weight = 50
 series = ""
 categories = [
   "New Consultants",
-  "Nouvelles Conseillères",
+  "Nouvelles(eaux) Conseillères(ers)",
   "Income and Rewards",
   "Revenu et Récompenses",
   "Shareable",
@@ -13,9 +13,9 @@ categories = [
   "Leadership Skills",
   "Compétences en Leadership",
 ]
-description = "Earn more as a Leader! It's really simple."
+description = "Gagnez plus en tant que chef! C'est vraiment simple."
 date = "2016-11-08T09:44:40-05:00"
-title = "Leader Income"
+title = "Revenu de Chef"
 
 +++
 

@@ -3,7 +3,7 @@ categories = [
   "Booking",
   "Engagements",
   "Host Program",
-  "Programme d'Hôtesses-Hôtes",
+  "Programme d'Hôtesse(Hôte)",
 ]
 categories_weight = 0
 description = ""

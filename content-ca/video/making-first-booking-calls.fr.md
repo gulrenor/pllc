@@ -7,11 +7,11 @@ title = "Obtenir Des Engagements Par Telephone"
 series = ""
 categories = [
   "New Consultants",
-  "Nouvelles Conseillères",
+  "Nouvelles(eaux) Conseillères(ers)",
   "Selling and Booking",
   "Ventes & Engagements",
   "Host Program",
-  "Programme d'Hôtesses-Hôtes",
+  "Programme d'Hôtesse(Hôte)",
   "Book",
   "Engagements",
 ]

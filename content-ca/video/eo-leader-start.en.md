@@ -1,5 +1,5 @@
 +++
-active = true
+active = false
 date = "2016-11-15T10:45:55-05:00"
 title = "Leader Start Your Biz 1-2-3"
 series = "Enrolling Online"
