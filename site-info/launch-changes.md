@@ -369,24 +369,24 @@ Menu [ _Micheline_ ]
 
 Triptych [ _Micheline_ ]
 --------
-+ Webinars -> Webinaires
-+ Business Guides -> Guides d'Affaires
++ ~~Webinars -> Webinaires OK~~
++ ~~Business Guides -> Guides d'Affaires OK~~
   + Replace &trade; with <sup>MC</sup>
-+ Tutorials -> Tutoriels
++ ~~Tutorials -> Tutoriels OK~~
 
 Slider [ _Micheline_ ]
 ------
-+ **Find Your Signature Experience slide** -> L'Expérience Find Your Signature: Découvrez le véritable sens du concept Find Your Signature!
-+ **Holding Your Find Your Signature Party slide** -> Accueillez Votre Présentation Find Your Signature: Voici un aperçu de notre présentation Find Your Signature.
-+ **Find Your Signature Webinar slide** -> Webinaire Find Your Signature: Animé oar kes formateurs du siège social de PartyLite, ce webinaire bous présentera la nouvelle présentation Find Your Signature et vous montrera comment elle révolutionne les entreprises PartyLite dans le monde!
-+ **Getting Leads slide** -> Pour Obtenir des Pistes: Utilisez ce format pour obtenir 2 à 3 réservations et 4 à 5 parrainages potentiels.
-+ **Booking Perks Made Easy slide** -> Les Avantages pour Engagements Simplifiés: Regardez cette vidéo didactique pour apprendre comment saisir les avantages pour engagements étape par étape.
++ ~~**Find Your Signature Experience slide** -> L'Expérience Find Your Signature: Découvrez le véritable sens du concept Find Your Signature! OK~~
++ ~~**Holding Your Find Your Signature Party slide** -> Accueillez Votre Présentation Find Your Signature: Voici un aperçu de notre présentation Find Your Signature. OK~~
++ ~~**Find Your Signature Webinar slide** -> Webinaire Find Your Signature: Animé oar kes formateurs du siège social de PartyLite, ce webinaire bous présentera la nouvelle présentation Find Your Signature et vous montrera comment elle révolutionne les entreprises PartyLite dans le monde! OK~~
++ ~~**Getting Leads slide** -> Pour Obtenir des Pistes: Utilisez ce format pour obtenir 2 à 3 réservations et 4 à 5 parrainages potentiels. Removed 1/31~~
++ ~~**Booking Perks Made Easy slide** -> Les Avantages pour Engagements Simplifiés: Regardez cette vidéo didactique pour apprendre comment saisir les avantages pour engagements étape par étape. OK~~
 
 Nouvelles Conseilleres [ _Micheline_ ]
 ----------------------
 ### Programme d'Hotesse(Hote)
 _Should we be using Host Program or Host Coaching for the menu?_
-+ **Get Paid** (YouTube video name) -> Se Faire Payer
++ ~~**Get Paid** (YouTube video name) -> Se Faire Payer OK~~
 
 ### Find Your Signature
 
@@ -394,7 +394,7 @@ _Should we be using Host Program or Host Coaching for the menu?_
 + ~~**Leader Income** -> Revenu de Chef: Gagnez plus en tant que chef! C'est vraiment simple. OK~~
 
 ### Vos Premieres Presentations
-+ Créez une liste de contacts (no title case) - this will need to be overridden, because thedefault is title case.
++ Créez une liste de contacts (no title case) - this will need to be overridden, because the default is title case.
 
 Ventes & Engagements [ _Micheline_ ]
 --------------------
