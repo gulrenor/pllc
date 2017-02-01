@@ -1,4 +1,6 @@
 +++
+series = ""
+series_weight = 50
 contenturl = "/video/booking-perks-made-easy/index.html"
 thumb = "/images/Product shot1.jpg"
 color = "mdblue"

@@ -1,4 +1,6 @@
 +++
+series = ""
+series_weight = 50
 weight = 50
 date = "2017-01-31T11:26:37-05:00"
 title = "find your signature experience"

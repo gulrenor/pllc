@@ -1,4 +1,6 @@
 +++
+series = ""
+series_weight = 50
 contenturl = "/info/find-your-signature-webinar/index.html"
 thumb = "/images/fys_webinar.jpg"
 color = "orange"

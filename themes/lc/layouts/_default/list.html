@@ -20,7 +20,7 @@
 
   <!-- Group results by series (if defined) with undefined series displaying first. -->
   {{ range .Data.Pages.GroupByParam "series" }}
-
+  
     <!-- Get quantity of content types for eval -->
     {{ $lenDoc := (len (where (where .Pages "Section" "doc") "Params.active" true )) }}
     {{ $lenVid := (len (where (where .Pages "Section" "video") "Params.active" true )) }}
@@ -60,7 +60,7 @@
         <div class="grid">
           {{ range .Pages }}
             <!-- Display videos and info pages, as long as summary_file isn't true -->
-            {{ if and (.Params.active) (or (eq "video" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb)))) }}
+            {{ if and (.Params.active) (or (eq "video" .Section) (eq "slider" .Section) (and (eq "info" .Section) (ne "true" .Params.summary_file) (and (isset .Params "thumb") (ne "" .Params.thumb)))) }}
               <!-- If there's documents (and a sidebar) then adjust size accordingly -->
               <div class="columns-{{if eq 0 $lenDoc}}3{{else}}2{{end}}">
                 {{ .Render "grid" }}

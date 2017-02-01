@@ -1,4 +1,6 @@
 +++
+series = ""
+series_weight = 50
 active = true
 date = "2017-01-31T12:11:27-05:00"
 title = "find your signature party"
