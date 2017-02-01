@@ -4,11 +4,12 @@ series = ""
 series_weight = 50
 categories = [
   "PartyLite Preferred",
+  "BusinessGuides",
 ]
 categories_weight = -10
 description = "PartyLite Preferred Member Program"
 date = "2016-11-08T09:46:07-05:00"
-title = "Preferred Member Program"
+title = "PartyLite Preferred™"
 summary_file = "true"
 thumb = "/images/preferred_logo.png"
 

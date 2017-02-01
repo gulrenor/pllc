@@ -4,6 +4,7 @@ title = "PartyLite Bingo: Hostess"
 series = ""
 series_weight = 50
 categories = [
+  "Games",
 ]
 categories_weight = 50
 description = ""
