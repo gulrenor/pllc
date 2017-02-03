@@ -142,10 +142,6 @@ canonifyURLS = true
       name = "Find Your Signature Party"
       parent = "Party Ideas"
       url = "/categories/find-your-signature/index.html"
-    [[languages.en.menu.main]]
-      name = "Games"
-      parent = "Party Ideas"
-      url = "/categories/games/index.html"
 
 ### Begin Menu (French) ###
 [languages.fr]
@@ -270,8 +266,3 @@ canonifyURLS = true
       name = "Présentations de Find Your Signature"
       parent = "Party Ideas"
       url = "/categories/find-your-signature/index.html"
-    [[languages.fr.menu.main]]
-      ## Games ##
-      name = "Jeux"
-      parent = "Party Ideas"
-      url = "/categories/jeux/index.html"
