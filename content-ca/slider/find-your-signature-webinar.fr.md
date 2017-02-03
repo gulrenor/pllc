@@ -13,4 +13,4 @@ title = "find your signature webinar"
 
 #### Webinaire Find Your Signature
 
-Animé oar kes formateurs du siège social de PartyLite, ce webinaire bous présentera la nouvelle présentation Find Your Signature et vous montrera comment elle révolutionne les entreprises PartyLite dans le monde!
+Animé par les formateurs du siège social de PartyLite, ce webinaire vous présentera la nouvelle présentation Find Your Signature et vous montrera comme elle révolutionne les entreprises PartyLite dans le monde!

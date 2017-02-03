@@ -212,20 +212,10 @@ canonifyURLS = true
     identifier = "Online Biz"
     weight = 30
     [[languages.fr.menu.main]]
-      ## Your Consultant Website ##
-      name = "Votre Site De Conseillère"
-      parent = "Online Biz"
-      url = "/categories/votre-site-de-conseillère/index.html"
-    [[languages.fr.menu.main]]
       ## Social Networking ##
       name = "Réseaux Sociaux"
       parent = "Online Biz"
       url = "/categories/réseaux-sociaux/index.html"
-    [[languages.fr.menu.main]]
-      ## PartyLite Preferred ##
-      name = "PartyLite Préféré (MC)"
-      parent = "Online Biz"
-      url = "/categories/partylite-preferred/index.html"
     
   ### Leader Academy ###
   [[languages.fr.menu.main]]
@@ -238,12 +228,6 @@ canonifyURLS = true
       parent = "leadership"
       url = "/categories/compétences-en-leadership/index.html"
       weight = -20
-    [[languages.fr.menu.main]]
-      ## Sponsoring ##
-      name = "Parrainage"
-      parent = "leadership"
-      url = "/categories/parrainage/index.html"
-      weight = -10
 
   ### Product ###
   [[languages.fr.menu.main]]

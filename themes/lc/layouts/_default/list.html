@@ -5,7 +5,12 @@
   {{ $currentURL := .Permalink | replaceRE "^http?://.*/([^/]+).html" "$1" }}
   {{ $.Scratch.Add "currentURL" $currentURL }}
 
-  <h2>{{ .Title | humanize }}</h2>
+  <!-- Not sure how to display parens and apostrophes in .Title, but FIXME HACK for sure... -->
+  {{ if eq .Title "Programme Dhôtessehôte"}}
+  <h2>Programme d'Hôtesse(Hôte)</h2>
+  {{ else }}
+  <h2>{{ .Title }}</h2>
+  {{ end }}
   
   <!-- If there's an info page with summary_file = true, then display the summary markdown. -->
   {{ range where .Data.Pages "Section" "info" }}

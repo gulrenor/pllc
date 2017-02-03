@@ -2,7 +2,7 @@
 
 css_dir = "themes/lc/static/css"
 sass_dir = "themes/lc/static/sass"
-images_dir = "static/images"
+images_dir = "images"
 fonts_dir =  "themes/lc/static/fonts"
 
 # Swap uncomment for live

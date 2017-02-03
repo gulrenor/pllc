@@ -795,37 +795,33 @@ pre {
   position: absolute;
   bottom: 0;
   padding: 0.4375rem;
-  max-width: 100%;
 }
 @media (min-width: 32em) {
   /* line 11, ../sass/_slick.scss */
   .slider-title {
     bottom: 1.75rem;
     padding: 1.75rem;
-    max-width: 80vw;
   }
 }
-/* line 23, ../sass/_slick.scss */
+/* line 21, ../sass/_slick.scss */
 .slider-title div {
   position: relative;
-  width: 100%;
-  max-width: 100%;
 }
-/* line 28, ../sass/_slick.scss */
+/* line 24, ../sass/_slick.scss */
 .slider-title p {
   margin: 0;
   padding-left: 0.4375rem;
 }
 @media (min-width: 32em) {
-  /* line 28, ../sass/_slick.scss */
+  /* line 24, ../sass/_slick.scss */
   .slider-title p {
+    max-width: 50vw;
     padding-left: 0.875rem;
-    max-width: 40rem;
   }
 }
 
 /* Slider */
-/* line 40, ../sass/_slick.scss */
+/* line 37, ../sass/_slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -841,7 +837,7 @@ pre {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 54, ../sass/_slick.scss */
+/* line 51, ../sass/_slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -849,17 +845,17 @@ pre {
   margin: 0;
   padding: 0;
 }
-/* line 61, ../sass/_slick.scss */
+/* line 58, ../sass/_slick.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 65, ../sass/_slick.scss */
+/* line 62, ../sass/_slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 70, ../sass/_slick.scss */
+/* line 67, ../sass/_slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -869,74 +865,74 @@ pre {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 79, ../sass/_slick.scss */
+/* line 76, ../sass/_slick.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-/* line 85, ../sass/_slick.scss */
+/* line 82, ../sass/_slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 91, ../sass/_slick.scss */
+/* line 88, ../sass/_slick.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 95, ../sass/_slick.scss */
+/* line 92, ../sass/_slick.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 99, ../sass/_slick.scss */
+/* line 96, ../sass/_slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 103, ../sass/_slick.scss */
+/* line 100, ../sass/_slick.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 106, ../sass/_slick.scss */
+/* line 103, ../sass/_slick.scss */
 .slick-slide img {
   display: block;
   object-fit: cover;
   height: 17.5rem;
 }
 @media (min-width: 32em) {
-  /* line 106, ../sass/_slick.scss */
+  /* line 103, ../sass/_slick.scss */
   .slick-slide img {
     height: 26.25rem;
   }
 }
-/* line 114, ../sass/_slick.scss */
+/* line 111, ../sass/_slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 120, ../sass/_slick.scss */
+/* line 117, ../sass/_slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 124, ../sass/_slick.scss */
+/* line 121, ../sass/_slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 128, ../sass/_slick.scss */
+/* line 125, ../sass/_slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 132, ../sass/_slick.scss */
+/* line 129, ../sass/_slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 138, ../sass/_slick.scss */
+/* line 135, ../sass/_slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
 }
