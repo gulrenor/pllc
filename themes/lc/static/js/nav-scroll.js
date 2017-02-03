@@ -71,7 +71,7 @@ $(document).ready(function() {
       nav.addClass('float');
     } else {
       nav.removeClass('float');
-    };
+    }
   });
 
 });

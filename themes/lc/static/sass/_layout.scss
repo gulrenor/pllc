@@ -27,6 +27,13 @@ body {
   padding-right: $body-padding;
   width: 100%;
 
+  // This needs to appear before the breakpoints. If it's not, then the nav visibility controlled by nav-scroll.js breaks, as it's looking for the content of the pseudo::before which is being overridden by the breakpoints.
+  // Definitely FIXME (to make the linter happy)
+  &::before {
+    content: 'mobile';
+    display: none;
+  }
+
   @include susy-breakpoint($bp-mobile) {
     margin: 0;
     padding: $body-padding;
@@ -62,11 +69,6 @@ body {
     &::before {
       content: 'exlarge';
     }
-  }
-
-  &::before {
-    content: 'mobile';
-    display: none;
   }
 }
 
