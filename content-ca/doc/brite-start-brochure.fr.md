@@ -4,11 +4,8 @@ categories_weight = 50
 series_weight = 50
 series = ""
 categories = [
-  "Income and Rewards",
   "Revenu et Récompenses",
-  "Brite Start",
   "Brillant Départ",
-  "Programs at a Glance",
   "Les Programmes d'un Seul Coup d'Œil",
 ]
 description = ""

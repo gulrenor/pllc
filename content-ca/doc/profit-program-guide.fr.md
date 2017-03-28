@@ -4,11 +4,8 @@ categories_weight = 50
 series_weight = 50
 series = ""
 categories = [
-  "New Consultants",
   "Nouvelles(eaux) Conseillères(ers)",
-  "Income and Rewards",
   "Les Programmes d'un Seul Coup d'Œil",
-  "BusinessGuides",
   "Guides d'Affaires",
 ]
 description = "Le programme de rémunération PartyLite est unique en son genre dans l’industrie de la vente directe. Il n’y a AUCUNE déduction pour les Privilèges/Crédits d’hôtesses/hôtes initiaux, ce qui vous permet de calculer immédiatement votre revenu. Bien d’autres avantages vous sont offerts."

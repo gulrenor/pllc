@@ -2,11 +2,8 @@
 categories_weight = 50
 series_weight = 50
 categories = [
-  "Selling and Booking",
   "Ventes & Engagements",
-  "Host Program",
   "Programme d'Hôtesse(Hôte)",
-  "Book",
   "Engagements",
 ]
 description = ""

@@ -3,9 +3,7 @@ active = true
 categories_weight = 50
 series_weight = 50
 categories = [
-  "Online Biz",
   "En Ligne",
-  "Social Networking",
   "Réseaux Sociaux",
 ]
 description = ""

@@ -2,7 +2,6 @@
 src = "http://partylite.vo.llnwd.net/o15/u/CAOLC/Learning_Center_Canada/Assets/doc/Fr_Spring_2017_Launch_Presentation.pdf"
 series_weight = 50
 categories = [
-  "Product Training",
   "Formation Produits",
 ]
 description = ""

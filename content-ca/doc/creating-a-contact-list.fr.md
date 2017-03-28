@@ -4,9 +4,7 @@ categories_weight = 50
 series_weight = 50
 series = ""
 categories = [
-  "First Parties",
   "Vos Premières Présentations",
-  "Grand Opening",
   "Présentation de Lancement",
 ]
 date = "2016-11-08T09:43:15-05:00"

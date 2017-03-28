@@ -1,8 +1,6 @@
 +++
 categories = [
-  "Booking",
   "Engagements",
-  "Host Program",
   "Programme d'Hôtesse(Hôte)",
 ]
 categories_weight = 0

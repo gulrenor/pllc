@@ -4,13 +4,9 @@ categories_weight = 50
 series_weight = 50
 series = ""
 categories = [
-  "New Consultants",
   "Nouvelles(eaux) Conseillères(ers)",
-  "Income and Rewards",
   "Revenu et Récompenses",
-  "Shareable",
   "Partageable",
-  "Leadership Skills",
   "Compétences en Leadership",
 ]
 description = "Gagnez plus en tant que chef! C'est vraiment simple."

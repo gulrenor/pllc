@@ -3,11 +3,8 @@ categories_weight = 50
 series_weight = 50
 series = "l'Appel d'Engagement"
 categories = [
-  "Selling and Booking",
   "Ventes & Engagements",
-  "Host Program",
   "Programme d'Hôtesse(Hôte)",
-  "Book",
   "Engagements",
 ]
 date = "2016-11-22T12:35:24-05:00"

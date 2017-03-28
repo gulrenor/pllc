@@ -5,11 +5,8 @@ date = "2016-11-22T12:35:11-05:00"
 title = "l'Appel d'Engagement"
 series = "l'Appel d'Engagement"
 categories = [
-  "Selling and Booking",
   "Ventes & Engagements",
-  "Host Program",
   "Programme d'Hôtesse(Hôte)",
-  "Book",
   "Engagements",
 ]
 description = ""
