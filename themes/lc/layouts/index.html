@@ -9,7 +9,7 @@
 
 <!-- Info Triptych begins-->
 <section class="grid section-break">
-  
+{{- if ne "fr-CA" $.Site.LanguageCode -}}
   <!-- Webinars -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product Shot3.jpg" | relURL }}" alt="Product Shot" />
@@ -20,7 +20,9 @@
       {{ end }}
     </ul>
   </div>
-  
+{{ end }}
+
+{{- if ne "fr-CA" $.Site.LanguageCode -}}
   <!-- Business Guides -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Product Shot"/>
@@ -31,7 +33,23 @@
       {{ end }}
     </ul>
   </div>
-  
+{{ end }}
+
+{{- if eq "fr-CA" $.Site.LanguageCode -}}
+  <!-- Guides d'Affaires -->
+  <div class="columns-3 bg-ltgrey triptych">
+    <img src="{{ "/images/Product shot1.jpg" | relURL }}" alt="Product Shot"/>
+    <h5 class="column-header bg-mdblue fg-white">{{ .Site.Params.businessguides }}</h5>
+    <ul>
+      {{ range .Site.Taxonomies.categories.guidesdaffaires }}
+      <li><a href="{{ .Page.URL }}index.html">{{ .Page.Title }}</a></li>
+      {{ end }}
+      <li><a href="/fr/doc/profit-program-guide/index.html">Programme de Bénéfices</a></li>
+    </ul>
+  </div>
+{{ end }}
+
+{{- if ne "fr-CA" $.Site.LanguageCode -}}
   <!-- Tutorials -->
   <div class="columns-3 bg-ltgrey triptych">
     <img src="{{ "/images/Product Shot5.jpg" | relURL }}" alt="Product Shot"/>
@@ -42,7 +60,7 @@
       {{ end }}
     </ul>
   </div>
-  
+{{ end }}
 </section>
 
 {{ partial "footer.html" . }}

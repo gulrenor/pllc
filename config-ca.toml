@@ -49,7 +49,9 @@ canonifyURLS = true
   businessguides = "Business Guides"
   tutorials = "Tutorials"
   download = "Download"
-  
+
+  [languages.en.params]
+    locale = "en-CA"
   
   ### New Consultants ###
   [[languages.en.menu.main]]
@@ -161,6 +163,9 @@ canonifyURLS = true
   businessguides = "Guides d'Affaires"
   tutorials = "Tutoriels"
   download = "Télécharger"
+  
+  [languages.fr.params]
+    locale = "fr-CA"
   
   ### New Consultants ###
   [[languages.fr.menu.main]]
